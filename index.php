@@ -2,7 +2,7 @@
 require_once('./vendor/autoload.php');
 
 $Consts = new Core\Consts();
-$method = Core\Methods::$sendMediaGroup;
+$method = Core\Methods::$sendDocument;
 
 /**
  * INFO
