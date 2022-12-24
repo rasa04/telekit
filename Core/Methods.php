@@ -114,7 +114,7 @@ Class Methods{
 
             self::writeLogFile($photoPathTG, true);
             // забираем название файла
-            $newFilePath = __DIR__ . "/../storage/img/" . explode("/", $fileUrl)[1];
+            $newFilePath = __DIR__ . "/../../storage/img/" . explode("/", $fileUrl)[1];
 
             // сохраняем файл на серсер
             file_put_contents($newFilePath, file_get_contents($photoPathTG));
