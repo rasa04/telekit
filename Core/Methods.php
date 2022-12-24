@@ -70,104 +70,6 @@ Class Methods{
     public static $sendMediaGroup = 'sendMediaGroup';
 
 
-    public static function sendMessage($Consts, $textMessage, $keyboard = [], $inline_keyboard = []){
-        $data = array (
-            "chat_id" => $Consts::CHAT_ID,
-            "text" => $textMessage,
-            "parse_mode" => "html",
-            "reply_to_message_id" => null,
-            'reply_markup' => [
-                'one_time_keyboard' => true,
-                'resize_keyboard' => true,
-                'keyboard' => [
-                    [
-                        ['text' => 'Назначить день рождение'],
-                        ['text' => 'Назначить особый день'],
-                    ],
-                    [
-                        ['text' => 'Функции'],
-                        ['text' => 'Поддержка'],
-                    ]
-                ],
-                // 'inline_keyboard' => [
-                //     [
-                //         [
-                //             'text' => 'Назначить день рождение',
-                //             'callback_data' => 'test_1',
-                //         ],
-                //         [
-                //             'text' => 'Функции',
-                //             'callback_data' => 'test_2',
-                //         ]
-                //     ],
-                //     [
-                //         [
-                //             'text' => 'Назначить день рождение',
-                //             'callback_data' => 'test_1',
-                //         ],
-                //         [
-                //             'text' => 'Функции',
-                //             'callback_data' => 'test_2',
-                //         ],
-                //         [
-                //             'text' => 'Функции 2',
-                //             'callback_data' => 'test_3',
-                //         ]
-                //     ]
-                // ]
-            ]
-        );
-        
-        return $data;
-    }
-
-    public static function sendDocument($Consts){
-        $data = [
-            'chat_id' => $Consts::CHAT_ID,
-            'protect_content' => 1,
-            'caption' => "Подпись",
-            'document' => curl_file_create(__DIR__ . "/../storage/img/" . "image1.png", 'image/jpg', "кот.jpg")
-            // 'document' => "BQACAgIAAxkDAAN1Y6ORUH9Pg2FSZ4qSSbrOw6CyTjAAAvQkAAJkIRlJLZrjkFcFEY4sBA"
-        ];
-
-        // var_dump($data['document']->name); exit();
-
-        return $data;
-    }
-
-    public static function sendPhoto($Consts){
-        $data = [
-            'chat_id' => $Consts::CHAT_ID,
-            'protect_content' => 1,
-            'caption' => "Подпись",
-            'photo' => curl_file_create(__DIR__ . "/../storage/img/" . "image1.png", 'image/png', "image1.png")
-            // 'document' => "BQACAgIAAxkDAAN1Y6ORUH9Pg2FSZ4qSSbrOw6CyTjAAAvQkAAJkIRlJLZrjkFcFEY4sBA"
-        ];
-
-        // var_dump($data['document']->name); exit();
-
-        return $data;
-    }
-
-    public static function sendMediaGroup($Consts){
-        $data = [
-            'chat_id' => $Consts::CHAT_ID,
-            'media' => json_encode(
-                [
-                    ['type' => 'document', 'media' => 'attach://cat'],
-                    ['type' => 'document', 'media' => 'attach://cat_2']
-                    // ['type' => 'photo', 'media' => 'attach://cat'],
-                    // ['type' => 'photo', 'media' => 'attach://cat_2']
-                ]
-            ),
-            'cat' => new \CURLFile(__DIR__ . "/../storage/img/" . "image1.png"), // тоже самое что curl_file_create, только класс
-            'cat_2' => new \CURLFile(__DIR__ . "/../storage/img/" . "image1.png")
-        ];
-
-        return $data;
-    }
-
-
     public static function writeLogFile($str, $clear = false){
         $log_file_name = __DIR__ . "/../storage/" . "message.txt";
         $now = date("Y-m-d H:i:s");
@@ -223,15 +125,47 @@ Class Methods{
     public static function sendTelegram($Consts, $method, $data, $headers = [])
     {
         $curl = curl_init();
-        curl_setopt_array($curl, [
-            CURLOPT_URL => 'https://api.telegram.org/bot' . $Consts::TOKEN . "/$method?" . http_build_query($data),
-            CURLOPT_POST => 1,
-            CURLOPT_HEADER => 0,
-            CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_POSTFIELDS => $data,
-            CURLOPT_SSL_VERIFYPEER => 0,
-            // CURLOPT_HTTPHEADER => array_merge(array("Content-Type: application/json"), $headers),
-        ]);
+            if($method == 'sendMessage'){
+            curl_setopt_array($curl, [
+                CURLOPT_URL => 'https://api.telegram.org/bot' . $Consts::TOKEN . "/$method?" . http_build_query($data::$data),
+                CURLOPT_POST => 1,
+                CURLOPT_HEADER => 0,
+                CURLOPT_RETURNTRANSFER => 1,
+                CURLOPT_POSTFIELDS => json_encode($data::$data),
+                CURLOPT_SSL_VERIFYPEER => 0,
+                CURLOPT_HTTPHEADER => array_merge(array("Content-Type: application/json"), $headers),
+            ]);
+        }
+        else if($method == 'sendDocument'){
+            curl_setopt_array($curl, [
+                CURLOPT_URL => 'https://api.telegram.org/bot' . $Consts::TOKEN . "/$method?" . http_build_query($data::$data),
+                CURLOPT_POST => 1,
+                CURLOPT_HEADER => 0,
+                CURLOPT_RETURNTRANSFER => 1,
+                CURLOPT_POSTFIELDS => json_encode($data::$data),
+                CURLOPT_SSL_VERIFYPEER => 0,
+            ]);
+        }
+        else if($method == 'sendPhoto'){
+            curl_setopt_array($curl, [
+                CURLOPT_URL => 'https://api.telegram.org/bot' . $Consts::TOKEN . "/$method?" . http_build_query($data::$data),
+                CURLOPT_POST => 1,
+                CURLOPT_HEADER => 0,
+                CURLOPT_RETURNTRANSFER => 1,
+                CURLOPT_POSTFIELDS => json_encode($data::$data),
+                CURLOPT_SSL_VERIFYPEER => 0,
+            ]);
+        }
+        else if($method == 'sendMediaGroup'){
+            curl_setopt_array($curl, [
+                CURLOPT_URL => 'https://api.telegram.org/bot' . $Consts::TOKEN . "/$method?" . http_build_query($data::$data),
+                CURLOPT_POST => 1,
+                CURLOPT_HEADER => 0,
+                CURLOPT_RETURNTRANSFER => 1,
+                CURLOPT_POSTFIELDS => $data::$data,
+                CURLOPT_SSL_VERIFYPEER => 0,
+            ]);
+        }
         
         $result = curl_exec($curl);
         curl_close($curl);

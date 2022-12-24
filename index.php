@@ -2,7 +2,7 @@
 require_once('./vendor/autoload.php');
 
 $Consts = new Core\Consts();
-$method = Core\Methods::$sendDocument;
+$method = Core\Methods::$sendMediaGroup;
 
 /**
  * INFO
@@ -14,17 +14,14 @@ $method = Core\Methods::$sendDocument;
  * 
  */
 
-/* ***************   REQUEST LISTENER   ***************** */
+/* ***************   REQUEST LISTENER   **************** */
 
 Core\Methods::requestListener($Consts);
 
 /* ***************   МЕТОДЫ ОТПРАВКИ   ***************** */
 
-$textMessage = "Новое тестовое сообщение <b> формы </b>";
-
-$data = Core\Methods::$method($Consts);
-
-/* ***************   ФУНКЦИЯ ОТПРАВКИ   ***************** */
+// var_dump($data::$data); exit();
+/* ***************   ФУНКЦИЯ ОТПРАВКИ   **************** */
 
 var_dump(Core\Methods::sendTelegram($Consts, $method, $data));
 ?>
