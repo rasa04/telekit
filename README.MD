@@ -1,3 +1,11 @@
+
+# INFO
+ * You can get updates with
+ * https://api.telegram.org/bot5977797894:AAHIXhQ6uY5Lu9BxhLY_j0bZSmMK8nQxbSc/getUpdates
+ * 
+ * If you want to set webhooks to your server use
+ * https://api.telegram.org/bot5977797894:AAHIXhQ6uY5Lu9BxhLY_j0bZSmMK8nQxbSc/setwebhook?url=https://matesite.uz/bots/birthdayReminder/index.php
+
 ## Пример настройки фото
 $Consts = new Core\Consts();
 $method = Core\Methods::$sendPhoto;
@@ -24,7 +32,7 @@ $method = Core\Methods::$sendMessage;
 
 $data = new Core\Methods\SendMessage([
     'chat_id' => 511703056,
-    'text' => 'Привет, зай))', 
+    'text' => 'Привет, зай', 
     'parse_mode' => 'html', 
     'reply_to_message_id' => null,
 ]);
@@ -88,7 +96,7 @@ $method = Core\Methods::$sendMediaGroup;
 
 $data = new \Core\Methods\SendMediaGroup([
     "media" => [
-        ['type' => 'document', 'name' => 'mycat', 'path' => 'image1.png'],
-        ['type' => 'document', 'name' => 'mycat2', 'path' => 'image1.png']
+        ['type' => 'document', 'name' => 'mycat', 'path' => 'img/image1.png'],
+        ['type' => 'document', 'name' => 'mycat2', 'path' => 'img/image1.png']
     ]
 ]);
