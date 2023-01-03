@@ -1,6 +1,8 @@
 <?php
 namespace Core;
 
+use Exception;
+
 trait Helpers
 {
     public function dd(array $request) : void
@@ -47,12 +49,14 @@ trait Helpers
         }
     }
 
-    public function getRequest() : array
+    public function getRequest(bool $withErrorIfEmpty = false) : array | null
     {
         $request = json_decode(file_get_contents('php://input'), true);
-        $this->writeLogFile($request, 'message.txt');
-        $this->saveDataToJson($request, 'data.json');
-        return $request;
+        if ($request != null) {
+            $this->writeLogFile($request, 'message.txt');
+            $this->saveDataToJson($request, 'data.json');
+        }
+        return ($withErrorIfEmpty == false) ? $request : throw new Exception('[PTB error] Nothing requested', 404);
     }
 
     public function isMessageContainsText(array $message, string $str) : bool

@@ -32,7 +32,6 @@ class RequestHandler {
         
         /* GETTING REQUEST */
         $request = $this->getRequest();
-
         /* SEND RESPONSE */
         if (isset($request['message'])) {
             foreach($commands as $command){
