@@ -82,10 +82,10 @@ $response
         ]
     ])
     ->send();
-
+```
 
 ## Пример настройки отправки медиа файлов
-
+```
 $response = new \Core\Methods\SendMediaGroup;
 $response->chat_id(id)
         ->media([
