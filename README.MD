@@ -1,10 +1,10 @@
 
 # INFO
- * You can get updates with
+ * :bulb: **Контакты найдете на [моем сайте](matesite.uz)**
+ * **Получать обновления в браузере**
  * https://api.telegram.org/bot5977797894:AAHIXhQ6uY5Lu9BxhLY_j0bZSmMK8nQxbSc/getUpdates
- * 
- * If you want to set webhooks to your server use
- * https://api.telegram.org/bot5977797894:AAHIXhQ6uY5Lu9BxhLY_j0bZSmMK8nQxbSc/setwebhook?url=https://matesite.uz/bots/dnd_ai/index.php
+ * **Настроить хук**
+ * https://api.telegram.org/bot5977797894:AAHIXhQ6uY5Lu9BxhLY_j0bZSmMK8nQxbSc/setwebhook?url=https://test.com/example_bot/index.php
 
 
 ## Пример настройки фото
