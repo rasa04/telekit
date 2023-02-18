@@ -1,10 +1,10 @@
 
-# INFO
+# СПРАВОЧНИК
  * :bulb: **Контакты найдете на [моем сайте](matesite.uz)**
  * **Получать обновления в браузере**
- * https://api.telegram.org/bot5977797894:AAHIXhQ6uY5Lu9BxhLY_j0bZSmMK8nQxbSc/getUpdates
+ * https://api.telegram.org/bot{TOKEN}/getUpdates
  * **Настроить хук**
- * https://api.telegram.org/bot5977797894:AAHIXhQ6uY5Lu9BxhLY_j0bZSmMK8nQxbSc/setwebhook?url=https://test.com/example_bot/index.php
+ * https://api.telegram.org/bot{TOKEN}/setwebhook?url=https://test.com/example_bot/index.php
 
 
 ## Пример настройки фото
