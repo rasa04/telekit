@@ -4,99 +4,87 @@
  * https://api.telegram.org/bot5977797894:AAHIXhQ6uY5Lu9BxhLY_j0bZSmMK8nQxbSc/getUpdates
  * 
  * If you want to set webhooks to your server use
- * https://api.telegram.org/bot5977797894:AAHIXhQ6uY5Lu9BxhLY_j0bZSmMK8nQxbSc/setwebhook?url=https://matesite.uz/bots/birthdayReminder/index.php
+ * https://api.telegram.org/bot5977797894:AAHIXhQ6uY5Lu9BxhLY_j0bZSmMK8nQxbSc/setwebhook?url=https://matesite.uz/bots/dnd_ai/index.php
+
 
 ## Пример настройки фото
-$Consts = new Core\Consts();
-$method = Core\Methods::$sendPhoto;
-
-$data = new Core\Methods\SendPhoto(['chat_id' => 511703056, 'caption' => "Новая подпись"]);
-$data::protect_content(1);
-$data::caption("Подпись");
-$data::photo("image1.png", "кот.jpg", "image/jpg");
-
+$response = new Core\Methods\SendPhoto;
+$response->protect_content(true)
+        ->caption('Подпись')
+        ->photo("image1.png", "кот.jpg", "image/jpg")
+        ->send()
 
 ## Пример настройки документа
-$Consts = new Core\Consts();
-$method = Core\Methods::$sendDocument;
-
-$data = new Core\Methods\SendDocument(['chat_id' => 511703056, 'caption' => "Новая подпись"]);
-$data::protect_content(1);
-$data::caption("Подпись");
-$data::document("image1.png", "кот.jpg", "image/jpg");
-
+$response = new Core\Methods\SendPhoto;
+$response->protect_content(true)
+        ->caption('Подпись')
+        ->photo("image1.png", "кот.jpg", "image/jpg")
+        ->send()
 
 ## Пример настройки сообщения
-$Consts = new Core\Consts();
-$method = Core\Methods::$sendMessage;
+<?php
+namespace Triggers;
 
-$data = new Core\Methods\SendMessage([
-    'chat_id' => 511703056,
-    'text' => 'Привет, зай', 
-    'parse_mode' => 'html', 
-    'reply_to_message_id' => null,
-]);
+use Core\Methods\SendMessage;
 
+class Help {
+    public function __construct($request)
+    {
+        $response = new SendMessage;
+        $response
+            ->chat_id($request['message']['chat']['id'])
+            ->text('Помощь')
+            ->send();
+    }
+}
 
 ## Пример настройки сообщения с кнопками
-$Consts = new Core\Consts();
-$method = Core\Methods::$sendMessage;
 
-$data = new Core\Methods\SendMessage([
-    'chat_id' => 511703056,
-    'text' => 'Привет, зай))', 
-    'parse_mode' => 'html', 
-    'reply_to_message_id' => null,
-    'reply_markup' => [
+$response = new SendMessage;
+
+$response
+    ->chat_id($request['message']['chat']['id'])
+    ->text('Выберите опцию')
+    ->parse_mode()
+    ->reply_markup([
         'one_time_keyboard' => true,
         'resize_keyboard' => true,
-        'keyboard' => [
-            [
-                ['text' => 'Назначить день рождение'],
-                ['text' => 'Назначить особый день'],
-            ],
-            [
-                ['text' => 'Функции'],
-                ['text' => 'Поддержка'],
-            ]
-        ],
         'inline_keyboard' => [
             [
                 [
                     'text' => 'Назначить день рождение',
-                    'callback_data' => 'test_1',
+                    'callback_data' => 'Назначить день рождение',
                 ],
                 [
-                    'text' => 'Функции',
-                    'callback_data' => 'test_2',
+                    'text' => 'Назначить особый день',
+                    'callback_data' => 'Назначить особый день',
                 ]
             ],
             [
                 [
-                    'text' => 'Назначить день рождение',
-                    'callback_data' => 'test_1',
+                    'text' => 'События',
+                    'callback_data' => 'События',
                 ],
                 [
                     'text' => 'Функции',
-                    'callback_data' => 'test_2',
+                    'callback_data' => 'Функции',
                 ],
                 [
-                    'text' => 'Функции 2',
-                    'callback_data' => 'test_3',
+                    'text' => 'Поддержка',
+                    'callback_data' => 'Поддержка',
                 ]
             ]
         ]
-    ]
-]);
+    ])
+    ->send();
 
 
 ## Пример настройки отправки медиа файлов
-$Consts = new Core\Consts();
-$method = Core\Methods::$sendMediaGroup;
 
-$data = new \Core\Methods\SendMediaGroup([
-    "media" => [
-        ['type' => 'document', 'name' => 'mycat', 'path' => 'img/image1.png'],
-        ['type' => 'document', 'name' => 'mycat2', 'path' => 'img/image1.png']
-    ]
-]);
+$response = new \Core\Methods\SendMediaGroup;
+$response->chat_id(id)
+        ->media([
+                ['type' => 'document', 'name' => 'mycat', 'path' => 'img/image1.png'],
+                ['type' => 'document', 'name' => 'mycat2', 'path' => 'img/image1.png']
+        ])
+        ->send();

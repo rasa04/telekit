@@ -7,6 +7,22 @@ namespace Composer\Autoload;
 class ComposerStaticInitb2c0fe2fcaf49e8c36f6280ec5dac5f3
 {
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'Triggers\\' => 9,
+        ),
+        'P' => 
+        array (
+            'Plots\\' => 6,
+        ),
+        'I' => 
+        array (
+            'Interactions\\' => 13,
+        ),
+        'G' => 
+        array (
+            'Games\\' => 6,
+        ),
         'C' => 
         array (
             'Core\\' => 5,
@@ -14,6 +30,22 @@ class ComposerStaticInitb2c0fe2fcaf49e8c36f6280ec5dac5f3
     );
 
     public static $prefixDirsPsr4 = array (
+        'Triggers\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Responses/Triggers',
+        ),
+        'Plots\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Responses/Plots',
+        ),
+        'Interactions\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Responses/Interactions',
+        ),
+        'Games\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Responses/Games',
+        ),
         'Core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Core',

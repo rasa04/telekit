@@ -6,5 +6,9 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Triggers\\' => array($baseDir . '/Responses/Triggers'),
+    'Plots\\' => array($baseDir . '/Responses/Plots'),
+    'Interactions\\' => array($baseDir . '/Responses/Interactions'),
+    'Games\\' => array($baseDir . '/Responses/Games'),
     'Core\\' => array($baseDir . '/Core'),
 );

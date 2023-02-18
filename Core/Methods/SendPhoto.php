@@ -2,47 +2,60 @@
 namespace Core\Methods;
 
 use Core\Consts;
-use Core\Helpers;
 
 class SendPhoto
 {
-    use Helpers;
-    private $response;
-    private $method = "sendPhoto";
-
-    public function __construct(array $data = [])
-    {
-        (isset($data['chat_id'])) ?  $this->response['chat_id'] = $data['chat_id'] : throw new \Exception('chat id does not exists');
-        if (!empty($data['protect_content'])) $this->response['protect_content'] = $data['protect_content'];
-        if (!empty($data['caption'])) $this->response['caption'] = $data['caption'];
-    }
-
-    public function chat_id(bool $chat_id = false) : void
-    {
-        $this->response['chat_id'] = $chat_id;
-    }
-
-    public function protect_content(bool $protect_content = false) : void
-    {
-        $this->response['protect_content'] = $protect_content;
-    }
+    use PropertiesTrait;
+    use \Core\Controllers;
     
-    public function caption(string $caption) : void
+    private array $response;
+
+    /**
+     * Photo caption (may also be used when resending photos by file_id), 0-1024 characters after entities parsing
+     */
+    public function caption(string $caption) : object
     {
         $this->response['caption'] = $caption;
+        return $this;
     }
     
-    public function photo(string $namePath, string $name, string $type = "image/jpg") : void
+    /**
+     * A JSON-serialized list of special entities that appear in the caption, which can be specified instead of parse_mode
+     */
+    public function caption_entities(string $caption_entities) : object
     {
-        $this->response['photo'] = curl_file_create(Consts::STORAGE. "/img/" . $namePath, $type, $name);
+        $this->response['caption_entities'] = $caption_entities;
+        return $this;
     }
 
-    public function send() : void
+    /**
+     * Pass True if the photo needs to be covered with a spoiler animation
+     */
+    public function has_spoiler(string $has_spoiler) : object
     {
+        $this->response['has_spoiler'] = $has_spoiler;
+        return $this;
+    }
+    
+    /**
+     * Photo to send. Pass a file_id as String to send a photo that exists on the Telegram servers (recommended), 
+     * pass an HTTP URL as a String for Telegram to get a photo from the Internet, or upload a new photo using multipart/form-data. 
+     * The photo must be at most 10 MB in size. The photo's width and height must not exceed 10000 in total. 
+     * Width and height ratio must be at most 20.
+     */
+    public function photo(string $namePath, string $name, string $type = "image/jpg") : object
+    {
+        $this->response['photo'] = curl_file_create(Consts::STORAGE. "/img/" . $namePath, $type, $name);
+        return $this;
+    }
+    
+    public function send(bool $writeLogFile = true, bool $saveDataToJson = true) : void
+    {
+        if (empty($this->response['chat_id'])) throw new \Exception('chat id does not exists');
         if (empty($this->response['photo'])) throw new \Exception('photo does not exists');
         $curl = curl_init();
         curl_setopt_array($curl, [
-            CURLOPT_URL => 'https://api.telegram.org/bot' . Consts::TOKEN . "/$this->method?" . http_build_query($this->response),
+            CURLOPT_URL => 'https://api.telegram.org/bot' . Consts::TOKEN . "/sendPhoto?" . http_build_query($this->response),
             CURLOPT_POST => 1,
             CURLOPT_HEADER => 0,
             CURLOPT_RETURNTRANSFER => 1,
@@ -51,8 +64,9 @@ class SendPhoto
         ]);    
         $result = curl_exec($curl);
         curl_close($curl);
+
         //сохраняем то что бот сам отправляет
-        $this->writeLogFile(json_decode($result, 1), 'message.txt');
-        $this->saveDataToJson(json_decode($result, 1), 'data.json');
+        if($writeLogFile == true) $this->writeLogFile(json_decode($result, 1), 'message.txt');
+        if($saveDataToJson == true) $this->saveDataToJson(json_decode($result, 1), 'data.json');
     }
 }

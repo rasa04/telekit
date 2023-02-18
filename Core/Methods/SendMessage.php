@@ -1,29 +1,23 @@
 <?php
 namespace Core\Methods;
+
 use \Core\Consts;
-use Core\Helpers;
 
 class SendMessage
 {
-    use Helpers;
-    private $response;
-    private $method = "sendMessage";
+    use PropertiesTrait;
+    use \Core\Controllers;
     
-    public function __construct(array $data)
-    {
-        (isset($data['chat_id'])) ? $this->response['chat_id'] = $data['chat_id'] : throw new \Exception('chat id does not exists');
-        (isset($data['text'])) ? $this->response['text'] = $data['text'] : throw new \Exception('chat id does not exists');
-        if (isset($data['text'])) $this->response['text'] = $data['text'];
-        if (isset($data['parse_mode']))  $this->response['parse_mode'] = $data['parse_mode'];
-        if (isset($data['reply_to_message_id']))  $this->response['reply_to_message_id'] = $data['reply_to_message_id'];
-        if (isset($data['reply_markup'])) $this->response['reply_markup'] = $data['reply_markup'];
-    }
+    private array $response;
 
-    public function send(array $headers = []) : void
+    public function send(array $headers = [], bool $writeLogFile = true, bool $saveDataToJson = true) : void
     {
+        if (empty($this->response['chat_id'])) throw new \Exception('chat id does not exists');
+        if (empty($this->response['text'])) throw new \Exception('text does not exists');
+
         $curl = curl_init();
         curl_setopt_array($curl, [
-            CURLOPT_URL => 'https://api.telegram.org/bot' . Consts::TOKEN . "/$this->method?" . http_build_query($this->response),
+            CURLOPT_URL => 'https://api.telegram.org/bot' . Consts::TOKEN . "/sendMessage?" . http_build_query($this->response),
             CURLOPT_POST => 1,
             CURLOPT_HEADER => 0,
             CURLOPT_RETURNTRANSFER => 1,
@@ -33,8 +27,38 @@ class SendMessage
         ]);
         $result = curl_exec($curl);
         curl_close($curl);
+
         //сохраняем то что бот сам отправляет
-        $this->writeLogFile(json_decode($result, 1), 'message.txt');
-        $this->saveDataToJson(json_decode($result, 1), 'data.json');
+        if($writeLogFile == true) $this->writeLogFile(json_decode($result, 1), 'message.txt');
+        if($saveDataToJson == true) $this->saveDataToJson(json_decode($result, 1), 'data.json');
     }
+
+    /**
+     * Unique identifier for the target chat or username of the target channel (in the format @channelusername)
+     */
+    public function text(string $text) : object
+    {
+        $this->response['text'] = $text;
+        return $this;
+    }
+
+    /**
+     * A JSON-serialized list of special entities that appear in message text, which can be specified instead of parse_mode
+     */
+    public function entities(array $entities) : object
+    {
+        // BETA
+        $this->response['entities'] = $entities;
+        return $this;
+    }
+
+    /**
+     * Disables link previews for links in this message
+     */
+    public function disable_web_page_preview(bool $disable_web_page_preview) : object
+    {
+        $this->response['disable_web_page_preview'] = $disable_web_page_preview;
+        return $this;
+    }
+
 }

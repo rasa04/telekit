@@ -1,17 +1,18 @@
 <?php
-namespace Core\Templates;
+namespace Triggers;
 
 use Core\Methods\SendMessage;
 
 class Start {
     public function __construct($request)
     {
-        $response = new SendMessage([
-            'chat_id' => $request['message']['chat']['id'],
-            'text' => 'Выберите опцию', 
-            'parse_mode' => 'html', 
-            'reply_to_message_id' => null,
-            'reply_markup' => [
+        $response = new SendMessage;
+        
+        $response
+            ->chat_id($request['message']['chat']['id'])
+            ->text('Выберите опцию')
+            ->parse_mode()
+            ->reply_markup([
                 'one_time_keyboard' => true,
                 'resize_keyboard' => true,
                 'inline_keyboard' => [
@@ -40,8 +41,7 @@ class Start {
                         ]
                     ]
                 ]
-            ]
-        ]);
-        $response->send();
+            ])
+            ->send();
     }
 }

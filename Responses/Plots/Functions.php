@@ -1,31 +1,31 @@
 <?php
-namespace Core\Templates;
+namespace Plots;
 
 use Core\Methods\SendMessage;
 
-class Support {
+class Functions {
     public function __construct($request)
     {
         $response = new SendMessage([
             'chat_id' => $request['callback_query']['message']['chat']['id'],
-            'text' => 'Поддержите нас задонатив на один перечисленных кошельков', 
+            'text' => 'Функции', 
             'parse_mode' => 'html', 
+            'reply_to_message_id' => null,
             'reply_markup' => [
                 'one_time_keyboard' => true,
                 'resize_keyboard' => true,
                 'keyboard' => [
                     [
-                        ['text' => 'payme'],
-                        ['text' => 'click'],
+                        ['text' => 'Языки'],
+                        ['text' => 'прочее'],
                     ],
                     [
-                        ['text' => 'visa'],
-                        ['text' => 'qiwi'],
+                        ['text' => 'прочее'],
+                        ['text' => 'прочее'],
                     ]
                 ]
             ],
-            'reply_to_message_id' => null,
         ]);
-        $response->send();
+       $response->send();
     }
 }

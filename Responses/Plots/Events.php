@@ -1,5 +1,5 @@
 <?php
-namespace Core\Templates;
+namespace Plots;
 
 use Core\Consts;
 use Core\Methods\SendMessage;
