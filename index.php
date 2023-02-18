@@ -3,7 +3,7 @@ require_once('./vendor/autoload.php');
 
 use Triggers\{Start, Help, Settings};
 use Plots\{SetBirthday, SetEvent, Functions, Support, Events};
-
+use Interactions\{ Rolls };
 new class {
     use Core\Controllers;
 
@@ -24,7 +24,8 @@ new class {
     ];
 
     private array $inlineQueries = [
-        'example' => null
+        'd20' => Rolls::class,
+        'к20' => Rolls::class
     ];
 
     private array $games = [
