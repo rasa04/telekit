@@ -14,29 +14,33 @@ trait Controllers
         ini_set('display_startup_errors', 1);
     }
 
-    public function getRequest(bool $withErrorIfEmpty = false) : array | null
+    public function getRequest(? bool $writeLogFile = true, ? bool $saveDataToJson = true) : array | null
     {
         $request = json_decode(file_get_contents('php://input'), true);
-        if (isset($request)) {
-            $this->writeLogFile($request, 'message.txt');
-            $this->saveDataToJson($request, 'data.json');
-        }
-        return ($withErrorIfEmpty == false) ? $request : throw new \Exception('[PTB error] Nothing requested', 404);
+        if (empty($request)) throw new \Exception('[PTB error] Nothing requested', 404);
+        if ($writeLogFile) $this->writeLogFile($request, 'message.txt');
+        if ($saveDataToJson) $this->saveDataToJson($request, 'data.json');
+        return $request;
     }
 
     public function detectRequest(array $request) : void {
         try {
             if (isset($request['message']['text'])) {
                 foreach(new \ArrayIterator($this->triggers) as $key => $val)
-                    ($key == strtolower($request['message']['text'])) ? new $val($request) : new \Triggers\DefaultAct($request);
+                    if($key == strtolower($request['message']['text'])) new $val($request);
             }
             elseif (isset($request['callback_query']['data'])) {
                 foreach(new \ArrayIterator($this->callbackDatas) as $key => $val)
                     if($key == strtolower($request['callback_query']['data'])) new $val($request);
             }
             elseif (isset($request['inline_query']['query'])) {
-                foreach(new \ArrayIterator($this->inlineQueries) as $key => $val)
-                    if($key == strtolower($request['inline_query']['query'])) new $val($request);
+                if (empty($this->inlineQueries)) {
+                    new \Interactions\DefaultAct($request);
+                }
+                else {
+                    foreach(new \ArrayIterator($this->inlineQueries) as $key => $val)
+                        if($key == strtolower($request['inline_query']['query'])) new $val($request);
+                }
             }
             elseif (isset($request['game_short_name'])) {
                 foreach(new \ArrayIterator($this->games) as $key => $val)

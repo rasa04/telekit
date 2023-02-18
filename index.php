@@ -3,7 +3,7 @@ require_once('./vendor/autoload.php');
 
 use Triggers\{Start, Help, Settings};
 use Plots\{SetBirthday, SetEvent, Functions, Support, Events};
-use Interactions\{ Rolls };
+use Interactions\{ Rolls, DefaultAct };
 new class {
     use Core\Controllers;
 
@@ -23,9 +23,12 @@ new class {
         "События" => Events::class,
     ];
 
+    /**
+     * You can trace and response to all queries first in Interactions\DefaultAct class
+     * Be careful that the new classes for processing inline Queries do not contradict each other
+     */
     private array $inlineQueries = [
-        'd20' => Rolls::class,
-        'к20' => Rolls::class
+
     ];
 
     private array $games = [
@@ -38,7 +41,7 @@ new class {
         $this->setIni();
 
         // GET REQUEST
-        $this->request = $this->getRequest();
+        $this->request = $this->getRequest(false, false);
         
         // DETECT PLOT
         $this->detectRequest($this->request);
