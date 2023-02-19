@@ -1,9 +1,8 @@
 <?php
 require_once('./vendor/autoload.php');
 
-use Triggers\{Start, Help, Settings};
+use Triggers\{GetApi, Start, Help, Settings};
 use Plots\{SetBirthday, SetEvent, Functions, Support, Events};
-use Interactions\{ Rolls, DefaultAct };
 new class {
     use Core\Controllers;
 
@@ -11,6 +10,7 @@ new class {
 
     private array $triggers = [
         "/start" => Start::class,
+        "api" => GetApi::class,
         "/help" => Help::class,
         "/settings" => Settings::class,
     ];

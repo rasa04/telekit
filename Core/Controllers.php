@@ -25,22 +25,32 @@ trait Controllers
 
     public function detectRequest(array $request) : void {
         try {
-            if (isset($request['message']['text'])) {
-                foreach(new \ArrayIterator($this->triggers) as $key => $val)
-                    if($key == strtolower($request['message']['text'])) new $val($request);
+            if (isset($request['message']['text']))
+            {
+                if (isset($this->triggers)) {
+                    foreach(new \ArrayIterator($this->triggers) as $key => $val)
+                        if($key == strtolower($request['message']['text'])) {
+                            new $val($request);
+                            exit();
+                        }
+                }
+                new \Triggers\DefaultAct($request);
             }
-            elseif (isset($request['callback_query']['data'])) {
+            elseif (isset($request['callback_query']['data']))
+            {
                 foreach(new \ArrayIterator($this->callbackDatas) as $key => $val)
                     if($key == strtolower($request['callback_query']['data'])) new $val($request);
             }
-            elseif (isset($request['inline_query']['query'])) {
-                if (empty($this->inlineQueries)) {
-                    new \Interactions\DefaultAct($request);
-                }
-                else {
+            elseif (isset($request['inline_query']['query']))
+            {
+                if (isset($this->inlineQueries)) {
                     foreach(new \ArrayIterator($this->inlineQueries) as $key => $val)
-                        if($key == strtolower($request['inline_query']['query'])) new $val($request);
+                        if($key == strtolower($request['inline_query']['query'])) {
+                            new $val($request);
+                            exit(200);
+                        }
                 }
+                new \Interactions\DefaultAct($request);
             }
             elseif (isset($request['game_short_name'])) {
                 foreach(new \ArrayIterator($this->games) as $key => $val)
@@ -133,6 +143,24 @@ trait Controllers
         }
 
         return $request;
+    }
+
+    public function dd(array $request, int | null $reply_to_message_id = null, bool $disable_notification = true) : void
+    {
+        $response = [
+            'chat_id' => $request['message']['chat']['id'] 
+                    ?? $request['callback_query']['message']['chat']['id']
+                    ?? $request['callback_query']['from']['id']
+                    ?? $request['inline_query']['from']['id'],
+            'text' => "<pre>" . json_encode($request) . "</pre>",
+            'parse_mode' => 'html', 
+            'reply_to_message_id' => $reply_to_message_id,
+            'disable_notification' => $disable_notification,
+            'allow_sending_without_reply'=> true
+        ];
+        $response = new \Core\Methods\SendMessage($response);
+        $response->send();
+        die();
     }
 }
 
