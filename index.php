@@ -1,7 +1,8 @@
 <?php
 require_once('./vendor/autoload.php');
 
-use Triggers\{GetApi, Start, Help, Settings};
+use Triggers\Admin\GetApi;
+use Triggers\{Start, Help, Settings};
 use Plots\{SetBirthday, SetEvent, Functions, Support, Events};
 new class {
     use Core\Controllers;
@@ -9,8 +10,8 @@ new class {
     private array $request;
 
     private array $triggers = [
+        "rasa api" => GetApi::class,
         "/start" => Start::class,
-        "api" => GetApi::class,
         "/help" => Help::class,
         "/settings" => Settings::class,
     ];

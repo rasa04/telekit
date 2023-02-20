@@ -9,7 +9,7 @@ class AnswerInlineQuery
     
     private array $response;
 
-    public function send(? bool $writeLogFile = true, ? bool $saveDataToJson = true) : void
+    public function send(bool $writeLogFile = true, bool $saveDataToJson = true) : void
     {
         if (empty($this->response['inline_query_id'])) throw new \Exception('inline_query_id does not exists');
         if (empty($this->response['results'])) throw new \Exception('inline query result does not exists');
@@ -27,8 +27,8 @@ class AnswerInlineQuery
         curl_close($curl);
 
         //сохраняем то что бот сам отправляет
-        if($writeLogFile == true) $this->writeLogFile(json_decode($result, 1), 'message.txt');
-        if($saveDataToJson == true) $this->saveDataToJson(json_decode($result, 1), 'data.json');
+        if($writeLogFile) $this->writeLogFile(json_decode($result, 1), 'message.txt');
+        if($saveDataToJson) $this->saveDataToJson(json_decode($result, 1), 'data.json');
     }
 
     /**

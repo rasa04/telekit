@@ -1,26 +1,11 @@
 <?php
 namespace Core;
 
+/**
+ * Тут находятся вспомогательные методы для разработки
+ */
 trait Helpers
 {
-    public function dd(array $request, int | null $reply_to_message_id = null, bool $disable_notification = true) : void
-    {
-        $response = [
-            'chat_id' => $request['message']['chat']['id'] 
-                    ?? $request['callback_query']['message']['chat']['id']
-                    ?? $request['callback_query']['from']['id']
-                    ?? $request['inline_query']['from']['id'],
-            'text' => "<pre>" . json_encode($request) . "</pre>",
-            'parse_mode' => 'html', 
-            'reply_to_message_id' => $reply_to_message_id,
-            'disable_notification' => $disable_notification,
-            'allow_sending_without_reply'=> true
-        ];
-        $response = new \Core\Methods\SendMessage($response);
-        $response->send();
-        die();
-    }
-
     public function isMessageContainsText(array $message, string $str) : bool
     {
         return (
@@ -143,10 +128,10 @@ trait Helpers
         }
     }
 
-    public function sendWithHttp($method, $textMessage)
+    public function sendWithHttp(string $method, string $textMessage)
     {
         // обычный запрос, без curl
-        $urlQuery = 'https://api.telegram.org/bot' . Consts::TOKEN . '/' . $method . "?chat_id=" . Consts::USER_ID . "&text=$textMessage";
+        $urlQuery = 'https://api.telegram.org/bot' . Consts::TOKEN . '/' . "$method?chat_id=" . Consts::USER_ID . "&text=$textMessage";
         $result = file_get_contents($urlQuery);
         return $result;
     }
