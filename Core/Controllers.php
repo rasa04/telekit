@@ -28,7 +28,8 @@ trait Controllers
         $data_value = $request['message']['text']
                     ?? $request['callback_query']['data']
                     ?? $request['inline_query']['query']
-                    ?? $request['game_short_name'];
+                    ?? $request['game_short_name']
+                    ?? null;
 
         // CREATE ITERATOR FOR ALL REGISTRATED RESPONSES
         if (isset($request['message']['text'])) $iterator = new \ArrayIterator($this->triggers);
@@ -40,7 +41,8 @@ trait Controllers
         // EXECUTE MATCHED RESPONSE
         if (isset($iterator)) {
             foreach($iterator as $key => $val)
-                if($key == strtolower($data_value)) {new $val($request); exit();}
+                // HANDLE A REQUEST WHICH STARTS WITH $KEY
+                if(preg_match("#$key#", strtolower($data_value))) {new $val($request); exit();}
         }
         
         // DEFAULT HANDLERS
@@ -125,7 +127,5 @@ trait Controllers
         die();
     }
 }
-
-
 
 ?>
