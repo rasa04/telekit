@@ -3,7 +3,7 @@ require_once('./vendor/autoload.php');
 
 use Interactions\Dices;
 use Triggers\Admin\GetApi;
-use Triggers\{Start, Help, NamesPrevalence, Settings};
+use Triggers\{Start, Help, NamesPrevalence, FirstOrSecond, OpenAi, Settings};
 use Plots\{SetBirthday, SetEvent, Functions, Support, Events};
 new class {
     use Core\Controllers;
@@ -11,6 +11,7 @@ new class {
     private array $request;
 
     private array $triggers = [
+        "^(openai|Openai|gpt|Gpt|ии|рик|Рик)\s" => OpenAi::class,
         "rasa api" => GetApi::class,
         "/start$" => Start::class,
         "/start@rickbot$" => Start::class,
@@ -19,7 +20,7 @@ new class {
         "/settings$" => Settings::class,
         "/settings@settings$" => Settings::class,
         "^(name|имя)\s" => NamesPrevalence::class,
-        "\s(or|или)\s" => \Triggers\FirstOrSecond::class,
+        "\s(or|или)\s" => FirstOrSecond::class,
     ];
     
     private array $callbackDatas = [

@@ -36,7 +36,7 @@ trait Controllers
         elseif (isset($request['callback_query']['data'])) $iterator = new \ArrayIterator($this->callbackDatas);
         elseif (isset($request['inline_query']['query'])) $iterator = new \ArrayIterator($this->inlineQueries);
         elseif (isset($request['game_short_name'])) $iterator = new \ArrayIterator($this->games);
-        else $this->dd($request);
+        // else $this->dd($request);
 
         // EXECUTE MATCHED RESPONSE
         if (isset($iterator)) {
