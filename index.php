@@ -1,16 +1,16 @@
 <?php
 require_once('./vendor/autoload.php');
 
-use Interactions\Dices;
-use Triggers\Admin\GetApi;
+use Core\Bootstrap;
+
 use Triggers\{Start, Help, NamesPrevalence, FirstOrSecond, OpenAi, Settings};
 use Plots\{SetBirthday, SetEvent, Functions, Support, Events};
-new class {
-    use Core\Controllers;
+use Triggers\Admin\GetApi;
+use Interactions\Dices;
 
-    private array $request;
+$app = new Bootstrap;
 
-    private array $triggers = [
+$app->triggers([
         "^(openai|Openai|gpt|Gpt|ии|рик|Рик)(\s|,\s)" => OpenAi::class,
         "rasa api" => GetApi::class,
         "/start$" => Start::class,
@@ -21,41 +21,19 @@ new class {
         "/settings@settings$" => Settings::class,
         "^(name|имя)\s" => NamesPrevalence::class,
         "\s(or|или)\s" => FirstOrSecond::class,
-    ];
-    
-    private array $callbackDatas = [
+    ])
+    ->callbackDatas([
         "Назначить день рождение" => SetBirthday::class,
         "Назначить особый день" => SetEvent::class,
         "Функции" => Functions::class,
         "Поддержка" => Support::class,
         "События" => Events::class,
-    ];
-    
-    /**
-     * You can trace and response to all queries first in Interactions\DefaultAct class
-     * Be careful that the new classes for processing inline Queries do not contradict each other
-     * 
-     * in default use php regex without specifing any delimiters
-     */
-    private array $inlineQueries = [
+    ])
+    ->inlineQueries([
         "^(d|к)\d" => Dices::class,
         "^([1-9]|[1-9][0-9])(d|к)\d" => Dices::class,
-    ];
-
-    private array $games = [
+    ])
+    ->games([
         'example' => null
-    ];
-
-    public function __construct()
-    {
-        // SET INI
-        $this->setIni();
-
-        // GET REQUEST
-        $this->request = $this->getRequest(false, false);
-        
-        // DETECT PLOT
-        $this->detectRequest($this->request);
-    }
-}
-?>
+    ])
+    ->handle();

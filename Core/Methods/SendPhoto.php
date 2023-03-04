@@ -3,13 +3,8 @@ namespace Core\Methods;
 
 use Core\Consts;
 
-class SendPhoto
+class SendPhoto extends SendAction
 {
-    use PropertiesTrait;
-    use \Core\Controllers;
-    
-    private array $response;
-
     /**
      * Photo caption (may also be used when resending photos by file_id), 0-1024 characters after entities parsing
      */

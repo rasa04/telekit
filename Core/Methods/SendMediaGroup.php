@@ -3,13 +3,8 @@ namespace Core\Methods;
 
 use Core\Consts;
 
-class SendMediaGroup
+class SendMediaGroup extends SendAction
 {
-    use PropertiesTrait;
-    use \Core\Controllers;
-    
-    private $response;
-
     /**
      * A JSON-serialized array describing messages to be sent, must include 2-10 items
      */

@@ -3,13 +3,8 @@ namespace Core\Methods;
 
 use \Core\Consts;
 
-class SendMessage
+class SendMessage extends SendAction
 {
-    use PropertiesTrait;
-    use \Core\Controllers;
-    
-    private array $response;
-
     public function send(array $headers = [], bool $writeLogFile = true, bool $saveDataToJson = true) : void
     {
         if (empty($this->response['chat_id'])) throw new \Exception('chat id does not exists');

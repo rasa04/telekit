@@ -3,13 +3,8 @@ namespace Core\Methods;
 
 use Core\Consts;
 
-class SendDocument
+class SendDocument extends SendAction
 {
-    use PropertiesTrait;
-    use \Core\Controllers;
-
-    private $response;
-    
     /**
      * Document caption (may also be used when resending documents by file_id), 0-1024 characters after entities parsing
      */
