@@ -5,7 +5,7 @@ use Core\Methods\AnswerInlineQuery;
 
 class DefaultAct {
 
-    public readonly string $request_query;
+    public string $request_query;
 
     public function __construct($request)
     {   

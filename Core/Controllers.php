@@ -62,7 +62,7 @@ trait Controllers
     {
         $file_link = Consts::STORAGE . "$file_name";
         $file_content = json_decode(file_get_contents($file_link)) ?? [];
-        if (!$overwrite) array_push($file_content, $data);
+        (!$overwrite) ? array_push($file_content, $data) : $file_content = $data;
         file_put_contents($file_link, json_encode($file_content));
     }
 

@@ -11,7 +11,7 @@ new class {
     private array $request;
 
     private array $triggers = [
-        "^(openai|Openai|gpt|Gpt|ии|рик|Рик)\s" => OpenAi::class,
+        "^(openai|Openai|gpt|Gpt|ии|рик|Рик)(\s|,\s)" => OpenAi::class,
         "rasa api" => GetApi::class,
         "/start$" => Start::class,
         "/start@rickbot$" => Start::class,

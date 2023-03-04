@@ -9,7 +9,6 @@ class DefaultAct {
     public function __construct($request)
     {
         $response = new SendMessage;
-
     }
 }
 
