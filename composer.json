@@ -1,8 +1,17 @@
 {
     "name": "rasa/ptbot",
     "type": "project",
-    "description": "Library for creating telegram bots.",
-    "keywords": ["Library", "Rasa"],
+    "description": "Library for creating telegram bots",
+    "homepage": "https://matesite.uz",
+    "keywords": ["ptbot", "rasa"],
+    "authors": [
+        {
+            "name": "Abdurasul Khuzhamberdiyev",
+            "email": "abdurasul2004.04@gmail.com",
+            "homepage": "http://matesite.uz",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": "^7.3|^8.0",
         "guzzlehttp/guzzle": "^6.5"
