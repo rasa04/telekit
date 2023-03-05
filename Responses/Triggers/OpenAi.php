@@ -7,83 +7,95 @@ use Core\Controllers;
 
 class OpenAi {
     use Controllers;
+    
+    private $name_triggers = [
+        'openai ', 'Openai ', 'gpt ', 'Gpt ', 'Рик ', 'рик ',
+        'openai , ', 'Openai , ', 'gpt , ', 'Gpt , ', 'Рик , ', 'рик , ',
+        'openai, ', 'Openai, ', 'gpt, ', 'Gpt, ', 'Рик, ', 'рик, '
+    ];
+    
+    // the users and groups who have access to context
+    private $users = [511703056, 748856943];
+
+    private $groups = [
+        "contexts_of_gigachadchat" => -1001765736589, // гигачад чат
+        "contexts_of_what" => -805540894, // че
+        "contexts_of_test" =>  -1001673287453 // тестовый чат
+    ];
+
+    private $messages = [];
+
     public function __construct($request)
     {
-        // the users and groups who have access to context
-        $users = [511703056, 748856943];
-        $groups = [
-            "contexts_of_gigachadchat" => -1001765736589, // гигачад чат
-            "contexts_of_what" => -805540894, // че
-            "contexts_of_test" =>  -1001673287453 // тестовый чат
-        ];
-
-        $messages = [];
-
         if (isset($request['message']['from']['id']) || isset($request['message']['chat']['id'])) {
             // get all contexts from appropriate stored file
-            if (isset($request['message']['chat']['id']) && in_array($request['message']['chat']['id'], $groups)) {
-                foreach ($groups as $key => $value) {
-                    if ($value == $request['message']['chat']['id']) $messages = json_decode(file_get_contents(Consts::STORAGE . "ai_contexts/$key.json")) ?? [];
+            if (isset($request['message']['chat']['id']) && in_array($request['message']['chat']['id'], $this->groups)) {
+                foreach ($this->groups as $key => $value) {
+                    if ($value == $request['message']['chat']['id']) $this->messages = json_decode(file_get_contents(Consts::STORAGE . "ai_contexts/$key.json")) ?? [];
                 }
             }
-            elseif (isset($request['message']['from']['id']) && in_array($request['message']['from']['id'], $users)) {
-                $messages = json_decode(file_get_contents(Consts::STORAGE . "ai_contexts/contexts.json")) ?? [];
+            elseif (isset($request['message']['from']['id']) && in_array($request['message']['from']['id'], $this->users)) {
+                $this->messages = json_decode(file_get_contents(Consts::STORAGE . "ai_contexts/contexts.json")) ?? [];
             }
 
-            array_push($messages, [
+            array_push($this->messages, [
                 "role" => "user",
-                "content" => $request['message']['text']
+                "content" => str_replace($this->name_triggers, '' , $request['message']['text'])
             ]);
-
+            
             // amount of stored contexts
-            $messages = array_slice($messages, -5, 5);
+            $this->messages = array_slice($this->messages, -5, 5);
         }
         else {
-            array_push($messages, [
+            array_push($this->messages, [
                 "role" => "user",
-                "content" => str_replace(['openai', 'Openai', 'gpt ', 'Gpt ', 'Рик', 'рик'], '' , $request['message']['text'])
+                "content" => str_replace($this->name_triggers, '' , $request['message']['text'])
+            ]);
+        }
+
+        //system behaviour
+        if (preg_match('(@system|@-sys|@система|@сис)',  $request['message']['text'])) {
+            array_pop($this->messages);
+            array_push($this->messages,[
+                "role" => "system",
+                "content" => str_replace(['@system ', '@система ', '@сис ', '@sys '], '' , $request['message']['text'])
             ]);
         }
 
         $question = [
             "model" => "gpt-3.5-turbo",
-            "messages" => $messages,
+            "messages" => $this->messages,
         ];
 
-        $curl = curl_init();
-        curl_setopt_array($curl, [
-            CURLOPT_URL => "https://api.openai.com/v1/chat/completions",
-            CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_HEADER => 0,
-            CURLOPT_SSL_VERIFYPEER => 0,
-            CURLOPT_HTTPHEADER => [
-                "Content-Type: application/json",
-                "Authorization: Bearer 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"
+        $response = $this->client()->post('https://api.openai.com/v1/chat/completions', [
+            'headers' => [
+                'Content-Type' => 'application/json',
+                'Authorization' => 'Bearer ' . Consts::GPT,
             ],
-            CURLOPT_POSTFIELDS => json_encode($question)
+            'json' => $question,
+            'verify' => false,
         ]);
-        $result = json_decode(curl_exec($curl), true);
-        curl_close($curl);
+        $result = json_decode($response->getBody()->getContents(), true);
 
         $answer = $result['choices'][0]['message']['content'];
 
         if (isset($request['message']['from']['id']) || isset($request['message']['chat']['id'])) {
-            array_push($messages, [
+            array_push($this->messages, [
                 "role" => "assistant",
                 "content" => $answer
             ]);
             
             // amount of stored contexts
-            $messages = array_slice($messages, -5, 5);
+            $this->messages = array_slice($this->messages, -7, 7);
 
             // save new context to stored file
-            if (isset($request['message']['chat']['id']) && in_array($request['message']['chat']['id'], $groups)) {
-                foreach ($groups as $key => $value) {
-                    if ($value == $request['message']['chat']['id']) $this->saveDataToJson($messages, "ai_contexts/$key.json", true);
+            if (isset($request['message']['chat']['id']) && in_array($request['message']['chat']['id'], $this->groups)) {
+                foreach ($this->groups as $key => $value) {
+                    if ($value == $request['message']['chat']['id']) $this->saveDataToJson($this->messages, "ai_contexts/$key.json", true);
                 }
             }
-            elseif (isset($request['message']['from']['id']) && in_array($request['message']['from']['id'], $users)) {
-                $this->saveDataToJson($messages, 'ai_contexts/contexts.json', true);
+            elseif (isset($request['message']['from']['id']) && in_array($request['message']['from']['id'], $this->users)) {
+                $this->saveDataToJson($this->messages, 'ai_contexts/contexts.json', true);
             }
         }
 

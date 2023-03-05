@@ -2,6 +2,7 @@
 namespace Core\Methods;
 
 use \Core\Consts;
+use Core\Controllers;
 
 class SendMessage extends SendAction
 {
@@ -9,19 +10,13 @@ class SendMessage extends SendAction
     {
         if (empty($this->response['chat_id'])) throw new \Exception('chat id does not exists');
         if (empty($this->response['text'])) throw new \Exception('text does not exists');
-
-        $curl = curl_init();
-        curl_setopt_array($curl, [
-            CURLOPT_URL => 'https://api.telegram.org/bot' . Consts::TOKEN . "/sendMessage?" . http_build_query($this->response),
-            CURLOPT_POST => 1,
-            CURLOPT_HEADER => 0,
-            CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_POSTFIELDS => json_encode($this->response),
-            CURLOPT_SSL_VERIFYPEER => 0,
-            CURLOPT_HTTPHEADER => array_merge(array("Content-Type: application/json"), $headers),
+        
+        $response = $this->client()->post("https://api.telegram.org/bot" . Consts::TOKEN . "/sendMessage", [
+            'headers' => array_merge(["Content-Type" => "application/json"], $headers),
+            'verify' => false,
+            'json' => $this->response,
         ]);
-        $result = curl_exec($curl);
-        curl_close($curl);
+        $result = $response->getBody()->getContents();
 
         //сохраняем то что бот сам отправляет
         if($writeLogFile == true) $this->writeLogFile(json_decode($result, 1), 'message.txt');

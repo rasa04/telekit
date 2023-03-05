@@ -3,8 +3,10 @@ namespace Triggers;
 
 use Core\Methods\SendMessage;
 use Core\Consts;
+use Core\Controllers;
 
 class NamesPrevalence {
+    use Controllers;
     public function __construct($request)
     {
         $response = new SendMessage;
@@ -12,19 +14,16 @@ class NamesPrevalence {
         (preg_match("/^name\s/", strtolower($request['message']['text']))) 
             ? $name = substr($request['message']['text'], 5)
             : $name = substr($request['message']['text'], 7);
-
-        $curl = curl_init();
-        curl_setopt_array($curl, [
-            CURLOPT_URL => "https://api.nationalize.io/?name=$name",
-            CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_HEADER => 0,
-            CURLOPT_SSL_VERIFYPEER => 0,
-            CURLOPT_HTTPHEADER => ["Content-Type: application/json"],
+        
+        $find = $this->client()->get("https://api.nationalize.io/?name=$name", [
+            'headers' => [
+                'Content-Type' => 'application/json',
+            ],
+            'verify' => false,
         ]);
-        $result = json_decode(curl_exec($curl), true);
-        curl_close($curl);
-
-        if (!empty($result["country"])) {                
+        $result = json_decode($find->getBody()->getContents(), true);
+            
+        // if (!empty($result["country"])) {
             $codes = json_decode(file_get_contents(Consts::STORAGE . "countries.json"), true);
             foreach ($codes as $key => $value) {
                 for ($j = 0; $j < count($result['country']); $j++) { 
@@ -43,6 +42,6 @@ class NamesPrevalence {
                 ->text($view)
                 ->parse_mode()
                 ->send();
-        }
+        // }
     }
 }

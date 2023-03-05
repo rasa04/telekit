@@ -4,7 +4,8 @@
     "description": "Library for creating telegram bots.",
     "keywords": ["Library", "Rasa"],
     "require": {
-        "php": "^7.3|^8.0"
+        "php": "^7.3|^8.0",
+        "guzzlehttp/guzzle": "^6.5"
     },
     "autoload": {
         "psr-4": {
