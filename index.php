@@ -1,13 +1,14 @@
 <?php
 require_once('./vendor/autoload.php');
-
 use Core\Bootstrap;
+use Dotenv\Dotenv;
 
 use Triggers\{Start, Help, NamesPrevalence, FirstOrSecond, OpenAi, Settings};
 use Plots\{SetBirthday, SetEvent, Functions, Support, Events};
 use Triggers\Admin\GetApi;
 use Interactions\Dices;
 
+Dotenv::createUnsafeImmutable(__DIR__)->load();
 $app = new Bootstrap;
 
 $app->triggers([

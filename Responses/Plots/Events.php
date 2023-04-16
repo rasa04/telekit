@@ -1,24 +1,30 @@
 <?php
 namespace Plots;
 
-use Core\Consts;
+use Core\Env;
 use Core\Methods\SendMessage;
+use Exception;
 
 class Events {
+    use Env;
+
+    /**
+     * @throws Exception
+     */
     public function __construct($request)
     {
-        $birthdays = json_decode(file_get_contents(Consts::FILE_BIRTHDAYS),  1);
+        $birthdays = json_decode(file_get_contents($this->env("file_birthdays")),  1);
         if (isset($birthdays)) {
-            $reletedUserBirthdays = [];
+            $relatedUserBirthdays = [];
             // выбираем данные принадлежащие пользователью
             foreach($birthdays as $birthday){
                 if ($request['callback_query']['from']['id'] == $birthday['from']) {
-                    array_push($reletedUserBirthdays, $birthday);
+                    $relatedUserBirthdays[] = $birthday;
                 }
             }
             // оформляем для отправки
             $scheduleTemplate = "";
-            foreach ($reletedUserBirthdays as $birthday) {
+            foreach ($relatedUserBirthdays as $birthday) {
                 $scheduleTemplate .= "У <b>" . $birthday["who"] . "</b> день рождение в " . $birthday["date"] . "!\n";
             }
             //подготовка к методу отправки

@@ -1,17 +1,22 @@
 <?php
 namespace Core\Methods;
 
-use \Core\Consts;
-use Core\Controllers;
+use Core\Env;
+use Exception;
 
 class SendMessage extends SendAction
 {
+    use Env;
+
+    /**
+     * @throws Exception
+     */
     public function send(array $headers = [], bool $writeLogFile = true, bool $saveDataToJson = true) : void
     {
-        if (empty($this->response['chat_id'])) throw new \Exception('chat id does not exists');
-        if (empty($this->response['text'])) throw new \Exception('text does not exists');
+        if (empty($this->response['chat_id'])) throw new Exception('chat id does not exists');
+        if (empty($this->response['text'])) throw new Exception('text does not exists');
         
-        $response = $this->client()->post("https://api.telegram.org/bot" . Consts::TOKEN . "/sendMessage", [
+        $response = $this->client()->post("https://api.telegram.org/bot" . $this->token() . "/sendMessage", [
             'headers' => array_merge(["Content-Type" => "application/json"], $headers),
             'verify' => false,
             'json' => $this->response,
@@ -19,8 +24,8 @@ class SendMessage extends SendAction
         $result = $response->getBody()->getContents();
 
         //сохраняем то что бот сам отправляет
-        if($writeLogFile == true) $this->writeLogFile(json_decode($result, 1), 'message.txt');
-        if($saveDataToJson == true) $this->saveDataToJson(json_decode($result, 1), 'data.json');
+        if($writeLogFile) $this->writeLogFile(json_decode($result, 1));
+        if($saveDataToJson) $this->saveDataToJson(json_decode($result, 1));
     }
 
     /**

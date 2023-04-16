@@ -1,12 +1,14 @@
 <?php
 namespace Triggers;
 
+use Core\Env;
 use Core\Methods\SendMessage;
-use Core\Consts;
 use Core\Controllers;
 
 class NamesPrevalence {
     use Controllers;
+    use Env;
+
     public function __construct($request)
     {
         $response = new SendMessage;
@@ -24,7 +26,7 @@ class NamesPrevalence {
         $result = json_decode($find->getBody()->getContents(), true);
             
         // if (!empty($result["country"])) {
-            $codes = json_decode(file_get_contents(Consts::STORAGE . "countries.json"), true);
+            $codes = json_decode(file_get_contents($this->storage() . "countries.json"), true);
             foreach ($codes as $key => $value) {
                 for ($j = 0; $j < count($result['country']); $j++) { 
                     if ($key == $result['country'][$j]['country_id']) $result['country'][$j]['country_id'] = $value;

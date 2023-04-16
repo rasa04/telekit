@@ -2,7 +2,6 @@
 namespace Triggers;
 
 use Core\Methods\SendMessage;
-use Core\Consts;
 
 class FirstOrSecond {
     public function __construct($request)
