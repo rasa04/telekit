@@ -50,5 +50,4 @@ class SendMessage extends SendAction
         $this->response['disable_web_page_preview'] = $disable_web_page_preview;
         return $this;
     }
-
 }

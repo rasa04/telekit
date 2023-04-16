@@ -15,7 +15,12 @@ class OpenAi {
     ];
     
     // the users and groups who have access to context
-    private $users = [511703056, 748856943];
+    private $users = [
+        511703056,
+        748856943,
+        250114420,
+        272004963
+    ];
 
     private $groups = [
         "contexts_of_gigachadchat" => -1001765736589, // гигачад чат

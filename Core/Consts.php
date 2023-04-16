@@ -2,7 +2,8 @@
 namespace Core;
 
 class Consts {
-    const TOKEN = 'your_token'; 
+    const TOKEN = '5854804644:AAGzDf0FtOI1B8U0ZiXYpjT-EVZ1aYmp5uE'; // rick
+    // const TOKEN = '5977797894:AAHIXhQ6uY5Lu9BxhLY_j0bZSmMK8nQxbSc'; // birthdre_bot 
     const CHAT_ID = -872746594;
     const USER_ID = 511703056;
     const DIRECTIRY = __DIR__ . "/..";
@@ -12,5 +13,5 @@ class Consts {
     const FILE_MESSAGE = __DIR__ . "/../storage/message.txt";
     const FILE_BIRTHDAYS = __DIR__ . "/../storage/birthdays.json";
     // also you can add additional constants and use it everywhere simply by importing them
-    const GPT = "another_token";
+    const GPT = "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";
 }

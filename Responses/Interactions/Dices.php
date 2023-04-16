@@ -5,7 +5,7 @@ use Core\Methods\AnswerInlineQuery;
 
 class Dices {
     
-    public readonly string $request_query;
+    public string $request_query;
 
     public function __construct($request)
     {
