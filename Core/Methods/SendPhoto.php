@@ -2,6 +2,7 @@
 namespace Core\Methods;
 
 use Core\Env;
+use Core\Storage;
 use Exception;
 
 class SendPhoto extends SendAction
@@ -42,7 +43,7 @@ class SendPhoto extends SendAction
      */
     public function photo(string $namePath, string $name, string $type = "image/jpg") : object
     {
-        $this->response['photo'] = curl_file_create($this->storage(). "/img/" . $namePath, $type, $name);
+        $this->response['photo'] = curl_file_create($this->storage_path(). "/img/" . $namePath, $type, $name);
         return $this;
     }
 
@@ -67,6 +68,6 @@ class SendPhoto extends SendAction
 
         //сохраняем то что бот сам отправляет
         if($writeLogFile) $this->writeLogFile(json_decode($result, 1), 'message.txt');
-        if($saveDataToJson) $this->saveDataToJson(json_decode($result, 1), 'data.json');
+        if($saveDataToJson) Storage::save(json_decode($result, 1), 'data.json');
     }
 }

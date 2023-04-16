@@ -26,7 +26,7 @@ class NamesPrevalence {
         $result = json_decode($find->getBody()->getContents(), true);
             
         // if (!empty($result["country"])) {
-            $codes = json_decode(file_get_contents($this->storage() . "countries.json"), true);
+            $codes = json_decode(file_get_contents($this->storage_path() . "countries.json"), true);
             foreach ($codes as $key => $value) {
                 for ($j = 0; $j < count($result['country']); $j++) { 
                     if ($key == $result['country'][$j]['country_id']) $result['country'][$j]['country_id'] = $value;

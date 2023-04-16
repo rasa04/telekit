@@ -3,6 +3,7 @@ namespace Core\Methods;
 
 use Core\Controllers;
 use Core\Env;
+use Core\Storage;
 use Exception;
 
 class AnswerInlineQuery
@@ -34,7 +35,7 @@ class AnswerInlineQuery
 
         //сохраняем то что бот сам отправляет
         if($writeLogFile) $this->writeLogFile(json_decode($result, 1), 'message.txt');
-        if($saveDataToJson) $this->saveDataToJson(json_decode($result, 1), 'data.json');
+        if($saveDataToJson) Storage::save(json_decode($result, 1), 'data.json');
     }
 
     /**

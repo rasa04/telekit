@@ -4,6 +4,7 @@ namespace Core;
 use Core\Methods\SendMessage;
 use GuzzleHttp\Client;
 use JetBrains\PhpStorm\NoReturn;
+use function GuzzleHttp\Psr7\str;
 
 /**
  * Тут находятся основные методы для разработки
@@ -13,18 +14,10 @@ trait Controllers
     use Env;
     public function writeLogFile(string | array $str, string $file = "message.txt", bool $overwrite = false) : void
     {
-        $log_file_name = $this->storage() . "$file";
+        $log_file_name = $this->storage_path() . "$file";
         $now = date("Y-m-d H:i:s");
         if ($overwrite) file_put_contents($log_file_name, '');
         file_put_contents($log_file_name, $now . " " . print_r($str, true) .  "\r\n", FILE_APPEND);
-    }
-
-    public function saveDataToJson(array $data, string $file_name = "data.json", bool $overwrite = false) : void
-    {
-        $file_link = $this->storage() . "$file_name";
-        $file_content = json_decode(file_get_contents($file_link)) ?? [];
-        (!$overwrite) ? array_push($file_content, $data) : $file_content = $data;
-        file_put_contents($file_link, json_encode($file_content));
     }
 
     public function saveFile(bool $withLog = false) : array
@@ -59,11 +52,11 @@ trait Controllers
 
             if ($withLog) {
                 $this->writeLogFile($photoPathTG, $withLog, true);
-                $this->saveDataToJson($request);
+                Storage::save($request);
             }
             
             // забираем название файла
-            $newFilePath = $this->storage() . "img/" . explode("/", $fileUrl)[1];
+            $newFilePath = $this->storage_path() . "img/" . explode("/", $fileUrl)[1];
             // сохраняем файл на серсер
             file_put_contents($newFilePath, file_get_contents($photoPathTG));
         }
@@ -75,16 +68,49 @@ trait Controllers
         return new Client();
     }
 
-    #[NoReturn] public function dd(array $request, bool $disable_notification = true, bool $allow_sending_without_reply = true) : void
+    public function chat_gpt($messages): string
     {
-        $response = new SendMessage;
-        $response
-            ->chat_id($request['message']['chat']['id'] 
+        $response = $this->client()->post('https://api.openai.com/v1/chat/completions', [
+            'headers' => [
+                'Content-Type' => 'application/json',
+                'Authorization' => 'Bearer ' . $this->gpt_token(),
+            ],
+            'json' => [
+                "model" => "gpt-3.5-turbo",
+                "messages" => $messages,
+            ],
+            'verify' => false,
+        ]);
+
+        $result = json_decode($response->getBody()->getContents(), true)['choices'][0]['message']['content'];
+
+        return (strlen($result) < 4000) ? $result : substr($result, 0, 4000) . "...";
+    }
+
+    public function authorized(array $request, string $type = "any")
+    {
+        if ($type == strtolower("user")) {
+            return isset($request['message']['from']['id']) && in_array($request['message']['from']['id'], $this->pro_users());
+        }
+        elseif ($type == strtolower("chat")) {
+            return isset($request['message']['chat']['id']) && in_array($request['message']['chat']['id'], $this->pro_chats());
+        }
+        elseif ($type == strtolower("any")){
+            return in_array($request['message']['chat']['id'] ?? $request['message']['from']['id'], $this->pro_chats());
+        }
+        else {
+            return false;
+        }
+    }
+
+    #[NoReturn] public function dd(array $request,string $data, bool $disable_notification = true, bool $allow_sending_without_reply = true) : void
+    {
+        (new SendMessage)->chat_id($request['message']['chat']['id']
                 ?? $request['callback_query']['message']['chat']['id']
                 ?? $request['callback_query']['from']['id']
                 ?? $request['inline_query']['from']['id']
                 ?? null)
-            ->text("<code>" . json_encode($request) . "</code>")
+            ->text($data)
             ->disable_notification($disable_notification)
             ->allow_sending_without_reply($allow_sending_without_reply)
             ->send();

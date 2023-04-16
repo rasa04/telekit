@@ -2,6 +2,7 @@
 namespace Core\Methods;
 
 use Core\Env;
+use Core\Storage;
 use Exception;
 
 class SendDocument extends SendAction
@@ -55,7 +56,7 @@ class SendDocument extends SendAction
      */
     public function document(string $namePath, string $name, string $type = "image/jpg") : object
     {
-        $this->response['document'] = curl_file_create($this->storage() . "/docs/" . $namePath, $type, $name);
+        $this->response['document'] = curl_file_create($this->storage_path() . "/docs/" . $namePath, $type, $name);
         return $this;
     }
 
@@ -81,6 +82,6 @@ class SendDocument extends SendAction
 
         //сохраняем то что бот сам отправляет
         if($writeLogFile) $this->writeLogFile(json_decode($result, 1));
-        if($saveDataToJson) $this->saveDataToJson(json_decode($result, 1));
+        if($saveDataToJson) Storage::save(json_decode($result, 1));
     }
 }
