@@ -1,7 +1,6 @@
 <?php
 namespace Triggers;
 
-use Core\Consts;
 use Core\Methods\SendMessage;
 
 class DefaultAct {

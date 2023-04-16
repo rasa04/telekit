@@ -1,10 +1,12 @@
 <?php
 namespace Core\Methods;
 
-use Core\Consts;
+use Core\Env;
+use Exception;
 
 class SendPhoto extends SendAction
 {
+    use Env;
     /**
      * Photo caption (may also be used when resending photos by file_id), 0-1024 characters after entities parsing
      */
@@ -40,17 +42,20 @@ class SendPhoto extends SendAction
      */
     public function photo(string $namePath, string $name, string $type = "image/jpg") : object
     {
-        $this->response['photo'] = curl_file_create(Consts::STORAGE. "/img/" . $namePath, $type, $name);
+        $this->response['photo'] = curl_file_create($this->storage(). "/img/" . $namePath, $type, $name);
         return $this;
     }
-    
+
+    /**
+     * @throws Exception
+     */
     public function send(bool $writeLogFile = true, bool $saveDataToJson = true) : void
     {
-        if (empty($this->response['chat_id'])) throw new \Exception('chat id does not exists');
-        if (empty($this->response['photo'])) throw new \Exception('photo does not exists');
+        if (empty($this->response['chat_id'])) throw new Exception('chat id does not exists');
+        if (empty($this->response['photo'])) throw new Exception('photo does not exists');
         $curl = curl_init();
         curl_setopt_array($curl, [
-            CURLOPT_URL => 'https://api.telegram.org/bot' . Consts::TOKEN . "/sendPhoto?" . http_build_query($this->response),
+            CURLOPT_URL => 'https://api.telegram.org/bot' . $this->token() . "/sendPhoto?" . http_build_query($this->response),
             CURLOPT_POST => 1,
             CURLOPT_HEADER => 0,
             CURLOPT_RETURNTRANSFER => 1,
@@ -61,7 +66,7 @@ class SendPhoto extends SendAction
         curl_close($curl);
 
         //сохраняем то что бот сам отправляет
-        if($writeLogFile == true) $this->writeLogFile(json_decode($result, 1), 'message.txt');
-        if($saveDataToJson == true) $this->saveDataToJson(json_decode($result, 1), 'data.json');
+        if($writeLogFile) $this->writeLogFile(json_decode($result, 1), 'message.txt');
+        if($saveDataToJson) $this->saveDataToJson(json_decode($result, 1), 'data.json');
     }
 }

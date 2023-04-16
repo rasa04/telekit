@@ -1,14 +1,19 @@
 <?php
 namespace Core;
 
+use Core\Methods\SendMessage;
+use GuzzleHttp\Client;
+use JetBrains\PhpStorm\NoReturn;
+
 /**
  * Тут находятся основные методы для разработки
  */
 trait Controllers
 {
+    use Env;
     public function writeLogFile(string | array $str, string $file = "message.txt", bool $overwrite = false) : void
     {
-        $log_file_name = Consts::STORAGE . "$file";
+        $log_file_name = $this->storage() . "$file";
         $now = date("Y-m-d H:i:s");
         if ($overwrite) file_put_contents($log_file_name, '');
         file_put_contents($log_file_name, $now . " " . print_r($str, true) .  "\r\n", FILE_APPEND);
@@ -16,7 +21,7 @@ trait Controllers
 
     public function saveDataToJson(array $data, string $file_name = "data.json", bool $overwrite = false) : void
     {
-        $file_link = Consts::STORAGE . "$file_name";
+        $file_link = $this->storage() . "$file_name";
         $file_content = json_decode(file_get_contents($file_link)) ?? [];
         (!$overwrite) ? array_push($file_content, $data) : $file_content = $data;
         file_put_contents($file_link, json_encode($file_content));
@@ -24,17 +29,16 @@ trait Controllers
 
     public function saveFile(bool $withLog = false) : array
     {
-        $Consts = new \Core\Consts();
         $request = json_decode(file_get_contents('php://input'), true);
 
-        // RECIEVE FILE
+        // RECEIVE FILE
         if (!empty($request["message"]["photo"])) {
             $file = [
                 "file_id" => $request["message"]["photo"][3]["file_id"],
             ];
             $curl = curl_init();
             curl_setopt_array($curl, [
-                CURLOPT_URL => 'https://api.telegram.org/bot' . $Consts::TOKEN . "/getFile?" . http_build_query($file),
+                CURLOPT_URL => 'https://api.telegram.org/bot' . $this->token() . "/getFile?" . http_build_query($file),
                 CURLOPT_POST => 1,
                 CURLOPT_HEADER => 0,
                 CURLOPT_RETURNTRANSFER => 1,
@@ -51,15 +55,15 @@ trait Controllers
             // записываем URL необходимого изображения
             $fileUrl = $dataResult["result"]["file_path"];
             // формируем полный URL до файла
-            $photoPathTG = "https://api.telegram.org/file/bot" . $Consts::TOKEN . "/" . $fileUrl;
+            $photoPathTG = "https://api.telegram.org/file/bot" . $this->token() . "/" . $fileUrl;
 
             if ($withLog) {
                 $this->writeLogFile($photoPathTG, $withLog, true);
-                $this->saveDataToJson($request, 'data.json');
+                $this->saveDataToJson($request);
             }
             
             // забираем название файла
-            $newFilePath = Consts::STORAGE . "img/" . explode("/", $fileUrl)[1];
+            $newFilePath = $this->storage() . "img/" . explode("/", $fileUrl)[1];
             // сохраняем файл на серсер
             file_put_contents($newFilePath, file_get_contents($photoPathTG));
         }
@@ -68,12 +72,12 @@ trait Controllers
 
     public function client() : object
     {
-        return new \GuzzleHttp\Client();
+        return new Client();
     }
 
-    public function dd(array $request, bool $disable_notification = true, bool $allow_sending_without_reply = true) : void
+    #[NoReturn] public function dd(array $request, bool $disable_notification = true, bool $allow_sending_without_reply = true) : void
     {
-        $response = new \Core\Methods\SendMessage;
+        $response = new SendMessage;
         $response
             ->chat_id($request['message']['chat']['id'] 
                 ?? $request['callback_query']['message']['chat']['id']
@@ -87,5 +91,3 @@ trait Controllers
         die();
     }
 }
-
-?>

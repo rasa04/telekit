@@ -1,6 +1,7 @@
 <?php
 namespace Core;
 
+use Dotenv\Dotenv;
 use Exception;
 
 class Bootstrap

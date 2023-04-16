@@ -1,22 +1,28 @@
 <?php
 namespace Core\Methods;
 
-use \Core\Consts;
+use Core\Controllers;
+use Core\Env;
+use Exception;
 
 class AnswerInlineQuery
 {
-    use \Core\Controllers;
-    
+    use Controllers;
+    use Env;
+
     private array $response;
 
+    /**
+     * @throws Exception
+     */
     public function send(bool $writeLogFile = true, bool $saveDataToJson = true) : void
     {
-        if (empty($this->response['inline_query_id'])) throw new \Exception('inline_query_id does not exists');
-        if (empty($this->response['results'])) throw new \Exception('inline query result does not exists');
+        if (empty($this->response['inline_query_id'])) throw new Exception('inline_query_id does not exists');
+        if (empty($this->response['results'])) throw new Exception('inline query result does not exists');
 
         $curl = curl_init();
         curl_setopt_array($curl, [
-            CURLOPT_URL => 'https://api.telegram.org/bot' . Consts::TOKEN . "/answerInlineQuery",
+            CURLOPT_URL => 'https://api.telegram.org/bot' . $this->token() . "/answerInlineQuery",
             CURLOPT_POST => 1,
             CURLOPT_RETURNTRANSFER => 1,
             CURLOPT_HEADER => 0,
