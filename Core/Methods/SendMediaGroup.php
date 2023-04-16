@@ -2,6 +2,7 @@
 namespace Core\Methods;
 
 use Core\Env;
+use Core\Storage;
 use CURLFile;
 use Exception;
 
@@ -19,7 +20,7 @@ class SendMediaGroup extends SendAction
         }
         $this->response['media'] = json_encode($this->response['media']);
         for($i = 0; $i < count($data['media']); $i++){
-            $this->response += array($data['media'][$i]['name'] => new CURLFile( $this->storage() . $data['media'][$i]['path']));
+            $this->response += array($data['media'][$i]['name'] => new CURLFile( $this->storage_path() . $data['media'][$i]['path']));
         }
         return $this;
     }
@@ -46,6 +47,6 @@ class SendMediaGroup extends SendAction
         
         //сохраняем то что бот сам отправляет
         if($writeLogFile) $this->writeLogFile(json_decode($result, 1));
-        if($saveDataToJson) $this->saveDataToJson(json_decode($result, 1));
+        if($saveDataToJson) Storage::save(json_decode($result, 1));
     }
 }

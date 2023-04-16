@@ -7,6 +7,7 @@ use Exception;
 class Bootstrap
 {
     use Controllers;
+    use Env;
 
     // for messages
     private array $triggers;
@@ -23,7 +24,7 @@ class Bootstrap
 
     public function __construct()
     {
-        date_default_timezone_set('Asia/Tashkent');
+        date_default_timezone_set($this->time_zone());
     }
 
     public function handle(bool $writeLogFile = true, bool $saveDataToJson = true) : void
@@ -80,8 +81,8 @@ class Bootstrap
     {
         $request = json_decode(file_get_contents('php://input'), true);
         if (empty($request)) throw new Exception('[PTB error] Nothing requested', 404);
-        if ($writeLogFile) $this->writeLogFile($request, 'message.txt');
-        if ($saveDataToJson) $this->saveDataToJson($request, 'data.json');
+        if ($writeLogFile) $this->writeLogFile($request);
+        if ($saveDataToJson) Storage::save($request);
         return $request;
     }
 

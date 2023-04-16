@@ -6,7 +6,7 @@ trait Env {
     {
         return getenv("TELEGRAM_TOKEN");
     }
-    public function storage(): array|false|string
+    public function storage_path(): array|false|string
     {
         return __DIR__ . "/../storage/";
     }
@@ -18,7 +18,7 @@ trait Env {
     {
         return __DIR__ . "/..";
     }
-    public function gpt(): string
+    public function gpt_token(): string
     {
         return getenv("GPT_TOKEN");
     }
@@ -40,7 +40,19 @@ trait Env {
     }
     public function pro_users(): array|false|string
     {
-        return explode(",", getenv("pro_users"));
+        return explode(",", getenv("PRO_USERS"));
+    }
+    public function pro_chats(): array|false|string
+    {
+        return [
+            "contexts_of_GigaChadChat" => -1001765736589, // гигачад чат
+            "contexts_of_what" => -805540894, // че
+            "contexts_of_test" =>  -1001673287453 // тестовый чат
+        ];
+    }
+    public function time_zone(): string
+    {
+        return getenv("TIME_ZONE");
     }
     public function env(string $key, string $separator = null): array|false|string
     {

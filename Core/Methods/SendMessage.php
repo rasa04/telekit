@@ -2,6 +2,7 @@
 namespace Core\Methods;
 
 use Core\Env;
+use Core\Storage;
 use Exception;
 
 class SendMessage extends SendAction
@@ -25,7 +26,7 @@ class SendMessage extends SendAction
 
         //сохраняем то что бот сам отправляет
         if($writeLogFile) $this->writeLogFile(json_decode($result, 1));
-        if($saveDataToJson) $this->saveDataToJson(json_decode($result, 1));
+        if($saveDataToJson) Storage::save(json_decode($result, 1));
     }
 
     /**
