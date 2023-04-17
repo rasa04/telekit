@@ -1,0 +1,112 @@
+2023-04-17 17:37:29 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 330
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1681753048
+            [text] => hi
+        )
+
+)
+
+2023-04-17 17:37:44 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 331
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1681753063
+            [text] => hi
+        )
+
+)
+
+2023-04-17 17:40:31 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 332
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1681753230
+            [text] => hi
+        )
+
+)
+
+2023-04-17 17:53:24 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 8048
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1681754003
+            [text] => hi
+        )
+
+)
+

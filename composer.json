@@ -21,10 +21,10 @@
     "autoload": {
         "psr-4": {
             "Core\\": "Core/",
-            "Triggers\\": "Responses/Triggers/",
-            "Plots\\": "Responses/Plots/",
-            "Interactions\\": "Responses/Interactions/",
-            "Games\\": "Responses/Games/"
+            "Triggers\\": "responses/Triggers/",
+            "Plots\\": "responses/Plots/",
+            "Interactions\\": "responses/Interactions/",
+            "Games\\": "responses/Games/"
         }
     }
 }
