@@ -8,9 +8,9 @@
 
 ## Команды do
 _php do_ через эту команду можно взаимодействовать с ботом
-* _php do --send --chat=-805540894 --message="сообщение"_ <- отправка сообщений
-* _php do --make --interaction=TestInteraction_ <- создания шаблонных файлов
-* _php do --make --interaction=TestInteraction_ <- создания шаблонных файлов
+* _php do --send --chat=-805540894 --message="сообщение"_ **<- отправка сообщений**
+* _php do --make --interaction=TestInteraction_ **<- создания шаблонных файлов Interaction**
+* _php do --make --trigger=TestTrigger_ **<- создания шаблонных файлов Trigger**
 
 ## Пример настройки фото
 ```
