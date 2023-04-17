@@ -2,9 +2,9 @@
 namespace Core;
 
 use ArrayIterator;
-use Dotenv\Dotenv;
 use Exception;
-use Triggers\DefaultAct;
+use Triggers\DefaultAct as TriggerDefault;
+use Interactions\DefaultAct as InteractionDefault;
 
 class Bootstrap
 {
@@ -112,7 +112,7 @@ class Bootstrap
         }
         
         // DEFAULT HANDLERS
-        if (isset($request['message']['text'])) new DefaultAct($request);
-        elseif (isset($request['inline_query']['query'])) new DefaultAct($request);
+        if (isset($request['message']['text'])) new TriggerDefault($request);
+        elseif (isset($request['inline_query']['query'])) new InteractionDefault($request);
     }
 }

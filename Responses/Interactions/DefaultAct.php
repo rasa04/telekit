@@ -22,7 +22,7 @@ class DefaultAct {
             $result = [];
             $i = 0;
             foreach ($dices as $key => $value) {
-                array_push($result, [
+                $result[] = [
                     "type" => "article",
                     "id" => $i++,
                     "title" => "Бросить " . "$key",
@@ -31,7 +31,7 @@ class DefaultAct {
                         "message_text" => "<code>d$value</code> <b>результат:</b> <code>" . strval(rand(1, $value)) . "</code>",
                         "parse_mode" => "HTML"
                     ]
-                ]);
+                ];
             }
 
             $response = new AnswerInlineQuery;
