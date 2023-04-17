@@ -1,0 +1,644 @@
+2023-04-17 11:33:19 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 7987
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1681731198
+            [text] => debug
+        )
+
+)
+
+2023-04-17 11:36:27 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 7988
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1681731386
+            [text] => Hi! It's test message fromphp-telegram-bot
+        )
+
+)
+
+2023-04-17 11:36:56 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 7989
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1681731415
+            [text] => Hi! It's test message from: PTBot
+        )
+
+)
+
+2023-04-17 11:37:53 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 7990
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1681731472
+            [text] => Hi! It's test message from: PTBot
+        )
+
+)
+
+2023-04-17 11:54:46 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 7991
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1681732486
+            [text] => Hi! It's test message from: PTBot
+        )
+
+)
+
+2023-04-17 11:55:18 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 7992
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1681732517
+            [text] => Hi! It's test message from: PTBot
+        )
+
+)
+
+2023-04-17 11:58:18 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 7993
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1681732698
+            [text] => Hi! It's test message from: PTBot
+        )
+
+)
+
+2023-04-17 12:16:38 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 7995
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1681733797
+            [text] => Hi! It's test message from: PTBot
+        )
+
+)
+
+2023-04-17 12:20:00 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 316
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1681733999
+            [text] => Hi! It's test message from: PTBot
+        )
+
+)
+
+2023-04-17 12:28:31 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 317
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1681734510
+            [text] => Hi! It's test message from: PTBot
+        )
+
+)
+
+2023-04-17 12:29:04 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 318
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1681734543
+            [text] => Hi! It's test message from: PTBot
+        )
+
+)
+
+2023-04-17 12:30:34 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 319
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1681734633
+            [text] => Hi! It's test message from: PTBot
+        )
+
+)
+
+2023-04-17 12:30:53 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 320
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1681734652
+            [text] => Hi! It's test message from: PTBot
+        )
+
+)
+
+2023-04-17 12:31:08 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 321
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1681734667
+            [text] => darou
+        )
+
+)
+
+2023-04-17 12:31:20 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 322
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1681734679
+            [text] => Hi! It's test message from: PTBot
+        )
+
+)
+
+2023-04-17 12:31:34 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 323
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1681734693
+            [text] => hello
+        )
+
+)
+
+2023-04-17 12:31:49 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 324
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1681734709
+            [text] => ну че не ожидали?)
+        )
+
+)
+
+2023-04-17 12:32:38 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 7996
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -805540894
+                    [title] => че
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1681734757
+            [text] => ну че пацаны когда вов?)
+        )
+
+)
+
+2023-04-17 12:32:56 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 7997
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -805540894
+                    [title] => че
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1681734775
+            [text] => я бы тоже хотел научиться
+        )
+
+)
+
+2023-04-17 12:36:21 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 8001
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -805540894
+                    [title] => че
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1681734981
+            [text] => а почему вы не смеетесь
+        )
+
+)
+
+2023-04-17 12:39:09 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 325
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1681735148
+            [text] => hello
+        )
+
+)
+
+2023-04-17 12:39:21 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 326
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1681735160
+            [text] => hello
+        )
+
+)
+
+2023-04-17 13:28:45 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 8005
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -805540894
+                    [title] => че
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1681738124
+            [text] => обидно как то
+        )
+
+)
+

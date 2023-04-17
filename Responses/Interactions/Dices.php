@@ -1,10 +1,9 @@
 <?php
 namespace Interactions;
 
-use Core\Methods\AnswerInlineQuery;
 use Exception;
 
-class Dices {
+class Dices extends Interaction {
     
     public string $request_query;
 
@@ -91,7 +90,7 @@ class Dices {
             ]
         ];
 
-        (new AnswerInlineQuery)->inline_query_id($request['inline_query']['id'])
+        $this->response()->inline_query_id($request['inline_query']['id'])
             ->results($result)
             ->cache_time(1)
             ->is_personal(true)

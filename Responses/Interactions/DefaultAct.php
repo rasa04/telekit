@@ -1,9 +1,7 @@
 <?php
 namespace Interactions;
 
-use Core\Methods\AnswerInlineQuery;
-
-class DefaultAct {
+class DefaultAct extends Interaction {
 
     public string $request_query;
 
@@ -28,14 +26,13 @@ class DefaultAct {
                     "title" => "Бросить " . "$key",
                     "description" => "Удачной игры!",
                     "input_message_content" => [
-                        "message_text" => "<code>d$value</code> <b>результат:</b> <code>" . strval(rand(1, $value)) . "</code>",
+                        "message_text" => "<code>d$value</code> <b>результат:</b> <code>" . rand(1, $value) . "</code>",
                         "parse_mode" => "HTML"
                     ]
                 ];
             }
 
-            $response = new AnswerInlineQuery;
-            $response->inline_query_id($request['inline_query']['id'])
+            $this->response()->inline_query_id($request['inline_query']['id'])
                 ->results($result)
                 ->cache_time(1)
                 ->is_personal(true)
@@ -43,5 +40,3 @@ class DefaultAct {
         }
     }
 }
-
-?>
