@@ -4,6 +4,7 @@
     "description": "Library for creating telegram bots",
     "homepage": "https://matesite.uz",
     "keywords": ["ptbot", "rasa"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Abdurasul Khuzhamberdiyev",
