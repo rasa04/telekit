@@ -4,6 +4,7 @@
     "description": "Library for creating telegram bots",
     "homepage": "https://matesite.uz",
     "keywords": ["ptbot", "rasa"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Abdurasul Khuzhamberdiyev",
@@ -16,11 +17,13 @@
         "php": "^8.0",
         "guzzlehttp/guzzle": "^6.5",
         "vlucas/phpdotenv": "^5.5",
-      "ext-curl": "*"
+        "doctrine/dbal": "^3.6",
+        "ext-curl": "*"
     },
     "autoload": {
         "psr-4": {
             "Core\\": "Core/",
+            "Database\\": "database/",
             "Triggers\\": "responses/Triggers/",
             "Plots\\": "responses/Plots/",
             "Interactions\\": "responses/Interactions/",

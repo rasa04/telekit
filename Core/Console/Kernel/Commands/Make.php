@@ -3,12 +3,13 @@
 namespace Core\Console\Kernel\Commands;
 
 use Core\Env;
+use Database\Connection;
 
 class Make extends CommandAbstract
 {
     use Env;
 
-    public function __construct($options)
+    public function __construct($options, $argv)
     {
         $samples = $this->app_path() . "\Core\Console\Kernel\Samples\\";
         $responses = $this->app_path() ."\Responses\\";

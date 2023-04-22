@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/responses/Interactions" isTestSource="false" packagePrefix="Interactions\" />
       <sourceFolder url="file://$MODULE_DIR$/responses/Plots" isTestSource="false" packagePrefix="Plots\" />
       <sourceFolder url="file://$MODULE_DIR$/responses/Triggers" isTestSource="false" packagePrefix="Triggers\" />
+      <sourceFolder url="file://$MODULE_DIR$/database" isTestSource="false" packagePrefix="Database\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />

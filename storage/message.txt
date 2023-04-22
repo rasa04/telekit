@@ -110,3 +110,87 @@
 
 )
 
+2023-04-18 07:26:58 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 8145
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1681802817
+            [text] => дон хуесос
+        )
+
+)
+
+2023-04-18 07:29:18 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 8146
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1681802957
+            [text] => раса долбааёб
+        )
+
+)
+
+2023-04-18 07:30:06 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 8147
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -805540894
+                    [title] => че
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1681803005
+            [text] => дон даун
+        )
+
+)
+
