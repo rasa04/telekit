@@ -9,7 +9,6 @@ use Doctrine\DBAL\Exception;
 
 class Kernel
 {
-
     private string $short_options = "";
     private array $long_options = [
         "send",
@@ -20,6 +19,15 @@ class Kernel
         "database::",
         "connect::",
         "get::",
+        "table::",
+        "tables::",
+        "parameters::",
+        "connect::",
+        "migrate::",
+        "migration::",
+        "fresh::",
+        "showTable::",
+        "column::"
     ];
 
     /**
