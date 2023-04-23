@@ -2,6 +2,7 @@
 namespace Triggers;
 
 use Core\Storage;
+use Doctrine\DBAL\Exception;
 
 class OpenAi extends Trigger {
     private array $name_triggers = [
@@ -12,6 +13,9 @@ class OpenAi extends Trigger {
 
     private array $messages = [];
 
+    /**
+     * @throws Exception
+     */
     public function __construct($request)
     {
         if ($this->authorized($request, 'chat')) {

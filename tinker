@@ -1,0 +1,43 @@
+<?php
+require "vendor/autoload.php";
+
+use Database\Connect;
+use Doctrine\DBAL\Exception;
+
+use Dotenv\Dotenv;
+Dotenv::createUnsafeImmutable(__DIR__)->load();
+
+$conn = new Connect;
+try {
+    $conn->connection->connect();
+} catch (Exception $e) {
+    echo "NOT CONNECTED\n" . $e;
+}
+
+try {
+
+    $users = [
+        511703056,
+        748856943,
+        250114420,
+        272004963,
+        679002894
+    ];
+
+    foreach ($users as $user) {
+        $result = $conn->queryBuilder->insert('users')
+            ->values([
+                    "user_id" => ':user_id1',
+                    "role" => ':role'
+            ])
+            ->setParameters([
+                    "user_id1" => $user,
+                    "role" => 'pro'
+            ])
+            ->executeStatement();
+    }
+
+
+} catch (Exception $e) {
+    echo $e->getMessage();
+}
