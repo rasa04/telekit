@@ -12,6 +12,7 @@ return new class extends Migration
             $table->id();
             $table->integer("user_id");
             $table->string("role");
+            $table->json("context");
         });
     }
 

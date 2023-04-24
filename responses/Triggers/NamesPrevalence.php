@@ -1,20 +1,11 @@
 <?php
 namespace Triggers;
-
 use Core\Database\Database;
-use Core\Env;
-use Core\Methods\SendMessage;
-use Core\Controllers;
 
-class NamesPrevalence {
-    use Controllers;
-    use Env;
+class NamesPrevalence extends Trigger {
 
     public function __construct($request)
     {
-        $response = new SendMessage;
-        $database = new Database;
-
         (preg_match("/^name\s/", strtolower($request['message']['text']))) 
             ? $name = substr($request['message']['text'], 5)
             : $name = substr($request['message']['text'], 7);
@@ -27,7 +18,7 @@ class NamesPrevalence {
         ]);
         $result = json_decode($find->getBody()->getContents(), true);
 
-        $countries = $database->table('countries');
+        $countries = Database::table('countries')->get();
 
         foreach ($countries as $country) {
             for ($i = 0; $i < count($result['country']); $i++) {
@@ -40,10 +31,6 @@ class NamesPrevalence {
             $view .= "страна: <b>${val["country_id"]}</b> | вероятность: <b>" . $val["probability"]*100 . "</b>%\n";
         }
 
-        $response
-            ->chat_id($request['message']['chat']['id'])
-            ->text($view)
-            ->parse_mode()
-            ->send();
+        $this->response()->chat_id($request['message']['chat']['id'])->text($view)->parse_mode()->send();
     }
 }

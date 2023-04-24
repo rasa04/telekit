@@ -8,6 +8,7 @@ class Blueprint
         "id" => false,
         "integer" => [],
         "string" => [],
+        "json" => [],
     ];
 
     public function __construct()
@@ -28,5 +29,10 @@ class Blueprint
     public function string(string $column): void
     {
         $this->columns["string"][] = $column;
+    }
+
+    public function json(string $column): void
+    {
+        $this->columns["json"][] = $column;
     }
 }

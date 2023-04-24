@@ -89,26 +89,22 @@ trait Controllers
         return (strlen($result) < 4000) ? $result : substr($result, 0, 4000) . "...";
     }
 
-    /**
-     * @throws Exception
-     */
+
     public function authorized(array $request, string $type = "any"): bool
     {
         $conn = new Database;
-        if ($conn->connection->isConnected()) {
+        try {
             $users = array_map(function ($row) {
                 return $row['user_id'];
             }, $conn->queryBuilder->select('user_id')->from('users')->fetchAllAssociative());
 
             $groups = array_map(function ($row) {
-                return $row['user_id'];
+                return $row['group_id'];
             }, $conn->queryBuilder->select('group_id')->from('groups')->fetchAllAssociative());
         }
-        elseif ($this->pro_users() !== null && $this->pro_chats() !== null) {
-            $users = $this->pro_users();
-            $groups = $this->pro_chats();
+        catch (Exception $error) {
+            exit("AUTH ERROR: " . $error);
         }
-        else exit("NO DATA FOR AUTH");
 
         if ($type == strtolower("user")) {
             return isset($request['message']['from']['id']) && in_array($request['message']['from']['id'], $users);

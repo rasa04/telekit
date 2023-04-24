@@ -12,6 +12,7 @@ return new class extends Migration
             $table->id();
             $table->integer("group_id");
             $table->string("rights");
+            $table->json("context");
         });
     }
 

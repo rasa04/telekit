@@ -16,6 +16,11 @@ class Database
     public AbstractSchemaManager $schemaManager;
     public QueryBuilder $queryBuilder;
 
+    private static string $table;
+    private static string $alias;
+    private static string $column;
+    private static array $where;
+
     /**
      * @throws Exception
      */
@@ -50,17 +55,87 @@ class Database
         }
     }
 
-    public function table(string $table, $column = '*'): array
+    public static function table(string $table, string $column = '*', string $alias = ''): Database
+    {
+        static::$table = $table;
+        static::$column = $column;
+        static::$alias = $alias;
+        return new static;
+    }
+
+    public static function column($column = '*'): Database
+    {
+        static::$column = $column;
+        return new static;
+    }
+
+    public static function where(string $predicates, string $key, string|int $value): Database
+    {
+        self::$where['predicates'] = $predicates;
+        self::$where['key'] = $key;
+        self::$where['value'] = $value;
+        return new static;
+    }
+
+    public function get(): array
     {
         try {
-            return $this->connection
-                ->createQueryBuilder()
-                ->select($column)
-                ->from($table)
-                ->fetchAllAssociative();
+            if (isset(self::$where['predicates']) && isset(self::$where['key']) && isset(self::$where['value'])) {
+                if (isset(self::$alias)) {
+                    return $this->connection
+                        ->createQueryBuilder()
+                        ->select(static::$column)
+                        ->from(static::$table, static::$alias)
+                        ->where(static::$where['predicates'])
+                        ->setParameter(static::$where['key'], static::$where['value'])
+                        ->fetchAllAssociative();
+                } else {
+                    return $this->connection
+                        ->createQueryBuilder()
+                        ->select(static::$column)
+                        ->from(static::$table)
+                        ->where(static::$where['predicates'])
+                        ->setParameter(static::$where['key'], static::$where['value'])
+                        ->fetchAllAssociative();
+                }
+            } else {
+                if (self::$alias !== '') {
+                    return $this->connection
+                        ->createQueryBuilder()
+                        ->select(static::$column)
+                        ->from(static::$table, static::$alias)
+                        ->fetchAllAssociative();
+                } else {
+                    return $this->connection
+                        ->createQueryBuilder()
+                        ->select(static::$column)
+                        ->from(static::$table)
+                        ->fetchAllAssociative();
+                }
+            }
         }
         catch (Exception $error) {
             exit($error);
         }
+    }
+
+    public function update(string $data, string $column = ''): bool
+    {
+//        if (strlen($column) > 1) static::$column = $column;
+        try {
+            $this->queryBuilder
+                ->update(static::$table)
+                ->set(static::$column, ':new_value')
+                ->where(static::$where['predicates'])
+                ->setParameters([
+                    'new_value'=> $data,
+                    static::$where['key'] => static::$where['value']
+                ])
+                ->executeStatement();
+        }
+        catch (Exception $error) {
+            exit($error);
+        }
+        return true;
     }
 }

@@ -35,6 +35,9 @@ class Schema
         foreach ($table_blueprint->columns["string"] as $column) {
             $table->addColumn($column, "string", []);
         }
+        foreach ($table_blueprint->columns["json"] as $column) {
+            $table->addColumn($column, "json", []);
+        }
 
         $conn = (new Database)->connection;
         $sql = $schema->toSql($conn->getDatabasePlatform());
