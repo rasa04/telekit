@@ -55,6 +55,7 @@ function seed_groups(): void
             -1001765736589,
             -805540894,
             -1001673287453,
+            -824923223,
         ];
         foreach ($groups as $group) {
             $result = $database->queryBuilder->insert('groups')
@@ -141,9 +142,9 @@ function update_context(): void
 }
 
 //SEEDERS
-//seed_users();
-//seed_groups();
-//seed_countries();
+seed_users();
+seed_groups();
+seed_countries();
 
 //list_countries();
 //list_context();
