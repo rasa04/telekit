@@ -8,7 +8,7 @@ trait Env {
     }
     public function storage_path(): array|false|string
     {
-        return __DIR__ . "\..\storage\\";
+        return __DIR__ . "/../storage/";
     }
     public function path(): string
     {
@@ -16,7 +16,7 @@ trait Env {
     }
     public function app_path(): string
     {
-        return __DIR__ . "\..";
+        return __DIR__ . "/..";
     }
     public function gpt_token(): string
     {

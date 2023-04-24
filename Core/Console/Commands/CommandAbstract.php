@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Console\Kernel\Commands;
+namespace Core\Console\Commands;
 
 abstract class CommandAbstract
 {

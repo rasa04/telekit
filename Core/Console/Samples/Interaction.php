@@ -1,7 +1,7 @@
 <?php
-namespace Core\Console\Kernel\Samples;
+namespace Core\Console\Samples;
 
-use Core\Storage;
+use Core\Console\Samples\Interaction;
 
 class Sample extends Interaction {
     public function __construct($request)

@@ -3,7 +3,7 @@ require_once('./vendor/autoload.php');
 use Core\Bootstrap;
 use Dotenv\Dotenv;
 
-use Triggers\{Start, Help, NamesPrevalence, FirstOrSecond, OpenAi, Settings};
+use Triggers\{Start, Help, NamesPrevalence, ChooseBetween, OpenAi, Settings};
 use Plots\{SetBirthday, SetEvent, Functions, Support, Events};
 use Triggers\Admin\GetApi;
 use Interactions\Dices;
@@ -21,7 +21,7 @@ $app->triggers([
         "/settings$" => Settings::class,
         "/settings@settings$" => Settings::class,
         "^(name|имя)\s" => NamesPrevalence::class,
-        "\s(or|или)\s" => FirstOrSecond::class,
+        "\s(or|или)\s" => ChooseBetween::class,
     ])
     ->callbackDatas([
         "Назначить день рождение" => SetBirthday::class,

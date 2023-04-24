@@ -1,30 +1,35 @@
 <?php
 namespace Triggers;
 
-use Core\Storage;
+use Core\Database\Database;
+use Doctrine\DBAL\Exception;
 
 class OpenAi extends Trigger {
-    private array $name_triggers = [
-        'openai ', 'Openai ', 'gpt ', 'Gpt ', 'Рик ', 'рик ',
-        'openai , ', 'Openai , ', 'gpt , ', 'Gpt , ', 'Рик , ', 'рик , ',
-        'openai, ', 'Openai, ', 'gpt, ', 'Gpt, ', 'Рик, ', 'рик, '
-    ];
 
     private array $messages = [];
 
     public function __construct($request)
     {
         if ($this->authorized($request, 'chat')) {
-            $name = array_search($request['message']['chat']['id'], $this->pro_chats(), true);
-            if ($name) $this->messages = Storage::get("ai_contexts/$name.json");
+            $context = Database::table(table: 'groups', alias: 'g')
+                ->column('context')
+                ->where('g.group_id = :group_id', 'group_id', $request['message']['chat']['id'])
+                ->get()[0]['context'];
+
+            $this->messages = json_decode($context, true);
         }
         elseif ($this->authorized($request, 'user')) {
-            $this->messages = Storage::get("ai_contexts/contexts.json");
+            $context = Database::table(table: 'users', alias: 'u')
+                ->column('context')
+                ->where('u.user_id = :user_id', 'user_id', $request['message']['from']['id'])
+                ->get()[0]['context'];
+
+            $this->messages = json_decode($context, true);
         }
 
         $this->messages[] = [
             "role" => "user",
-            "content" => str_replace($this->name_triggers, '', $request['message']['text'])
+            "content" => $request['message']['text']
         ];
 
         $answer = $this->chat_gpt($this->messages);
@@ -37,11 +42,14 @@ class OpenAi extends Trigger {
         $this->messages = array_slice($this->messages, -10, 10);
 
         if ($this->authorized($request, 'chat')) {
-            $name = array_search($request['message']['chat']['id'], $this->pro_chats(), true);
-            if ($name) Storage::save($this->messages, "ai_contexts/$name.json", true);
+            Database::table('groups', 'context')
+                ->where('group_id = :group_id', 'group_id', $request['message']['chat']['id'])
+                ->update(json_encode($this->messages));
         }
         elseif ($this->authorized($request, 'user')) {
-            Storage::save($this->messages, 'ai_contexts/contexts.json', true);
+            Database::table('users', 'context')
+                ->where('user_id = :user_id', 'user_id', $request['message']['from']['id'])
+                ->update(json_encode($this->messages));
         }
 
         $this->response()->chat_id($request['message']['chat']['id'])->text($answer)->send();

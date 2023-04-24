@@ -2,9 +2,10 @@
 namespace Core;
 
 use ArrayIterator;
+use Core\Storage\Storage;
 use Exception;
-use Triggers\DefaultAct as TriggerDefault;
 use Interactions\DefaultAct as InteractionDefault;
+use Triggers\DefaultAct as TriggerDefault;
 
 class Bootstrap
 {

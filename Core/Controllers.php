@@ -1,10 +1,12 @@
 <?php
 namespace Core;
 
+use Core\Database\Database;
 use Core\Methods\SendMessage;
+use Core\Storage\Storage;
+use Doctrine\DBAL\Exception;
 use GuzzleHttp\Client;
 use JetBrains\PhpStorm\NoReturn;
-use function GuzzleHttp\Psr7\str;
 
 /**
  * Тут находятся основные методы для разработки
@@ -87,16 +89,31 @@ trait Controllers
         return (strlen($result) < 4000) ? $result : substr($result, 0, 4000) . "...";
     }
 
-    public function authorized(array $request, string $type = "any")
+
+    public function authorized(array $request, string $type = "any"): bool
     {
+        $conn = new Database;
+        try {
+            $users = array_map(function ($row) {
+                return $row['user_id'];
+            }, $conn->queryBuilder->select('user_id')->from('users')->fetchAllAssociative());
+
+            $groups = array_map(function ($row) {
+                return $row['group_id'];
+            }, $conn->queryBuilder->select('group_id')->from('groups')->fetchAllAssociative());
+        }
+        catch (Exception $error) {
+            exit("AUTH ERROR: " . $error);
+        }
+
         if ($type == strtolower("user")) {
-            return isset($request['message']['from']['id']) && in_array($request['message']['from']['id'], $this->pro_users());
+            return isset($request['message']['from']['id']) && in_array($request['message']['from']['id'], $users);
         }
         elseif ($type == strtolower("chat")) {
-            return isset($request['message']['chat']['id']) && in_array($request['message']['chat']['id'], $this->pro_chats());
+            return isset($request['message']['chat']['id']) && in_array($request['message']['chat']['id'], $groups);
         }
         elseif ($type == strtolower("any")){
-            return in_array($request['message']['chat']['id'] ?? $request['message']['from']['id'], $this->pro_chats());
+            return in_array($request['message']['chat']['id'] ?? $request['message']['from']['id'], $groups);
         }
         else {
             return false;
