@@ -1,6 +1,7 @@
 <?php
 namespace Triggers;
 
+use Core\Database\Database;
 use Core\Env;
 use Core\Methods\SendMessage;
 use Core\Controllers;
@@ -12,6 +13,7 @@ class NamesPrevalence {
     public function __construct($request)
     {
         $response = new SendMessage;
+        $database = new Database;
 
         (preg_match("/^name\s/", strtolower($request['message']['text']))) 
             ? $name = substr($request['message']['text'], 5)
@@ -24,26 +26,24 @@ class NamesPrevalence {
             'verify' => false,
         ]);
         $result = json_decode($find->getBody()->getContents(), true);
-            
-        // if (!empty($result["country"])) {
-            $codes = json_decode(file_get_contents($this->storage_path() . "countries.json"), true);
-            foreach ($codes as $key => $value) {
-                for ($j = 0; $j < count($result['country']); $j++) { 
-                    if ($key == $result['country'][$j]['country_id']) $result['country'][$j]['country_id'] = $value;
-                }
-            }
-            
-            $view = "Распространенность имени <b>" . strtoupper($result['name']) . "</b>\n";
-            foreach($result["country"] as $val)
-            {
-                $view .= "страна: <b>" . $val["country_id"] . "</b> | вероятность: <b>" . $val["probability"]*100 . "</b>%\n";
-            }
 
-            $response
-                ->chat_id($request['message']['chat']['id'])
-                ->text($view)
-                ->parse_mode()
-                ->send();
-        // }
+        $countries = $database->table('countries');
+
+        foreach ($countries as $country) {
+            for ($i = 0; $i < count($result['country']); $i++) {
+                if ($country["code"] === $result['country'][$i]['country_id']) $result['country'][$i]['country_id'] = $country["name"];
+            }
+        }
+
+        $view = "Распространенность имени <b>" . strtoupper($result['name']) . "</b>\n";
+        foreach($result["country"] as $val) {
+            $view .= "страна: <b>${val["country_id"]}</b> | вероятность: <b>" . $val["probability"]*100 . "</b>%\n";
+        }
+
+        $response
+            ->chat_id($request['message']['chat']['id'])
+            ->text($view)
+            ->parse_mode()
+            ->send();
     }
 }

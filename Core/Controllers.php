@@ -1,8 +1,9 @@
 <?php
 namespace Core;
 
+use Core\Database\Database;
 use Core\Methods\SendMessage;
-use Database\Connect;
+use Core\Storage\Storage;
 use Doctrine\DBAL\Exception;
 use GuzzleHttp\Client;
 use JetBrains\PhpStorm\NoReturn;
@@ -93,7 +94,7 @@ trait Controllers
      */
     public function authorized(array $request, string $type = "any"): bool
     {
-        $conn = new Connect;
+        $conn = new Database;
         if ($conn->connection->isConnected()) {
             $users = array_map(function ($row) {
                 return $row['user_id'];

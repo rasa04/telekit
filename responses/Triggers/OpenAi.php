@@ -1,7 +1,8 @@
 <?php
 namespace Triggers;
 
-use Core\Storage;
+use Core\Database\Database;
+use Core\Storage\Storage;
 use Doctrine\DBAL\Exception;
 
 class OpenAi extends Trigger {
@@ -18,6 +19,7 @@ class OpenAi extends Trigger {
      */
     public function __construct($request)
     {
+        $database = new Database;
         if ($this->authorized($request, 'chat')) {
             $name = array_search($request['message']['chat']['id'], $this->pro_chats(), true);
             if ($name) $this->messages = Storage::get("ai_contexts/$name.json");

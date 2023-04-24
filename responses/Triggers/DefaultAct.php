@@ -10,6 +10,3 @@ class DefaultAct {
         $response = new SendMessage;
     }
 }
-
-
-?>

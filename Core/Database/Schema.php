@@ -1,7 +1,6 @@
 <?php
 
 namespace Core\Database;
-use Database\Connect;
 use Doctrine\DBAL\Exception;
 use Doctrine\DBAL\Schema\Schema as DoctrineSchema;
 use Doctrine\DBAL\Schema\SchemaException;
@@ -37,7 +36,7 @@ class Schema
             $table->addColumn($column, "string", []);
         }
 
-        $conn = (new Connect)->connection;
+        $conn = (new Database)->connection;
         $sql = $schema->toSql($conn->getDatabasePlatform());
         foreach ($sql as $statement) {
             try {
@@ -53,7 +52,7 @@ class Schema
     public static function dropIfExist(string $name): void
     {
         try {
-            $result = (new Connect)->connection->executeStatement("DROP TABLE IF EXISTS $name");
+            $result = (new Database)->connection->executeStatement("DROP TABLE IF EXISTS $name");
             echo $result . "\n";
         }
         catch (\Exception $e) {

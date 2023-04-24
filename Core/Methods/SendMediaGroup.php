@@ -2,7 +2,7 @@
 namespace Core\Methods;
 
 use Core\Env;
-use Core\Storage;
+use Core\Storage\Storage;
 use CURLFile;
 use Exception;
 

@@ -1,7 +1,8 @@
 <?php
 
-namespace Core\Console\Kernel\Commands;
+namespace Core\Console\Commands;
 use Core\Methods\SendMessage;
+
 class Send extends CommandAbstract
 {
     public function __construct($options, $argv)

@@ -3,7 +3,7 @@ namespace Core\Methods;
 
 use Core\Controllers;
 use Core\Env;
-use Core\Storage;
+use Core\Storage\Storage;
 use Exception;
 
 class AnswerInlineQuery

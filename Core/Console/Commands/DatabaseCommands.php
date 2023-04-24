@@ -1,17 +1,12 @@
 <?php
 
-namespace Core\Console\Kernel\Commands;
+namespace Core\Console\Commands;
 
+use Core\Database\Database;
 use Core\Env;
-use Database\Connect;
-use Doctrine\DBAL\Configuration;
-use Doctrine\DBAL\DriverManager;
 use Doctrine\DBAL\Exception;
-use Doctrine\DBAL\Schema\Schema;
-use Doctrine\DBAL\Schema\Table;
-use Doctrine\DBAL\Tools\DsnParser;
 
-class Database
+class DatabaseCommands
 {
     use Env;
 
@@ -20,7 +15,7 @@ class Database
      */
     public function __construct($options, $argv)
     {
-        $conn = (new Connect())->connection;
+        $conn = (new Database)->connection;
 
         if (!isset($argv[2])) {
             var_dump($conn->getDatabase());
@@ -64,11 +59,9 @@ class Database
             var_dump($result);
         }
         elseif ($argv[2] === '--tables') {
-            $stmt = $conn->executeQuery("SELECT name FROM sqlite_master WHERE type='table'");
-            $tables = $stmt->fetchAllAssociative();
-            if (empty($tables)) echo "NO TABLES";
+            $tables = $conn->createSchemaManager()->listTables();
             foreach ($tables as $table) {
-                echo $table["name"] . "\n";
+                echo $table->getName() . "\n";
             }
         }
         elseif ($argv[2] === '--migrate') {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Core\Console\Kernel;
+namespace Core\Console;
 
-use Core\Console\Kernel\Commands\Make;
-use Core\Console\Kernel\Commands\Database;
-use Core\Console\Kernel\Commands\Send;
+use Core\Console\Commands\DatabaseCommands;
+use Core\Console\Commands\Make;
+use Core\Console\Commands\Send;
 use Doctrine\DBAL\Exception;
 
 class Kernel
@@ -22,7 +22,6 @@ class Kernel
         "table::",
         "tables::",
         "parameters::",
-        "connect::",
         "migrate::",
         "migration::",
         "fresh::",
@@ -39,7 +38,8 @@ class Kernel
 
         if ($argv[1] === "--send") new Send($options, $argv);
         elseif ($argv[1] === "--make") new Make($options, $argv);
-        elseif ($argv[1] === "--database") new Database($options, $argv);
+        elseif ($argv[1] === "--database") new DatabaseCommands($options, $argv);
+        elseif ($argv[1] === "tinker") require "tinker";
         else echo "Unknown command: " . $argv[1];
     }
 }

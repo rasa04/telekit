@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Console\Kernel\Commands;
+namespace Core\Console\Commands;
 
 use Core\Env;
 
@@ -10,23 +10,23 @@ class Make extends CommandAbstract
 
     public function __construct($options, $argv)
     {
-        $samples = $this->app_path() . "\Core\Console\Kernel\Samples\\";
-        $responses = $this->app_path() ."\Responses\\";
-        $database = $this->app_path() . "\database\\";
+        $samplesPath = $this->app_path() . "\Core\Console\Samples\\";
+        $responsesPath = $this->app_path() ."\Responses\\";
+        $databasePath = $this->app_path() . "\database\\";
 
         if (isset($options["interaction"])) {
-            $file = $samples . "Interaction.php";
-            $new_file = $responses . "Interactions\\" . $options["interaction"] . ".php";
+            $file = $samplesPath . "Interaction.php";
+            $new_file = $responsesPath . "Interactions\\" . $options["interaction"] . ".php";
             $this->response(["file" => $new_file], copy($file, $new_file));
         }
         elseif (isset($options["trigger"])) {
-            $file = $samples . "Trigger.php";
-            $new_file = $responses . "Triggers\\" . $options["trigger"] . ".php";
+            $file = $samplesPath . "Trigger.php";
+            $new_file = $responsesPath . "Triggers\\" . $options["trigger"] . ".php";
             $this->response(["file" => $new_file], copy($file, $new_file));
         }
         elseif (isset($options["migration"])) {
-            $file = $samples . "Migration.php";
-            $new_file = $database . "migrations\\"
+            $file = $samplesPath . "Migration.php";
+            $new_file = $databasePath . "migrations\\"
                 . date("Y_m_d")
                 . time()
                 . "_create_${options['migration']}_table.php";
