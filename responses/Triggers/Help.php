@@ -1,13 +1,10 @@
 <?php
 namespace Triggers;
 
-use Core\Methods\SendMessage;
-
-class Help {
+class Help extends Trigger {
     public function __construct($request)
     {
-        $response = new SendMessage;
-        $response
+        $this->message()
             ->chat_id($request['message']['chat']['id'])
             ->text('Помощь')
             ->send();

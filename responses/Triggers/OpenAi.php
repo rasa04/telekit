@@ -2,7 +2,6 @@
 namespace Triggers;
 
 use Core\Database\Database;
-use Doctrine\DBAL\Exception;
 
 class OpenAi extends Trigger {
 
@@ -52,6 +51,6 @@ class OpenAi extends Trigger {
                 ->update(json_encode($this->messages));
         }
 
-        $this->response()->chat_id($request['message']['chat']['id'])->text($answer)->send();
+        $this->message()->chat_id($request['message']['chat']['id'])->text($answer)->send();
     }
 }

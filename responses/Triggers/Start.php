@@ -1,13 +1,9 @@
 <?php
-namespace Triggers;
+namespace Triggers;;
 
-use Core\Methods\SendMessage;
-
-class Start {
+class Start extends Trigger {
     public function __construct($request)
     {
-        $response = new SendMessage;
-        
         $text = "<b>Приветствую!</b>\n"
         ."Этот бот в большей степени является личным инструментом разработчика. Но вы также можете использовать часть его функционала.\n"
         ."\n <b>ДОСТУПНЫЕ КОМАНДЫ</b>\n\n"
@@ -18,7 +14,7 @@ class Start {
         ."\n<b> * Если добавляете в чат предоставьте админку что бы с ботом было удобнее работать</b>\n"
         ."\nтак же бот может общатся и отвечать на вопросы. что бы начать общатся напишите слово 'рик' (или любое из перечисленных: openai|gpt|ии|рик) перед предложением.";
 
-        $response
+        $this->message()
             ->chat_id($request['message']['chat']['id'])
             ->text($text)
             ->parse_mode()

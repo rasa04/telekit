@@ -1,46 +1,83 @@
 
-# СПРАВОЧНИК
- * :bulb: **Контакты найдете на [моем сайте](https://matesite.uz)**
- * **Получать обновления в браузере** https://api.telegram.org/bot{TOKEN}/getUpdates
- * **Настроить хук** https://api.telegram.org/bot{TOKEN}/setwebhook?url=https://test.com/example_bot/index.php
- * **Удалить хук** https://api.telegram.org/bot{TOKEN}/deleteWebhook
+# GET STARTED
+ * :bulb: **Find contacts on [my website](https://matesite.uz)**
+ * **Receive updates in the browser** https://api.telegram.org/bot{TOKEN}/getUpdates
+ * **Set up a webhook** https://api.telegram.org/bot{TOKEN}/setwebhook?url=https://test.com/example_bot/index.php
+ * **Delete a webhook** https://api.telegram.org/bot{TOKEN}/deleteWebhook
 
 
-## Команды do
-_php do_ через эту команду можно взаимодействовать с ботом
-* _php do --send --chat=-805540894 --message="сообщение"_ **<- отправка сообщений**
-* _php do --make --interaction=TestInteraction_ **<- создания шаблонных файлов Interaction**
-* _php do --make --trigger=TestTrigger_ **<- создания шаблонных файлов Trigger**
+# "do" commands
+## With the command _"php do"_, you can interact with the bot. Here are some examples:
 
-## Пример настройки фото
+## Sending messages
 ```
-$response = new Core\Methods\SendPhoto;
-$response->protect_content(true)
-        ->caption('Подпись')
-        ->photo("image1.png", "кот.jpg", "image/jpg")
-        ->send()
+php do --send (sends default message to default user from .env file)
+php do --send --chat=CHAT_ID
+php do --send --chat=CHAT_ID --message="hello world"
 ```
 
-## Пример настройки документа
+## "make" command
+### Creating template Interaction files
 ```
-$response = new Core\Methods\SendPhoto;
-$response->protect_content(true)
-        ->caption('Подпись')
-        ->photo("image1.png", "кот.jpg", "image/jpg")
-        ->send()
+php do --make --interaction=MyInteraction
+```
+### Creating template Trigger files
+```
+php do --make --trigger=myTrigger 
+```
+### Creating template Migration files
+```
+php do --make --migration=table 
 ```
 
-## Пример настройки сообщения
+## "database" command
+### Get database
 ```
+php do --database
+```
+### Check database connection
+```
+php do --database --connection
+```
+### Check database version
+```
+php do --database --version
+```
+### Show tables
+```
+php do --database --tables
+```
+### Describe table
+```
+php do --database --table=users
+```
+### Output table contents
+```
+php do --database --showTable=users
+```
+### Output the contents of a specific table field
+```
+php do --database --showTable=users --column="user_id"
+```
+### run migrations
+```
+php do --database --migrate
+```
+### undo all migration
+```
+php do --database --migrate --fresh
+```
+
+# Send responses
+## Send message
+```
+<?php
 namespace Triggers;
 
-use Core\Methods\SendMessage;
-
-class Help {
+class Help extends Trigger {
     public function __construct($request)
     {
-        $response = new SendMessage;
-        $response
+        $this->message()
             ->chat_id($request['message']['chat']['id'])
             ->text('Помощь')
             ->send();
@@ -48,13 +85,11 @@ class Help {
 }
 ```
 
-## Пример настройки сообщения с кнопками
+### Send message with buttons
 ```
-$response = new SendMessage;
-
-$response
+$this->message()
     ->chat_id($request['message']['chat']['id'])
-    ->text('Выберите опцию')
+    ->text('Choose the option')
     ->parse_mode()
     ->reply_markup([
         'one_time_keyboard' => true,
@@ -62,26 +97,18 @@ $response
         'inline_keyboard' => [
             [
                 [
-                    'text' => 'Назначить день рождение',
-                    'callback_data' => 'Назначить день рождение',
+                    'text' => 'About',
+                    'callback_data' => 'About',
                 ],
                 [
-                    'text' => 'Назначить особый день',
-                    'callback_data' => 'Назначить особый день',
+                    'text' => 'Help',
+                    'callback_data' => 'help',
                 ]
             ],
             [
                 [
-                    'text' => 'События',
-                    'callback_data' => 'События',
-                ],
-                [
-                    'text' => 'Функции',
-                    'callback_data' => 'Функции',
-                ],
-                [
-                    'text' => 'Поддержка',
-                    'callback_data' => 'Поддержка',
+                    'text' => 'Settings',
+                    'callback_data' => 'settings',
                 ]
             ]
         ]
@@ -89,18 +116,36 @@ $response
     ->send();
 ```
 
-## Пример настройки отправки медиа файлов
+## Send photo
 ```
-$response = new \Core\Methods\SendMediaGroup;
-$response->chat_id(id)
-        ->media([
-                ['type' => 'document', 'name' => 'mycat', 'path' => 'img/image1.png'],
-                ['type' => 'document', 'name' => 'mycat2', 'path' => 'img/image1.png']
-        ])
-        ->send();
+$this->photo()
+    ->protect_content(true)
+    ->caption('Подпись')
+    ->photo("image1.png", "кот.jpg", "image/jpg")
+    ->send()
 ```
 
-## Пример InlineQueries
+## Send document
+```
+$this->document()
+    ->protect_content(true)
+    ->caption('Sign')
+    ->photo("image1.png", "cat.jpg", "image/jpg")
+    ->send()
+```
+
+## Send media files
+```
+$this->mediaGroup()
+    ->chat_id(id)
+    ->media([
+            ['type' => 'document', 'name' => 'mycat', 'path' => 'img/image1.png'],
+            ['type' => 'document', 'name' => 'mycat2', 'path' => 'img/image1.png']
+    ])
+    ->send();
+```
+
+# InlineQueries
 ```
 namespace Interactions;
 
