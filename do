@@ -6,4 +6,9 @@ use Dotenv\Dotenv;
 
 Dotenv::createUnsafeImmutable(__DIR__)->load();
 
-new Kernel($argv);
+try {
+    new Kernel($argv);
+} catch (\Doctrine\DBAL\Exception $e) {
+    var_dump($e);
+}
+
