@@ -194,3 +194,59 @@
 
 )
 
+2023-04-25 09:01:39 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 10842
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -824923223
+                    [title] => что
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1682413299
+            [text] => хуй или пизда или сковорада?
+        )
+
+)
+
+2023-04-25 09:02:23 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 10843
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -824923223
+                    [title] => что
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1682413344
+            [text] => рик сколько будет 4+4?
+        )
+
+)
+

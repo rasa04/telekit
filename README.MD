@@ -12,8 +12,8 @@
 ## Sending messages
 ```
 php do --send (sends default message to default user from .env file)
-php do --send --chat=CHAT_ID
-php do --send --chat=CHAT_ID --message="hello world"
+php do --send --to=CHAT_ID
+php do --send --to=CHAT_ID --message="hello world"
 ```
 
 ## "make" command
