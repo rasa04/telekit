@@ -38,18 +38,7 @@ trait Env {
     {
         return 511703056;
     }
-    public function pro_users(): array|false|string
-    {
-        return explode(",", getenv("PRO_USERS"));
-    }
-    public function pro_chats(): array|false|string
-    {
-        return [
-            "contexts_of_GigaChadChat" => -1001765736589, // гигачад чат
-            "contexts_of_what" => -805540894, // че
-            "contexts_of_test" =>  -1001673287453 // тестовый чат
-        ];
-    }
+
     public function time_zone(): string
     {
         return getenv("TIME_ZONE");
