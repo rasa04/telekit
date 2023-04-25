@@ -15,7 +15,7 @@ Open a terminal or command prompt and navigate to your project directory.
 
 Run the following command:
 ```
-composer require rasa/telekit
+composer require rasa04/telekit
 ```
 This will download and install the Telekit library and all its dependencies into your project's vendor directory.
 
