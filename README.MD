@@ -1,4 +1,9 @@
 # TELEKIT FRAMEWORK
+[![Latest Stable Version](http://poser.pugx.org/rasa/telekit/v)](https://packagist.org/packages/rasa/telekit) 
+[![Total Downloads](http://poser.pugx.org/rasa/telekit/downloads)](https://packagist.org/packages/rasa/telekit) 
+[![Latest Unstable Version](http://poser.pugx.org/rasa/telekit/v/unstable)](https://packagist.org/packages/rasa/telekit) 
+[![License](http://poser.pugx.org/rasa/telekit/license)](https://packagist.org/packages/rasa/telekit) 
+[![PHP Version Require](http://poser.pugx.org/rasa/telekit/require/php)](https://packagist.org/packages/rasa/telekit)
 
 # GET STARTED
  * :bulb: **Find contacts on [my website](https://matesite.uz)**
@@ -15,7 +20,7 @@ Open a terminal or command prompt and navigate to your project directory.
 
 Run the following command:
 ```
-composer require rasa04/telekit
+composer require rasa/telekit
 ```
 This will download and install the Telekit library and all its dependencies into your project's vendor directory.
 
