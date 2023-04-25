@@ -1,12 +1,10 @@
 <?php
 namespace Triggers;
 
-use Core\Methods\SendMessage;
-
-class DefaultAct {
+class DefaultAct extends Trigger {
 
     public function __construct($request)
     {
-        $response = new SendMessage;
+        $this->message();
     }
 }
