@@ -5,6 +5,7 @@ namespace Core\Console;
 use Core\Console\Commands\DatabaseCommands;
 use Core\Console\Commands\Make;
 use Core\Console\Commands\Send;
+use Core\Validator\ErrorHandler;
 use Doctrine\DBAL\Exception;
 
 class Kernel
@@ -40,6 +41,6 @@ class Kernel
         elseif ($argv[1] === "--make") new Make($options, $argv);
         elseif ($argv[1] === "--database") new DatabaseCommands($options, $argv);
         elseif ($argv[1] === "tinker") require "tinker";
-        else echo "Unknown command: " . $argv[1];
+        else new ErrorHandler("Unknown command: " . $argv[1]);
     }
 }

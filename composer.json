@@ -1,5 +1,5 @@
 {
-    "name": "rasa/ptbot",
+    "name": "rasa/telekit",
     "type": "project",
     "description": "Library for creating telegram bots",
     "homepage": "https://matesite.uz",

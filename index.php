@@ -1,6 +1,6 @@
 <?php
 require_once('./vendor/autoload.php');
-use Core\Bootstrap;
+use Core\App;
 use Dotenv\Dotenv;
 
 use Triggers\{Start, Help, NamesPrevalence, ChooseBetween, OpenAi, Settings};
@@ -9,9 +9,8 @@ use Triggers\Admin\GetApi;
 use Interactions\Dices;
 
 Dotenv::createUnsafeImmutable(__DIR__)->load();
-$app = new Bootstrap;
 
-$app->triggers([
+App::triggers([
         "^(openai|Openai|gpt|Gpt|ии|рик|Рик)(\s|,\s)" => OpenAi::class,
         "rasa api" => GetApi::class,
         "/start$" => Start::class,
@@ -23,7 +22,7 @@ $app->triggers([
         "^(name|имя)\s" => NamesPrevalence::class,
         "\s(or|или)\s" => ChooseBetween::class,
     ])
-    ->callbackDatas([
+    ->callbacks([
         "Назначить день рождение" => SetBirthday::class,
         "Назначить особый день" => SetEvent::class,
         "Функции" => Functions::class,

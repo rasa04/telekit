@@ -4,6 +4,7 @@ namespace Core\Console\Commands;
 
 use Core\Database\Database;
 use Core\Env;
+use Core\Validator\ErrorHandler;
 use Doctrine\DBAL\Exception;
 
 class DatabaseCommands
@@ -85,7 +86,7 @@ class DatabaseCommands
             }
         }
         else {
-            echo "UNKNOWN COMMAND: " . $argv[2];
+            new ErrorHandler("UNKNOWN COMMAND: " . $argv[2]);
         }
     }
 }
