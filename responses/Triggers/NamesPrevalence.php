@@ -1,6 +1,6 @@
 <?php
 namespace Triggers;
-use Core\Database\Database;
+use Core\Responses\Trigger;
 use Database\models\Country;
 
 class NamesPrevalence extends Trigger {

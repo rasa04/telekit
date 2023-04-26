@@ -5,7 +5,7 @@ use Core\Database\Database;
 use Dotenv\Dotenv;
 
 use Triggers\{Start, Help, NamesPrevalence, ChooseBetween, OpenAi, Settings};
-use Plots\{SetBirthday, SetEvent, Functions, Support, Events};
+use Plots\{About, Support, Settings as SettingsPlot};
 use Triggers\Admin\GetApi;
 use Interactions\Dices;
 
@@ -25,11 +25,9 @@ App::triggers([
         "\s(or|или)\s" => ChooseBetween::class,
     ])
     ->callbacks([
-        "Назначить день рождение" => SetBirthday::class,
-        "Назначить особый день" => SetEvent::class,
-        "Функции" => Functions::class,
-        "Поддержка" => Support::class,
-        "События" => Events::class,
+        "about" => About::class,
+        "support" => Support::class,
+        "settings" => SettingsPlot::class,
     ])
     ->inlineQueries([
         "^(d|к)\d" => Dices::class,

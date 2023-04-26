@@ -1,7 +1,7 @@
 <?php
 namespace Core\Console\Samples;
 
-use Triggers\Trigger;
+use Core\Responses\Trigger;
 
 class Sample extends Trigger {
     public function __construct($request)

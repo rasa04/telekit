@@ -1,6 +1,7 @@
 <?php
 namespace Triggers;
 
+use Core\Responses\Trigger;
 use Database\models\Group;
 use Database\models\User;
 

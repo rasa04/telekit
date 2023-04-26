@@ -94,12 +94,51 @@ function openai(): void
     new \Triggers\OpenAi($request);
 }
 
+function test_triggers(): void
+{
+    $request = [
+        'message' => [
+            'chat' => [
+                'id' => 511703056
+            ],
+            'from' => [
+                'id'=> 511703056
+            ],
+            'text' => 'сколько будет 5+5?'
+        ]
+    ];
+//    new \Triggers\Start($request);
+//    new \Triggers\Help($request);
+//    new \Triggers\Settings($request);
+}
+function test_plots(): void
+{
+    $request = [
+        'callback_query' => [
+            'message' => [
+                'chat' => [
+                    'id' => 511703056
+                ],
+                'from' => [
+                    'id'=> 511703056
+                ],
+                'text' => 'сколько будет 5+5?'
+            ]
+        ]
+    ];
+
+//    new \Plots\About($request);
+    new \Plots\Settings($request);
+}
+
 //SEEDERS
-seed_users();
-seed_groups();
-seed_countries();
+//seed_users();
+//seed_groups();
+//seed_countries();
 //
 //list_countries();
 //list_context();
 //update_context();
 //openai();
+//test_triggers();
+test_plots();

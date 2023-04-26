@@ -5,7 +5,7 @@ abstract class SendAction
 {
     use \Core\Controllers;
 
-    protected $response;
+    protected array $response;
 
     /**
      * Unique identifier for the target chat or username of the target channel (in the format @channelusername)

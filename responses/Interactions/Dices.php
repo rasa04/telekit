@@ -1,6 +1,7 @@
 <?php
 namespace Interactions;
 
+use Core\Responses\Interaction;
 use Exception;
 
 class Dices extends Interaction {
