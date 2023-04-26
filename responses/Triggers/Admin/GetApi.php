@@ -1,6 +1,6 @@
 <?php
 namespace Triggers\Admin;
-use Triggers\Trigger;
+use Core\Responses\Trigger;
 
 class GetApi extends Trigger {
     public function __construct($request)

@@ -1,6 +1,8 @@
 <?php
 namespace Interactions;
 
+use Core\Responses\Interaction;
+
 class DefaultAct extends Interaction {
 
     public string $request_query;

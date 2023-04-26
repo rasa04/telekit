@@ -1,13 +1,13 @@
 <?php
 
-namespace Triggers;
+namespace Core\Responses;
 
-use Core\Methods\SendMessage;
-use Core\Methods\SendMediaGroup;
-use Core\Methods\SendDocument;
-use Core\Methods\SendPhoto;
 use Core\Controllers;
 use Core\Env;
+use Core\Methods\SendDocument;
+use Core\Methods\SendMediaGroup;
+use Core\Methods\SendMessage;
+use Core\Methods\SendPhoto;
 
 class Trigger
 {

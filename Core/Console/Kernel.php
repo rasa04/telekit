@@ -6,7 +6,6 @@ use Core\Console\Commands\DatabaseCommands;
 use Core\Console\Commands\Make;
 use Core\Console\Commands\Send;
 use Core\Validator\ErrorHandler;
-use Doctrine\DBAL\Exception;
 
 class Kernel
 {
@@ -18,21 +17,20 @@ class Kernel
         "trigger::",
         "interaction::",
         "database::",
+        "model::",
         "connect::",
         "get::",
         "table::",
         "tables::",
-        "parameters::",
+        "params::",
         "migrate::",
         "migration::",
         "fresh::",
         "showTable::",
-        "column::"
+        "column::",
+        "driver::",
     ];
 
-    /**
-     * @throws Exception
-     */
     public function __construct($argv)
     {
         $options = getopt(short_options: $this->short_options, long_options: $this->long_options);

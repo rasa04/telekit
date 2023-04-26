@@ -1,31 +1,20 @@
 <?php
 namespace Plots;
 
-use Core\Methods\SendMessage;
+use Core\Responses\Plot;
 
-class Support {
+class Support extends Plot {
     public function __construct($request)
     {
-        $response = new SendMessage([
-            'chat_id' => $request['callback_query']['message']['chat']['id'],
-            'text' => 'Поддержите нас задонатив на один перечисленных кошельков', 
-            'parse_mode' => 'html', 
-            'reply_markup' => [
-                'one_time_keyboard' => true,
-                'resize_keyboard' => true,
-                'keyboard' => [
-                    [
-                        ['text' => 'payme'],
-                        ['text' => 'click'],
-                    ],
-                    [
-                        ['text' => 'visa'],
-                        ['text' => 'qiwi'],
-                    ]
-                ]
-            ],
-            'reply_to_message_id' => null,
-        ]);
-        $response->send();
+        $this->message()
+            ->chat_id($request['callback_query']['message']['chat']['id'])
+            ->parse_mode()
+            ->text('<b>Скоро...</b>')
+            ->reply_markup([
+                'chat_id' => $request['callback_query']['message']['chat']['id'],
+                'text' => '<b>Скоро...<b>',
+                'parse_mode' => 'html',
+                'reply_to_message_id' => null,
+            ]);
     }
 }

@@ -2,150 +2,143 @@
 require "vendor/autoload.php";
 
 use Core\Database\Database;
-use Doctrine\DBAL\Exception;
+use Database\models\Country;
+use Database\models\Group;
+use Database\models\User;
 
-
+new Database;
 function seed_users(): void
 {
-    $database = new Database;
-    try {
-        $database->connection->connect();
-    } catch (Exception $e) {
-        echo "NOT CONNECTED\n" . $e;
+    $users = [
+        511703056,
+        748856943,
+        250114420,
+        272004963,
+        679002894
+    ];
+    foreach ($users as $user) {
+        $result = User::insert([
+            "user_id" => $user,
+            "role" => 'pro',
+            "context" => json_encode([]),
+        ]);
     }
-
-    try {
-        $users = [
-            511703056,
-            748856943,
-            250114420,
-            272004963,
-            679002894
-        ];
-        foreach ($users as $user) {
-            $result = $database->queryBuilder->insert('users')
-                ->values([
-                    "user_id" => ':user_id1',
-                    "role" => ':role',
-                    "context" => ':context',
-                ])
-                ->setParameters([
-                    "user_id1" => $user,
-                    "role" => 'pro',
-                    "context" => json_encode([]),
-                ])
-                ->executeStatement();
-        }
-
-    } catch (Exception $e) {
-        echo $e->getMessage();
-    }
+    var_dump($result);
 }
 function seed_groups(): void
 {
-    $database = new Database;
-    try {
-        $database->connection->connect();
-    } catch (Exception $e) {
-        echo "NOT CONNECTED\n" . $e;
+    $groups = [
+        -1001765736589,
+        -805540894,
+        -1001673287453,
+        -824923223,
+    ];
+    foreach ($groups as $group) {
+        $result = Group::insert([
+            "group_id" => $group,
+            "rights" => "pro",
+            "context" => json_encode([]),
+        ]);
     }
-
-    try {
-        $groups = [
-            -1001765736589,
-            -805540894,
-            -1001673287453,
-            -824923223,
-        ];
-        foreach ($groups as $group) {
-            $result = $database->queryBuilder->insert('groups')
-                ->values([
-                    "group_id" => ':group_id1',
-                    "rights" => ':rights',
-                    "context" => ':context',
-                ])
-                ->setParameters([
-                    "group_id1" => $group,
-                    "rights" => 'pro',
-                    "context" => json_encode([]),
-                ])
-                ->executeStatement();
-        }
-
-    } catch (Exception $e) {
-        echo $e->getMessage();
-    }
+    var_dump($result);
 }
 
 function seed_countries(): void
 {
-    $database = new Database;
-    try {
-        $database->connection->connect();
-    } catch (Exception $e) {
-        echo "NOT CONNECTED\n" . $e;
+    $countries = json_decode(file_get_contents(__DIR__ . '/../../storage/countries.json'), true);
+    $result = [];
+    foreach ($countries as $countryCode => $countryName) {
+        $result[] = Country::insert([
+            "code" => $countryCode,
+            "name" => $countryName
+        ]);
     }
-
-    try {
-        $countries = json_decode(file_get_contents(__DIR__ . '/../../storage/countries.json'), true);
-        $result = [];
-        foreach ($countries as $countryCode => $countryName) {
-            $result[] = $database->queryBuilder->insert('countries')
-                ->values([
-                    "code" => ':code',
-                    "name" => ':name'
-                ])
-                ->setParameters([
-                    "code" => $countryCode,
-                    "name" => $countryName
-                ])
-                ->executeStatement();
-        }
-        var_dump($result);
-
-    } catch (Exception $e) {
-        echo $e->getMessage();
-    }
+    var_dump($result);
 }
 
 function list_countries(): void
 {
-    var_dump(Database::table('countries')->get());
+    var_dump(Country::all(['code', 'name'])->toArray());
 }
 
 function list_context(): void
 {
-    $result = Database::table(table: 'users', alias: 'u')
-        ->column('context')
-        ->where('u.user_id = :user_id', 'user_id', 511703056)
-        ->get()[0]['context'];
-    var_dump($result);
+//    $result = Capsule::table('groups')
+//        ->where('group_id', '=', -805540894)->value('context');
+//    var_dump($result);
+
+    $result = Group::where('group_id', '=', -805540894)->first('context');
+    var_dump($result->toArray()["context"]);
 }
 
 function update_context(): void
 {
-    echo Database::table('users', 'context')
-        ->where('user_id = :user_id', 'user_id', '511703056')
-        ->update('[{"name":"my","none":"yeah"}]') ? 'true' : 'false';
+    User::where('user_id', '=', 511703056)->update([
+        'context' => '[{"name":"my","none":"yeah"}]'
+    ]);
+}
 
+function openai(): void
+{
+    $request = [
+        'message' => [
+            'chat' => [
+                'id' => -805540894
+            ],
+            'from' => [
+                'id'=> 511703056
+            ],
+            'text' => 'сколько будет 5+5?'
+        ]
+    ];
+    new \Triggers\OpenAi($request);
+}
 
-//    $database = new Database;
-//    $database->queryBuilder
-//        ->update('users')
-//        ->set('context', ':new_value')
-//        ->where('user_id = :user_id')
-//        ->setParameters([
-//            'new_value'=> '[{"name":"my info 3"}]',
-//            'user_id' => 511703056,
-//        ])
-//        ->executeStatement();
+function test_triggers(): void
+{
+    $request = [
+        'message' => [
+            'chat' => [
+                'id' => 511703056
+            ],
+            'from' => [
+                'id'=> 511703056
+            ],
+            'text' => 'сколько будет 5+5?'
+        ]
+    ];
+//    new \Triggers\Start($request);
+//    new \Triggers\Help($request);
+//    new \Triggers\Settings($request);
+}
+function test_plots(): void
+{
+    $request = [
+        'callback_query' => [
+            'message' => [
+                'chat' => [
+                    'id' => 511703056
+                ],
+                'from' => [
+                    'id'=> 511703056
+                ],
+                'text' => 'сколько будет 5+5?'
+            ]
+        ]
+    ];
+
+//    new \Plots\About($request);
+    new \Plots\Settings($request);
 }
 
 //SEEDERS
-seed_users();
-seed_groups();
-seed_countries();
-
+//seed_users();
+//seed_groups();
+//seed_countries();
+//
 //list_countries();
 //list_context();
 //update_context();
+//openai();
+//test_triggers();
+test_plots();

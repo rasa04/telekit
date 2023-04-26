@@ -17,8 +17,10 @@
         "php": "^8.0",
         "guzzlehttp/guzzle": "^6.5",
         "vlucas/phpdotenv": "^5.5",
+        "illuminate/database": "^10.9",
         "doctrine/dbal": "^3.6",
-        "ext-curl": "*"
+        "ext-curl": "*",
+        "ext-pdo": "*"
     },
     "autoload": {
         "psr-4": {

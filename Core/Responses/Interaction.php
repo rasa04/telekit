@@ -1,10 +1,10 @@
 <?php
 
-namespace Interactions;
+namespace Core\Responses;
 
-use Core\Methods\AnswerInlineQuery;
 use Core\Controllers;
 use Core\Env;
+use Core\Methods\AnswerInlineQuery;
 
 class Interaction
 {

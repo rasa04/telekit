@@ -1,6 +1,7 @@
 <?php
 namespace Triggers;
-use Core\Database\Database;
+use Core\Responses\Trigger;
+use Database\models\Country;
 
 class NamesPrevalence extends Trigger {
 
@@ -18,11 +19,13 @@ class NamesPrevalence extends Trigger {
         ]);
         $result = json_decode($find->getBody()->getContents(), true);
 
-        $countries = Database::table('countries')->get();
+        $countries = Country::all(['code', 'name'])->toArray();
 
         foreach ($countries as $country) {
             for ($i = 0; $i < count($result['country']); $i++) {
-                if ($country["code"] === $result['country'][$i]['country_id']) $result['country'][$i]['country_id'] = $country["name"];
+                if ($country["code"] === $result['country'][$i]['country_id']) {
+                    $result['country'][$i]['country_id'] = $country["name"];
+                }
             }
         }
 

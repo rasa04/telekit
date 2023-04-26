@@ -24,6 +24,11 @@ class Make extends CommandAbstract
             $new_file = $responsesPath . "Triggers\\" . $options["trigger"] . ".php";
             $this->response(["file" => $new_file], copy($file, $new_file));
         }
+        elseif (isset($options["model"])) {
+            $file = $samplesPath . "Model.php";
+            $new_file = $databasePath . "models\\" . $options["model"] . ".php";
+            $this->response(["file" => $new_file], copy($file, $new_file));
+        }
         elseif (isset($options["migration"])) {
             $file = $samplesPath . "Migration.php";
             $new_file = $databasePath . "migrations\\"

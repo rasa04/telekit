@@ -1,14 +1,16 @@
 <?php
 require_once('./vendor/autoload.php');
 use Core\App;
+use Core\Database\Database;
 use Dotenv\Dotenv;
 
 use Triggers\{Start, Help, NamesPrevalence, ChooseBetween, OpenAi, Settings};
-use Plots\{SetBirthday, SetEvent, Functions, Support, Events};
+use Plots\{About, Support, Settings as SettingsPlot};
 use Triggers\Admin\GetApi;
 use Interactions\Dices;
 
 Dotenv::createUnsafeImmutable(__DIR__)->load();
+new Database;
 
 App::triggers([
         "^(openai|Openai|gpt|Gpt|ии|рик|Рик)(\s|,\s)" => OpenAi::class,
@@ -23,11 +25,9 @@ App::triggers([
         "\s(or|или)\s" => ChooseBetween::class,
     ])
     ->callbacks([
-        "Назначить день рождение" => SetBirthday::class,
-        "Назначить особый день" => SetEvent::class,
-        "Функции" => Functions::class,
-        "Поддержка" => Support::class,
-        "События" => Events::class,
+        "about" => About::class,
+        "support" => Support::class,
+        "settings" => SettingsPlot::class,
     ])
     ->inlineQueries([
         "^(d|к)\d" => Dices::class,
