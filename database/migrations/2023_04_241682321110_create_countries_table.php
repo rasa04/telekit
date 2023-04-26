@@ -1,23 +1,24 @@
 <?php
 
-use Core\Database\Blueprint;
-use Core\Database\Migration;
-use Core\Database\Schema;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Capsule\Manager as Capsule;
 
 return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('countries', function (Blueprint $table) {
+        Capsule::schema()->create('countries', function (Blueprint $table) {
             $table->id();
             $table->string("code");
             $table->string("name");
+            $table->timestamps();
         });
     }
 
     public function down(): void
     {
-        Schema::dropIfExist('countries');
+        Capsule::schema()->dropIfExists('countries');
     }
 };
 

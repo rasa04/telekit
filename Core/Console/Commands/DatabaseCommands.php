@@ -5,34 +5,31 @@ namespace Core\Console\Commands;
 use Core\Database\Database;
 use Core\Env;
 use Core\Validator\ErrorHandler;
-use Doctrine\DBAL\Exception;
+use Illuminate\Database\Capsule\Manager as Capsule;
+use PDO;
 
 class DatabaseCommands
 {
     use Env;
 
-    /**
-     * @throws Exception
-     */
     public function __construct($options, $argv)
     {
-        $conn = (new Database)->connection;
-
+        new Database;
         if (!isset($argv[2])) {
-            var_dump($conn->getDatabase());
+            var_dump(Capsule::connection()->getDatabaseName());
         }
-        elseif ($argv[2] == '--connect') {
-            var_dump($conn->connect());
+        elseif ($argv[2] === '--params') {
+            var_dump(Capsule::connection()->getConfig());
         }
-        elseif ($argv[2] === '--parameters') {
-            var_dump($conn->getParams());
+        elseif ($argv[2] === '--driver') {
+            var_dump(Capsule::connection()->getDriverName());
         }
         elseif ($argv[2] === '--version') {
-            echo 'SQLite version: ' . $conn->fetchOne('SELECT sqlite_version()');
+            var_dump(Capsule::connection()->getPdo()->getAttribute(PDO::ATTR_SERVER_VERSION));
         }
         elseif (isset($options['table'])) {
             $table = $options['table'];
-            $columns = $conn->createSchemaManager()->listTableColumns($table);
+            $columns = Capsule::connection()->getDoctrineSchemaManager()->listTableColumns($table);
             echo "Name | Length | NotNull | Unsigned | \n-----------------------------------\n";
             foreach ($columns as $column) {
                 echo ($column->getName() ?? "---") . ' | '
@@ -47,22 +44,21 @@ class DatabaseCommands
             if (isset($options['column'])) {
                 $columns = array_map(
                     fn ($column) => $column->getName(),
-                    $conn->createSchemaManager()->listTableColumns('users')
+                    Capsule::connection()->getDoctrineSchemaManager()->listTableColumns($table)
                 );
                 if (!in_array($options['column'], $columns)) exit("NO SUCH A COLUMN");
-                $result = array_map(
-                    fn ($row) => $row[$options['column']],
-                    $conn->createQueryBuilder()->select($options['column'])->from($table)->fetchAllAssociative()
-                );
+
+               $result = Capsule::table($table)->pluck($options['column']);
             }else {
-                $result = $conn->createQueryBuilder()->select('*')->from($table)->fetchAllAssociative();
+                $result = Capsule::table($table)->get()->values();
             }
             var_dump($result);
         }
         elseif ($argv[2] === '--tables') {
-            $tables = $conn->createSchemaManager()->listTables();
+            $tables = Capsule::connection()->getDoctrineSchemaManager()->listTableNames();
+            if (empty($tables)) echo "NO TABLES YET";
             foreach ($tables as $table) {
-                echo $table->getName() . "\n";
+                echo $table . "\n";
             }
         }
         elseif ($argv[2] === '--migrate') {
@@ -70,19 +66,11 @@ class DatabaseCommands
             $folders = scandir($migrations_folder);
             $migrations = array_filter($folders, fn($files) => preg_match("#^\d#", $files));
 
-            if (!isset($argv[3])) {
-                foreach ($migrations as $migration)
-                {
-                    $migration = require $migrations_folder . $migration;
-                    $migration->up();
-                }
-            }
-            elseif ($argv[3] === '--fresh') {
-                foreach ($migrations as $migration)
-                {
-                    $migration = require $migrations_folder . $migration;
-                    $migration->down();
-                }
+            foreach ($migrations as $migration)
+            {
+                $migration = require $migrations_folder . $migration;
+                if (!isset($argv[3])) $migration->up();
+                elseif ($argv[3] === '--fresh') $migration->down();
             }
         }
         else {

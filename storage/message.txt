@@ -250,3 +250,313 @@
 
 )
 
+2023-04-26 17:10:41 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 11018
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -805540894
+                    [title] => че
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1682529041
+            [text] => 10.
+        )
+
+)
+
+2023-04-26 17:11:17 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 11019
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1682529077
+            [text] => 10
+        )
+
+)
+
+2023-04-26 17:17:50 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 11020
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -805540894
+                    [title] => че
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1682529470
+            [text] => 10
+        )
+
+)
+
+2023-04-26 17:18:23 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 11021
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -805540894
+                    [title] => че
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1682529503
+            [text] => 10
+        )
+
+)
+
+2023-04-26 17:18:46 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 11022
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -805540894
+                    [title] => че
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1682529526
+            [text] => твоё утверждение
+
+К сожалению, вы не указали, какое именно утверждение мне нужно обосновать. Если вы уточните свой вопрос, я с удовольствием дам аргументы и факты, подтверждающие свою позицию.
+        )
+
+)
+
+2023-04-26 17:35:09 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 11023
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -805540894
+                    [title] => че
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1682530509
+            [text] => 10.
+        )
+
+)
+
+2023-04-26 17:43:29 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 11024
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1682531010
+            [text] => Сумма 5 и 5 равна 10.
+        )
+
+)
+
+2023-04-26 17:43:46 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 11025
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1682531027
+            [text] => Какой именно Рик вам нужно обосновать? Это может быть имя человека, игровой персонаж, герой кинофильма, аниме или другой персонаж. Пожалуйста, уточните свой вопрос для более точного ответа.
+        )
+
+)
+
+2023-04-26 17:46:49 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 11034
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1682531210
+            [text] => Ответ: 10.
+        )
+
+)
+
+2023-04-26 17:47:12 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 11036
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1682531232
+            [text] => Чтобы обосновать ответ на вопрос, необходимы соответствующие данные или факты. Если вы уточните, к какому вопросу нужно дать ответ, я с удовольствием предоставлю аргументы и доказательства в поддержку своей позиции.
+        )
+
+)
+
+2023-04-26 17:49:49 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 11049
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -805540894
+                    [title] => че
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1682531389
+            [text] => 10.
+        )
+
+)
+

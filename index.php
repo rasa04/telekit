@@ -1,6 +1,7 @@
 <?php
 require_once('./vendor/autoload.php');
 use Core\App;
+use Core\Database\Database;
 use Dotenv\Dotenv;
 
 use Triggers\{Start, Help, NamesPrevalence, ChooseBetween, OpenAi, Settings};
@@ -9,6 +10,7 @@ use Triggers\Admin\GetApi;
 use Interactions\Dices;
 
 Dotenv::createUnsafeImmutable(__DIR__)->load();
+new Database;
 
 App::triggers([
         "^(openai|Openai|gpt|Gpt|ии|рик|Рик)(\s|,\s)" => OpenAi::class,
