@@ -1,5 +1,5 @@
 <?php
-namespace Triggers\Admin;
+namespace Responses\Triggers\Admin;
 use Core\Responses\Trigger;
 
 class GetApi extends Trigger {

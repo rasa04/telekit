@@ -1,5 +1,5 @@
 <?php
-namespace Core\Console\Samples;
+namespace Responses\Triggers;
 
 use Core\Responses\Trigger;
 

@@ -1,21 +1,26 @@
 <?php
-namespace Core\Console\Samples;
+namespace Responses\Interactions;
 
-use Core\Console\Samples\Interaction;
+use Core\Responses\Interaction;
 
-class Sample extends Interaction {
+class DefaultAct extends Interaction {
+
+    public string $request_query;
+
     public function __construct($request)
     {
-        $result = [
-            [
-                "type" => "article",
-                "id" => "0",
-                "title" => "сообщение",
-                "description" => "Удачной игры!",
-                "input_message_content" => [
-                    "message_text" => "message text",
-                    "parse_mode" => "HTML"
-                ]
+        $this->request_query = $request['inline_query']['query'];
+
+        if (!empty($this->request_query)) die();
+
+        $result[] = [
+            "type" => "article",
+            "id" => 0,
+            "title" => "title",
+            "description" => "Description",
+            "input_message_content" => [
+                "message_text" => "Text message",
+                "parse_mode" => "HTML"
             ]
         ];
 

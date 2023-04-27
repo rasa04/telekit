@@ -1,5 +1,5 @@
 <?php
-namespace Interactions;
+namespace Responses\Interactions;
 
 use Core\Responses\Interaction;
 use Exception;

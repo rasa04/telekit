@@ -91,7 +91,7 @@ function openai(): void
             'text' => 'сколько будет 5+5?'
         ]
     ];
-    new \Triggers\OpenAi($request);
+    new Responses\Triggers\OpenAi($request);
 }
 
 function test_triggers(): void
@@ -127,8 +127,8 @@ function test_plots(): void
         ]
     ];
 
-//    new \Plots\About($request);
-    new \Plots\Settings($request);
+//    new Responses\Plots\About($request);
+    new Responses\Plots\Settings($request);
 }
 
 //SEEDERS
@@ -139,6 +139,6 @@ function test_plots(): void
 //list_countries();
 //list_context();
 //update_context();
-//openai();
+openai();
 //test_triggers();
-test_plots();
+//test_plots();

@@ -1,7 +1,8 @@
 <?php
-namespace Triggers;
+namespace Responses\Triggers;
 
 use Core\Responses\Trigger;
+use Triggers\Start;
 
 class Help extends Trigger {
 
