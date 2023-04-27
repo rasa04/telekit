@@ -1,15 +1,18 @@
-# TELEKIT FRAMEWORK
+# Telekit framework
 [![Latest Stable Version](http://poser.pugx.org/rasa/telekit/v)](https://packagist.org/packages/rasa/telekit) 
 [![Total Downloads](http://poser.pugx.org/rasa/telekit/downloads)](https://packagist.org/packages/rasa/telekit) 
 [![Latest Unstable Version](http://poser.pugx.org/rasa/telekit/v/unstable)](https://packagist.org/packages/rasa/telekit) 
 [![License](http://poser.pugx.org/rasa/telekit/license)](https://packagist.org/packages/rasa/telekit) 
 [![PHP Version Require](http://poser.pugx.org/rasa/telekit/require/php)](https://packagist.org/packages/rasa/telekit)
 
-# GET STARTED
- * :bulb: **Find contacts on [my website](https://matesite.uz)**
- * **Receive updates in the browser** https://api.telegram.org/bot{TOKEN}/getUpdates
- * **Set up a webhook** https://api.telegram.org/bot{TOKEN}/setwebhook?url=https://test.com/example_bot/index.php
- * **Delete a webhook** https://api.telegram.org/bot{TOKEN}/deleteWebhook
+# About Telekit
+Telekit is a powerful toolkit for building Telegram bots with ease, using Laravel Eloquent ORM. With Telekit, developers can quickly build and deploy bots, saving time and effort.
+
+One of the standout features of Telekit is its support for Laravel Eloquent ORM, which allows developers to easily interact with the database and perform complex operations with just a few lines of code. This makes it simple to manage data within your Telegram bot and keep your code organized and maintainable.
+
+Telekit also provides a range of tools and utilities for working with the Telegram API, making it easy to handle incoming messages, send messages to users, and perform other common bot tasks. Developers can take advantage of Telekit's intuitive API to quickly build and test new bot features, without having to worry about the underlying details of the Telegram protocol.
+
+
 
 # Requirements
 * PHP version 8.0
@@ -25,6 +28,11 @@ composer require rasa/telekit
 This will download and install the Telekit library and all its dependencies into your project's vendor directory.
 
 Once the installation is complete, you can start using Telekit by including its autoload file in your code
+
+ * :bulb: **Contacts [my website](https://matesite.uz)**
+ * **Receive updates in the browser** https://api.telegram.org/bot{TOKEN}/getUpdates
+ * **Set up a webhook** https://api.telegram.org/bot{TOKEN}/setwebhook?url=https://test.com/example_bot/index.php
+ * **Delete a webhook** https://api.telegram.org/bot{TOKEN}/deleteWebhook
 
 # <h1 style="cyan:purple;">"do" commands</h1>
 ## With the command _"php do"_, you can interact with the bot. Here are some examples:
@@ -48,6 +56,10 @@ php do --make --trigger=myTrigger
 ### Creating template Migration files
 ```
 php do --make --migration=table 
+```
+### Creating template Model files
+```
+php do --make --model=User 
 ```
 
 ## "database" command
@@ -169,9 +181,9 @@ $this->mediaGroup()
 ```
 namespace Interactions;
 
-use Core\Methods\AnswerInlineQuery;
+use Core\Responses\Interaction;
 
-class Example {
+class Example extends Interaction {
     public function __construct($request)
     {
         $result = [
@@ -181,7 +193,7 @@ class Example {
                 "title" => "Do",
                 "description" => "something",
                 "input_message_content" => [
-                    "message_text" => "результат: <b> OK </b>",
+                    "message_text" => "result: <b> OK </b>",
                     "parse_mode" => "HTML"
                 ]
             ],
@@ -191,16 +203,18 @@ class Example {
                 "title" => "Do 2",
                 "description" => "something 2",
                 "input_message_content" => [
-                    "message_text" => "результат: <b> OK 2 </b>",
+                    "message_text" => "result: <b> OK 2 </b>",
                     "parse_mode" => "HTML"
                 ]
             ]
         ];
 
-        $response = new AnswerInlineQuery;
-        $response->inline_query_id($request['inline_query']['id'])
+        $this->answerInlineQuery()
+            ->inline_query_id($request['inline_query']['id'])
             ->results($result)
-            ->send();
+            ->cache_time(1)
+            ->is_personal(true)
+            ->send(false, false);
     }
 }
 ```

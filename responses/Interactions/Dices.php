@@ -91,7 +91,8 @@ class Dices extends Interaction {
             ]
         ];
 
-        $this->response()->inline_query_id($request['inline_query']['id'])
+        $this->answerInlineQuery()
+            ->inline_query_id($request['inline_query']['id'])
             ->results($result)
             ->cache_time(1)
             ->is_personal(true)
