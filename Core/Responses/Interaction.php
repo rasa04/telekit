@@ -11,7 +11,7 @@ class Interaction
     use Controllers;
     use Env;
 
-    public function response(): AnswerInlineQuery
+    public function answerInlineQuery(): AnswerInlineQuery
     {
         return new AnswerInlineQuery;
     }

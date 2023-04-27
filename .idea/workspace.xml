@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c38c8e77-207b-443c-bb14-c6deba798537" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/FUNDING.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/FUNDING.yml" afterDir="false" />
-    </list>
+    <list default="true" id="c38c8e77-207b-443c-bb14-c6deba798537" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,6 +87,7 @@
       <workItem from="1682527800513" duration="9188000" />
       <workItem from="1682570668199" duration="169000" />
       <workItem from="1682572609579" duration="2739000" />
+      <workItem from="1682590129065" duration="1230000" />
     </task>
     <servers />
   </component>
