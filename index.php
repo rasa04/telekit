@@ -4,10 +4,10 @@ use Core\App;
 use Core\Database\Database;
 use Dotenv\Dotenv;
 
-use Triggers\{Start, Help, NamesPrevalence, ChooseBetween, OpenAi, Settings};
-use Plots\{About, Support, Settings as SettingsPlot};
-use Triggers\Admin\GetApi;
-use Interactions\Dices;
+use Responses\Triggers\{Start, Help, NamesPrevalence, ChooseBetween, OpenAi, Settings};
+use Responses\Triggers\Admin\GetApi;
+use Responses\Plots\{About, Support, Settings as SettingsPlot};
+use Responses\Interactions\Dices;
 
 Dotenv::createUnsafeImmutable(__DIR__)->load();
 new Database;

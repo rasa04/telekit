@@ -26,10 +26,7 @@
         "psr-4": {
             "Core\\": "Core/",
             "Database\\": "database/",
-            "Triggers\\": "responses/Triggers/",
-            "Plots\\": "responses/Plots/",
-            "Interactions\\": "responses/Interactions/",
-            "Games\\": "responses/Games/"
+            "Responses\\": "responses/"
         }
     }
 }

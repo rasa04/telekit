@@ -1,0 +1,84 @@
+2023-04-26 19:38:56 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 11091
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -805540894
+                    [title] => че
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1682537936
+            [text] => 10
+        )
+
+)
+
+2023-04-27 06:16:46 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 11125
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -805540894
+                    [title] => че
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1682576206
+            [text] => 10
+        )
+
+)
+
+2023-04-27 06:16:55 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 11126
+            [from] => Array
+                (
+                    [id] => 5854804644
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => rickbot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -805540894
+                    [title] => че
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1682576216
+            [text] => 10
+        )
+
+)
+

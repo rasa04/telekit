@@ -55,9 +55,9 @@ php do --make --migration=table
 ```
 php do --database
 ```
-### Check database connection
+### Parameters
 ```
-php do --database --connection
+php do --database --params
 ```
 ### Check database version
 ```

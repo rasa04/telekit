@@ -1,5 +1,5 @@
 <?php
-namespace Plots;
+namespace Responses\Plots;
 
 use Core\Responses\Plot;
 

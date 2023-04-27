@@ -1,5 +1,5 @@
 <?php
-namespace Triggers;
+namespace Responses\Triggers;
 
 use Core\Responses\Trigger;
 use Database\models\Group;

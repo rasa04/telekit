@@ -5,8 +5,8 @@ use ArrayIterator;
 use Core\Storage\Storage;
 use Core\Validator\ErrorHandler;
 use Exception;
-use Interactions\DefaultAct as InteractionDefault;
-use Triggers\DefaultAct as TriggerDefault;
+use Responses\Interactions\DefaultAct as InteractionDefault;
+use Responses\Triggers\DefaultAct as TriggerDefault;
 
 class App
 {
