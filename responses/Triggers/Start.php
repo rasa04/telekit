@@ -14,7 +14,7 @@ class Start extends Trigger {
         ."Команды <code>name</code> и <code>имя</code> предназначены для просмотра распространенности имени в разных странах\n\n"
         ."<b>Если добавляете в чат предоставьте админку что бы с ботом было удобнее работать</b>\n\n";
 
-        $this->message()
+        $this->sendMessage()
             ->chat_id($request['message']['chat']['id'])
             ->text($text)
             ->parse_mode()

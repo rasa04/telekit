@@ -3,7 +3,7 @@ namespace Responses\Interactions;
 
 use Core\Responses\Interaction;
 
-class DefaultAct extends Interaction {
+class Sample extends Interaction {
 
     public string $request_query;
 

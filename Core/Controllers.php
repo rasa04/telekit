@@ -1,16 +1,13 @@
 <?php
 namespace Core;
 
-use Core\Database\Database;
 use Core\Methods\SendMessage;
 use Core\Storage\Storage;
-use Doctrine\DBAL\Exception;
+use Database\models\Group;
+use Database\models\User;
 use GuzzleHttp\Client;
 use JetBrains\PhpStorm\NoReturn;
 
-/**
- * Тут находятся основные методы для разработки
- */
 trait Controllers
 {
     use Env;
@@ -70,6 +67,19 @@ trait Controllers
         return new Client();
     }
 
+    public function authorized(): bool
+    {
+        $group = Group::where('group_id', $GLOBALS['request']['message']['chat']['id'])->first('role');
+        $user = User::where('user_id', $GLOBALS['request']['message']['chat']['id'])->first('role');
+        if ($group) {
+            return $group->toArray()['role'] == 'pro';
+        } else if ($user) {
+            return $user->toArray()['role'] == 'pro';
+        } else {
+            return false;
+        }
+    }
+
     public function chat_gpt($messages): string
     {
         $response = $this->client()->post('https://api.openai.com/v1/chat/completions', [
@@ -89,12 +99,12 @@ trait Controllers
         return (strlen($result) < 4000) ? $result : substr($result, 0, 4000) . "...";
     }
 
-    #[NoReturn] public function dd(array $request,string $data, bool $disable_notification = true, bool $allow_sending_without_reply = true) : void
+    #[NoReturn] public function dd(string $data, bool $disable_notification = true, bool $allow_sending_without_reply = true) : void
     {
-        (new SendMessage)->chat_id($request['message']['chat']['id']
-                ?? $request['callback_query']['message']['chat']['id']
-                ?? $request['callback_query']['from']['id']
-                ?? $request['inline_query']['from']['id']
+        (new SendMessage)->chat_id($GLOBALS['request']['message']['chat']['id']
+                ?? $GLOBALS['request']['callback_query']['message']['chat']['id']
+                ?? $GLOBALS['request']['callback_query']['from']['id']
+                ?? $GLOBALS['request']['inline_query']['from']['id']
                 ?? null)
             ->text($data)
             ->disable_notification($disable_notification)
