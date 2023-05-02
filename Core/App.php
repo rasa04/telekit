@@ -66,30 +66,29 @@ class App
 
     private function setRequest(): void
     {
+        if (isset($GLOBALS['request'])) return;
+
         $request = json_decode(file_get_contents('php://input'), true);
         if (empty($request)) new ErrorHandler('Nothing requested');
         $GLOBALS['request'] = $request;
     }
     
     private function matchingResponse() : void {
-        if (isset($GLOBALS['request']['message'])) $this->matchTriggers();
+        if (isset($GLOBALS['request']['message']['text'])) $this->matchTriggers();
         elseif (isset($GLOBALS['request']['callback_query']['data'])) $this->matchCallbackQueries();
         elseif (isset($GLOBALS['request']['inline_query']['query'])) $this->matchInlineQueries();
         elseif (isset($GLOBALS['request']['game_short_name'])) $this->matchGames();
-        elseif (isset($GLOBALS['request']['voice'])) $this->matchVoices();
+        elseif (isset($GLOBALS['request']['message']['voice'])) $this->matchVoices();
 
-        if     (isset($GLOBALS['request']['message']))       new TriggerDefault($GLOBALS['request']);
+        if     (isset($GLOBALS['request']['message']['text']))       new TriggerDefault($GLOBALS['request']);
         elseif (isset($GLOBALS['request']['inline_query']['query'])) new InteractionDefault($GLOBALS['request']);
     }
 
     private function matchTriggers(): void
     {
-        if (isset($GLOBALS['request']['message']['text'])) return;
-
         foreach(static::$triggers as $key => $val) {
             if (!preg_match("#$key#", strtolower($GLOBALS['request']['message']['text']))) return;
             new $val($GLOBALS['request']);
-            exit();
         }
     }
 
@@ -98,7 +97,6 @@ class App
         foreach(static::$inlineQueries as $key => $val) {
             if (!preg_match("#$key#", strtolower($GLOBALS['request']['inline_query']['query']))) return;
             new $val($GLOBALS['request']);
-            exit();
         }
     }
 
@@ -107,7 +105,6 @@ class App
         foreach(static::$callbackData as $key => $val) {
             if (!preg_match("#$key#", strtolower($GLOBALS['request']['callback_query']['data']))) return;
             new $val($GLOBALS['request']);
-            exit();
         }
     }
 
@@ -122,7 +119,6 @@ class App
         if (!isset($GLOBALS['request']['message']['voice'])) return;
         foreach(static::$voices as $voiceHandler) {
             new $voiceHandler($GLOBALS['request']);
-            exit();
         }
     }
 }

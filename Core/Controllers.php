@@ -69,10 +69,10 @@ trait Controllers
 
     public function authorized(): bool
     {
-        $group = Group::where('group_id', $GLOBALS['request']['message']['chat']['id'])->first('role');
+        $group = Group::where('group_id', $GLOBALS['request']['message']['chat']['id'])->first('rights');
         $user = User::where('user_id', $GLOBALS['request']['message']['chat']['id'])->first('role');
         if ($group) {
-            return $group->toArray()['role'] == 'pro';
+            return $group->toArray()['rights'] == 'pro';
         } else if ($user) {
             return $user->toArray()['role'] == 'pro';
         } else {

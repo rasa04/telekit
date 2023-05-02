@@ -2,7 +2,7 @@
 namespace Core;
 
 trait Env {
-    public function token(): array|false|string
+    public static function token(): array|false|string
     {
         return getenv("TELEGRAM_TOKEN");
     }

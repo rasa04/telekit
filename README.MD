@@ -36,7 +36,16 @@ Once the installation is complete, you can start using Telekit by including its 
 
 # <h1 style="cyan:purple;">"do" commands</h1>
 ## With the command _"php do"_, you can interact with the bot. Here are some examples:
-
+## Polling
+### Process requests on your local computer without using hooks using the polling method
+```
+php do serve
+```
+## getUpdates
+### See updates via the convenient output page
+```
+php do getUpdates
+```
 ## Sending messages
 ```
 php do --send (sends default message to default user from .env file)
