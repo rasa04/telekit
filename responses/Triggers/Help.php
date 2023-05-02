@@ -2,7 +2,7 @@
 namespace Responses\Triggers;
 
 use Core\Responses\Trigger;
-use Triggers\Start;
+use Responses\Triggers\Start;
 
 class Help extends Trigger {
 

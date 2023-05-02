@@ -34,6 +34,6 @@ class NamesPrevalence extends Trigger {
             $view .= "страна: <b>${val["country_id"]}</b> | вероятность: <b>" . $val["probability"]*100 . "</b>%\n";
         }
 
-        $this->message()->chat_id($request['message']['chat']['id'])->text($view)->parse_mode()->send();
+        $this->sendMessage()->chat_id($request['message']['chat']['id'])->text($view)->parse_mode()->send();
     }
 }

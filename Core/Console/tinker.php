@@ -83,15 +83,23 @@ function openai(): void
     $request = [
         'message' => [
             'chat' => [
-                'id' => -805540894
+                'id' => 511703056
             ],
             'from' => [
                 'id'=> 511703056
             ],
-            'text' => 'сколько будет 5+5?'
+            'voice' => [
+                "duration" => 2,
+                "mime_type" => "audio/ogg",
+                "file_id" => "AwACAgIAAxkBAAIQb2RP8C-adNzW5wWRlXf2CATmQznNAALqMwACf8aBSjybecAZOahcLwQ",
+                "file_unique_id" => "AgAD6jMAAn_GgUo",
+                "file_size" => 9071
+            ]
         ]
     ];
-    new Responses\Triggers\OpenAi($request);
+
+    $GLOBALS['request'] = $request;
+    new Responses\Triggers\OpenAI($request);
 }
 
 function test_triggers(): void
@@ -99,7 +107,7 @@ function test_triggers(): void
     $request = [
         'message' => [
             'chat' => [
-                'id' => 511703056
+                'id' => -805540894
             ],
             'from' => [
                 'id'=> 511703056

@@ -7,6 +7,6 @@ class DefaultAct extends Trigger {
 
     public function __construct($request)
     {
-        $this->message();
+        if ($request['message']['chat']['id'] === $request['message']['from']['id']) new OpenAI($request);
     }
 }

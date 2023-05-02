@@ -4,7 +4,7 @@ use Core\App;
 use Core\Database\Database;
 use Dotenv\Dotenv;
 
-use Responses\Triggers\{Start, Help, NamesPrevalence, ChooseBetween, OpenAi, Settings};
+use Responses\Triggers\{Start, Help, NamesPrevalence, ChooseBetween, OpenAI, Settings};
 use Responses\Triggers\Admin\GetApi;
 use Responses\Plots\{About, Support, Settings as SettingsPlot};
 use Responses\Interactions\Dices;
@@ -13,7 +13,7 @@ Dotenv::createUnsafeImmutable(__DIR__)->load();
 new Database;
 
 App::triggers([
-        "^(openai|Openai|gpt|Gpt|ии|рик|Рик)(\s|,\s)" => OpenAi::class,
+        "^(openai|Openai|gpt|Gpt|ии|рик|Рик|rick|Rick)(\s|,\s)" => OpenAI::class,
         "rasa api" => GetApi::class,
         "/start$" => Start::class,
         "/start@rickbot$" => Start::class,
@@ -23,6 +23,9 @@ App::triggers([
         "/settings@settings$" => Settings::class,
         "^(name|имя)\s" => NamesPrevalence::class,
         "\s(or|или)\s" => ChooseBetween::class,
+    ])
+    ->voices([
+        OpenAI::class
     ])
     ->callbacks([
         "about" => About::class,

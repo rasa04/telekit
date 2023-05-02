@@ -1,10 +1,8 @@
 <?php
 namespace Core;
 
-use ArrayIterator;
 use Core\Storage\Storage;
 use Core\Validator\ErrorHandler;
-use Exception;
 use Responses\Interactions\DefaultAct as InteractionDefault;
 use Responses\Triggers\DefaultAct as TriggerDefault;
 
@@ -13,54 +11,33 @@ class App
     use Controllers;
     use Env;
 
-    /**
-     * Messages
-     */
     private static array $triggers;
-
-    /**
-     * Inline keyboards
-     */
     private static array $callbackData;
-
-    /**
-     * Inline queries
-     */
     private static array $inlineQueries;
-
-    /**
-     * Games
-     */
     private static array $games;
+    private static array $voices;
 
-    public function __construct()
-    {
-
-    }
-
-    /**
-     * @throws Exception
-     */
     public function handle(bool $writeLogFile = true, bool $saveDataToJson = true) : void
     {
         date_default_timezone_set($this->time_zone());
-        static::setIni();
+        ini_set('error_reporting', E_ALL);
+        ini_set('allow_url_fopen', 1);
+        ini_set('display_errors', 1);
+        ini_set('display_startup_errors', 1);
 
-        try {
-            $request = $this->getRequest($writeLogFile, $saveDataToJson);
-            $this->detectRequest($request);
-        } catch (Exception $e) {
-            new ErrorHandler($e);
-        }
+        $this->setRequest();
+        if ($writeLogFile) $this->writeLogFile($GLOBALS['request']);
+        if ($saveDataToJson) Storage::save($GLOBALS['request']);
+        $this->matchingResponse();
     }
 
-    public static function triggers(array $triggers) : App
+    public static function triggers(array $triggers): App
     {
         static::$triggers = $triggers;
         return new static;
     }
 
-    public function callbacks(array $callbackData) : App {
+    public static function callbacks(array $callbackData): App {
         static::$callbackData = $callbackData;
         return new static;
     }
@@ -72,59 +49,76 @@ class App
      * @param $inlineQueries : array
      * @return App : object context
      */
-    public function inlineQueries(array $inlineQueries) : App {
+    public static function inlineQueries(array $inlineQueries): App {
         static::$inlineQueries = $inlineQueries;
         return new static;
     }
 
-    public function games(array $games) : object {
+    public static function games(array $games): App {
         static::$games = $games;
         return new static;
     }
 
-    public static function setIni() : void
-    {
-        ini_set('error_reporting', E_ALL);
-        ini_set('allow_url_fopen', 1);
-        ini_set('display_errors', 1);
-        ini_set('display_startup_errors', 1);
+    public static function voices(array $voices): App {
+        static::$voices = $voices;
+        return new static;
     }
 
-    /**
-     * @throws Exception
-     */
-    public function getRequest(bool $writeLogFile = true, bool $saveDataToJson = true) : array | null
+    private function setRequest(): void
     {
+        if (isset($GLOBALS['request'])) return;
+
         $request = json_decode(file_get_contents('php://input'), true);
         if (empty($request)) new ErrorHandler('Nothing requested');
-        if ($writeLogFile) $this->writeLogFile($request);
-        if ($saveDataToJson) Storage::save($request);
-        return $request;
+        $GLOBALS['request'] = $request;
     }
     
-    public function detectRequest(array $request) : void {
-        // DETECT REQUEST TYPE
-        $data_value = $request['message']['text']
-                    ?? $request['callback_query']['data']
-                    ?? $request['inline_query']['query']
-                    ?? $request['game_short_name']
-                    ?? null;
+    private function matchingResponse() : void {
+        if (isset($GLOBALS['request']['message']['text'])) $this->matchTriggers();
+        elseif (isset($GLOBALS['request']['callback_query']['data'])) $this->matchCallbackQueries();
+        elseif (isset($GLOBALS['request']['inline_query']['query'])) $this->matchInlineQueries();
+        elseif (isset($GLOBALS['request']['game_short_name'])) $this->matchGames();
+        elseif (isset($GLOBALS['request']['message']['voice'])) $this->matchVoices();
 
-        // CREATE ITERATOR FOR ALL REGISTERED RESPONSES
-        if     (isset($request['message']['text']))        $iterator = new ArrayIterator(static::$triggers);
-        elseif (isset($request['callback_query']['data'])) $iterator = new ArrayIterator(static::$callbackData);
-        elseif (isset($request['inline_query']['query']))  $iterator = new ArrayIterator(static::$inlineQueries);
-        elseif (isset($request['game_short_name']))        $iterator = new ArrayIterator(static::$games);
+        if     (isset($GLOBALS['request']['message']['text']))       new TriggerDefault($GLOBALS['request']);
+        elseif (isset($GLOBALS['request']['inline_query']['query'])) new InteractionDefault($GLOBALS['request']);
+    }
 
-        // EXECUTE MATCHED RESPONSE
-        if (isset($iterator)) {
-            foreach($iterator as $key => $val)
-                // HANDLE A REQUEST WHICH STARTS WITH $KEY
-                if(preg_match("#$key#", strtolower($data_value))) {new $val($request); exit();}
+    private function matchTriggers(): void
+    {
+        foreach(static::$triggers as $key => $val) {
+            if (!preg_match("#$key#", strtolower($GLOBALS['request']['message']['text']))) return;
+            new $val($GLOBALS['request']);
         }
-        
-        // DEFAULT HANDLERS
-        if (isset($request['message']['text'])) new TriggerDefault($request);
-        elseif (isset($request['inline_query']['query'])) new InteractionDefault($request);
+    }
+
+    private function matchInlineQueries(): void
+    {
+        foreach(static::$inlineQueries as $key => $val) {
+            if (!preg_match("#$key#", strtolower($GLOBALS['request']['inline_query']['query']))) return;
+            new $val($GLOBALS['request']);
+        }
+    }
+
+    private function matchCallbackQueries(): void
+    {
+        foreach(static::$callbackData as $key => $val) {
+            if (!preg_match("#$key#", strtolower($GLOBALS['request']['callback_query']['data']))) return;
+            new $val($GLOBALS['request']);
+        }
+    }
+
+    private function matchGames(): void
+    {
+        $iterator = new \ArrayIterator(static::$games);
+        $data_value = $GLOBALS['request']['game_short_name'];
+    }
+
+    private function matchVoices(): void
+    {
+        if (!isset($GLOBALS['request']['message']['voice'])) return;
+        foreach(static::$voices as $voiceHandler) {
+            new $voiceHandler($GLOBALS['request']);
+        }
     }
 }

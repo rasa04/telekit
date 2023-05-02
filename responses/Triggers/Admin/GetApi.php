@@ -15,10 +15,6 @@ class GetApi extends Trigger {
             'verify' => false
         ])->getBody()->getContents();
 
-        $this->message()
-            ->chat_id($request['message']['chat']['id'])
-            ->text($result)
-            ->parse_mode()
-            ->send();
+        $this->reply_message("<code>$result</code>");
     }
 }

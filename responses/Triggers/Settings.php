@@ -6,7 +6,7 @@ use Core\Responses\Trigger;
 class Settings extends Trigger {
     public function __construct($request)
     {
-        $this->message()
+        $this->sendMessage()
             ->chat_id($request['message']['chat']['id'])
             ->parse_mode()
             ->text('Settings')

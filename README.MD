@@ -29,14 +29,23 @@ This will download and install the Telekit library and all its dependencies into
 
 Once the installation is complete, you can start using Telekit by including its autoload file in your code
 
- * :bulb: **Contacts [my website](https://matesite.uz)**
+ * **[my website](https://matesite.uz)**
  * **Receive updates in the browser** https://api.telegram.org/bot{TOKEN}/getUpdates
  * **Set up a webhook** https://api.telegram.org/bot{TOKEN}/setwebhook?url=https://test.com/example_bot/index.php
  * **Delete a webhook** https://api.telegram.org/bot{TOKEN}/deleteWebhook
 
 # <h1 style="cyan:purple;">"do" commands</h1>
 ## With the command _"php do"_, you can interact with the bot. Here are some examples:
-
+## Polling
+### Process requests on your local computer without using hooks using the polling method
+```
+php do serve
+```
+## getUpdates
+### See updates via the convenient output page
+```
+php do getUpdates
+```
 ## Sending messages
 ```
 php do --send (sends default message to default user from .env file)
@@ -101,6 +110,15 @@ php do --database --migrate --fresh
 ```
 
 # <h1 style="color:cyan;">Send responses</h1>
+## reply message
+```
+class Hi extends Trigger {
+    public function __construct($request)
+    {
+        $this->reply_message('Hi');
+    }
+}
+```
 ## Send message
 ```
 <?php
@@ -109,7 +127,7 @@ namespace Triggers;
 class Help extends Trigger {
     public function __construct($request)
     {
-        $this->message()
+        $this->sendMessage()
             ->chat_id($request['message']['chat']['id'])
             ->text('Помощь')
             ->send();
@@ -119,7 +137,7 @@ class Help extends Trigger {
 
 ### Send message with buttons
 ```
-$this->message()
+$this->sendMessage()
     ->chat_id($request['message']['chat']['id'])
     ->text('Choose the option')
     ->parse_mode()

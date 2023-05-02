@@ -14,7 +14,11 @@ class Trigger
     use Controllers;
     use Env;
 
-    public function message(): SendMessage
+    public function request(): array
+    {
+        return $GLOBALS['request'];
+    }
+    public function sendMessage(): SendMessage
     {
         return new SendMessage;
     }
@@ -29,5 +33,16 @@ class Trigger
     public function mediaGroup(): SendMediaGroup
     {
         return new SendMediaGroup;
+    }
+    public function reply_message(string $message): void
+    {
+        (new SendMessage)
+            ->chat_id($GLOBALS['request']['message']['chat']['id'])
+            ->text($message)
+            ->send();
+    }
+    public function request_message(): array
+    {
+        return $GLOBALS['request']['message'];
     }
 }

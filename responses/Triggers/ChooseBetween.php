@@ -11,9 +11,6 @@ class ChooseBetween extends Trigger {
 
         $answer = str_replace("?", "", $answers[rand(0, count($answers)-1)]);
 
-        $this->message()
-            ->chat_id($request['message']['chat']['id'])
-            ->text($answer)
-            ->send();
+        $this->reply_message($answer);
     }
 }
