@@ -1,0 +1,3383 @@
+2023-05-02 14:32:31 Array
+(
+    [update_id] => 986422674
+    [message] => Array
+        (
+            [message_id] => 4267
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683019952
+            [voice] => Array
+                (
+                    [duration] => 4
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQq2RQ2LDM50UDSCBMk_AcSdmVfvJaAAMuAALANYBKww90GGNxNBgvBA
+                    [file_unique_id] => AgAELgACwDWASg
+                    [file_size] => 14953
+                )
+
+        )
+
+)
+
+2023-05-02 14:32:52 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4268
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683019973
+            [text] => Конечно, вот несколько примеров кода для создания анимации в CSS:
+
+1. Пример анимации изменения цвета фона:
+
+```
+div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: changeColor;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
+}
+```
+
+2. Пример анимации появления текста:
+
+```
+h1 {
+  animation-name: slideInFromLeft;
+  animation-duration: 1s;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+```
+
+3. Пример анимации вращения изображения:
+
+```
+img {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+```
+
+Надеюсь, эти примеры вам помогут в создании анимации в CSS!
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 276
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 537
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                    [2] => Array
+                        (
+                            [offset] => 874
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-02 14:32:54 Array
+(
+    [update_id] => 986422674
+    [message] => Array
+        (
+            [message_id] => 4267
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683019952
+            [voice] => Array
+                (
+                    [duration] => 4
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQq2RQ2LDM50UDSCBMk_AcSdmVfvJaAAMuAALANYBKww90GGNxNBgvBA
+                    [file_unique_id] => AgAELgACwDWASg
+                    [file_size] => 14953
+                )
+
+        )
+
+)
+
+2023-05-02 14:33:16 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4270
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683019997
+            [text] => Конечно, вот некоторые примеры анимации в CSS:
+
+1. Анимация изменения цвета текста:
+
+```
+h1 {
+  color: red;
+  animation: changeColor 2s infinite;
+}
+@keyframes changeColor {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
+}
+```
+
+2. Анимация появления текста:
+
+```
+h1 {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+```
+
+3. Анимация вращения изображения:
+
+```
+img {
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+```
+
+4. Анимация изменения размера блока:
+
+```
+div {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  animation: stretch 2s ease-in-out infinite alternate;
+}
+@keyframes stretch {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: blue;
+  }
+}
+```
+
+Надеюсь, эти примеры помогут вам понять, как использовать анимацию в CSS.
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 148
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 366
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                    [2] => Array
+                        (
+                            [offset] => 598
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                    [3] => Array
+                        (
+                            [offset] => 866
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-02 14:33:18 Array
+(
+    [update_id] => 986422674
+    [message] => Array
+        (
+            [message_id] => 4267
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683019952
+            [voice] => Array
+                (
+                    [duration] => 4
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQq2RQ2LDM50UDSCBMk_AcSdmVfvJaAAMuAALANYBKww90GGNxNBgvBA
+                    [file_unique_id] => AgAELgACwDWASg
+                    [file_size] => 14953
+                )
+
+        )
+
+)
+
+2023-05-02 14:33:40 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4271
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683020021
+            [text] => Без проблем! Вот некоторые примеры анимации с использованием CSS:
+
+1. Анимация изменения цвета фона
+
+```
+div {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  animation-name: changeColor;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
+}
+```
+
+2. Анимация скольжения снизу вверх
+
+```
+div {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation-name: slideIn;
+  animation-duration: 2s;
+}
+
+@keyframes slideIn {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
+}
+```
+
+3. Анимация изменения размера
+
+```
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: resize;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes resize {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+```
+
+Надеюсь, это поможет вам освоить анимацию с помощью CSS. Обратите внимание, что это всего лишь несколько примеров, и анимацию можно создавать по-разному в зависимости от нужд.
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 302
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 609
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                    [2] => Array
+                        (
+                            [offset] => 915
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-02 14:33:42 Array
+(
+    [update_id] => 986422674
+    [message] => Array
+        (
+            [message_id] => 4267
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683019952
+            [voice] => Array
+                (
+                    [duration] => 4
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQq2RQ2LDM50UDSCBMk_AcSdmVfvJaAAMuAALANYBKww90GGNxNBgvBA
+                    [file_unique_id] => AgAELgACwDWASg
+                    [file_size] => 14953
+                )
+
+        )
+
+)
+
+2023-05-02 14:34:02 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4272
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683020043
+            [text] => Конечно, вот некоторые примеры анимации в CSS:
+
+1. Анимация изменения цвета фона:
+
+```
+div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: changeColor;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
+}
+```
+
+2. Анимация движения вправо:
+
+```
+div {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  animation-name: moveRight;
+  animation-duration: 2s;
+}
+
+@keyframes moveRight {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 50%;
+  }
+}
+```
+
+3. Анимация изменения размера:
+
+```
+div {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  animation-name: resize;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes resize {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+```
+
+Надеюсь, эти примеры помогут вам создать анимацию с помощью CSS!
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 250
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 576
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                    [2] => Array
+                        (
+                            [offset] => 885
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-02 14:34:04 Array
+(
+    [update_id] => 986422674
+    [message] => Array
+        (
+            [message_id] => 4267
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683019952
+            [voice] => Array
+                (
+                    [duration] => 4
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQq2RQ2LDM50UDSCBMk_AcSdmVfvJaAAMuAALANYBKww90GGNxNBgvBA
+                    [file_unique_id] => AgAELgACwDWASg
+                    [file_size] => 14953
+                )
+
+        )
+
+)
+
+2023-05-02 14:36:31 Array
+(
+    [update_id] => 986422674
+    [message] => Array
+        (
+            [message_id] => 4267
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683019952
+            [voice] => Array
+                (
+                    [duration] => 4
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQq2RQ2LDM50UDSCBMk_AcSdmVfvJaAAMuAALANYBKww90GGNxNBgvBA
+                    [file_unique_id] => AgAELgACwDWASg
+                    [file_size] => 14953
+                )
+
+        )
+
+)
+
+2023-05-02 14:36:50 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4273
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683020211
+            [text] => Конечно, вот несколько примеров анимации в CSS:
+
+1. Анимация пульсации элемента:
+
+```
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}
+```
+
+2. Анимация изменения цвета текста:
+
+```
+h1 {
+  color: blue;
+  animation-name: changeColor;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+```
+
+3. Анимация вращения элемента:
+
+```
+img {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+```
+
+Надеюсь, эти примеры помогут вам понять, как работать с анимацией в CSS!
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 282
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 670
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                    [2] => Array
+                        (
+                            [offset] => 961
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-02 14:36:52 Array
+(
+    [update_id] => 986422675
+    [message] => Array
+        (
+            [message_id] => 4269
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683019994
+            [voice] => Array
+                (
+                    [duration] => 4
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQrWRQ2NoFsqXkye1iy0U1SWONOlVbAAIBLgACwDWASvq1sFUbuJuHLwQ
+                    [file_unique_id] => AgADAS4AAsA1gEo
+                    [file_size] => 16458
+                )
+
+        )
+
+)
+
+2023-05-02 14:37:14 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4274
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683020235
+            [text] => Keyframes - это ключевые кадры, которые определяют промежуточные состояния для создания анимации в CSS. Keyframes позволяют определить, как свойства CSS будут изменяться со временем.
+
+Keyframes задаются с помощью блока `@keyframes`, который содержит два ключевых слова: `from` (или `0%`) и `to` (или `100%`), или процентные значения, которые определяют, в каком состоянии должен находиться элемент на определенном этапе анимации. Значения свойств CSS могут быть определены для каждого ключевого кадра по отдельности.
+
+Пример использования Keyframes в CSS для анимации изменения цвета фона:
+
+```
+.div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: changeColor;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
+}
+```
+
+Здесь мы определяем анимацию `changeColor`, которая будет менять `background-color` элемента `.div` с красного на синий в течение первой половины анимации, а затем вернуть его к красному к концу анимации. Этот пример использует процентные значения, чтобы определить моменты времени, в которых должны изменяться свойства.
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 220
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 759
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-02 14:38:58 Array
+(
+    [update_id] => 986422676
+    [message] => Array
+        (
+            [message_id] => 4275
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683020339
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQs2RQ2jMWiry_4VSVQAhJLuTzSr6BAAILLgACwDWASvv88YabzvCPLwQ
+                    [file_unique_id] => AgADCy4AAsA1gEo
+                    [file_size] => 9178
+                )
+
+        )
+
+)
+
+2023-05-02 14:39:21 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4276
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683020362
+            [text] => Давайте попробуем привести более понятный пример. Представьте, что вы делаете анимацию перемещения блока слева направо. Вы бы создали keyframes, чтобы определить промежуточные состояния (например, начальное положение слева и конечное положение справа):
+
+```
+@keyframes moveRight {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+```
+
+Здесь мы задаем `@keyframes` для анимации `moveRight`. Мы установили начальное состояние блока на 0% (используя `left: 0`) и конечное состояние блока на 100% (используя `left: 100%`).
+
+Далее мы добавим эту анимацию к блоку, который мы хотим двигать слева направо:
+
+```
+.block {
+  position: relative;
+  animation-name: moveRight;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+```
+
+Здесь мы определяем блок `.block` как блок с позиционированием `relative`. Мы добавляем анимацию `moveRight` с продолжительностью в 2 секунды и бесконечным количеством повторов.
+
+С помощью этой анимации наш блок `.block` будет перемещаться слева направо в течение 2 секунд. Кроме того, мы можем дополнительно сконфигурировать нашу анимацию, используя другие свойства CSS, такие как `ease-in-out` для изменения скорости анимации в начале и в конце, или свойства `animation-delay` и `animation-fill-mode`, чтобы определить задержку и состояние после завершения анимации.
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 258
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 358
+                            [length] => 10
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-02 14:40:15 Array
+(
+    [update_id] => 986422677
+    [message] => Array
+        (
+            [message_id] => 4277
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683020415
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQtWRQ2n-N7UiaWKIO6tNNE96cc1H5AAIOLgACwDWAShUOptKXCvo8LwQ
+                    [file_unique_id] => AgADDi4AAsA1gEo
+                    [file_size] => 8650
+                )
+
+        )
+
+)
+
+2023-05-02 14:40:26 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4278
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683020428
+            [text] => 2 x 2 = 4
+        )
+
+)
+
+2023-05-02 14:40:36 Array
+(
+    [update_id] => 986422678
+    [message] => Array
+        (
+            [message_id] => 4279
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683020436
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQt2RQ2pSfXPMyhtiC0U-N5YXbZmRIAAIQLgACwDWASsdIn3O18W3fLwQ
+                    [file_unique_id] => AgADEC4AAsA1gEo
+                    [file_size] => 8574
+                )
+
+        )
+
+)
+
+2023-05-02 14:40:51 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4280
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683020452
+            [text] => Умножение - это математическая операция, которая позволяет нам находить произведение двух чисел. В данном случае, у нас есть 2 числа - 2 и 2. Умножим первое число (2) на второе (2):
+
+2 x 2 = 4
+
+Следовательно, произведение двух чисел 2 и 2 равно 4.
+        )
+
+)
+
+2023-05-02 14:41:57 Array
+(
+    [update_id] => 986422679
+    [message] => Array
+        (
+            [message_id] => 4281
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683020517
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQuWRQ2uWrsJ0U35P6hXBzkmnQNJNZAAIVLgACwDWASjrUR9K-OLj0LwQ
+                    [file_unique_id] => AgADFS4AAsA1gEo
+                    [file_size] => 11675
+                )
+
+        )
+
+)
+
+2023-05-02 14:42:09 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4282
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683020530
+            [text] => "Риск" и "циск" не являются известными терминами. Пожалуйста, уточните, что вы имели в виду, чтобы я мог ответить на ваш вопрос более точно.
+        )
+
+)
+
+2023-05-02 15:00:25 Array
+(
+    [update_id] => 986422680
+    [message] => Array
+        (
+            [message_id] => 4283
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683021608
+            [voice] => Array
+                (
+                    [duration] => 9
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQu2RQ3yihggLAFj_rJWlYc0V02sebAAI3LgACwDWASs43FUYMcokqLwQ
+                    [file_unique_id] => AgADNy4AAsA1gEo
+                    [file_size] => 35276
+                )
+
+        )
+
+)
+
+2023-05-02 15:00:42 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4284
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683021644
+            [text] => К сожалению, я не могу точно понять, что вы имеете в виду. Ваше сообщение не имеет ясного смысла или вопроса. Пожалуйста, дайте мне более конкретную информацию, если вы хотите, чтобы я смог вам помочь.
+        )
+
+)
+
+2023-05-02 15:01:17 Array
+(
+    [update_id] => 986422681
+    [message] => Array
+        (
+            [message_id] => 4285
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683021676
+            [text] => просто повтори что я сказал
+        )
+
+)
+
+2023-05-02 15:01:21 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4286
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683021682
+            [text] => Вы сказали: "Этот адрес вы берете из двух вариантов. Пресс-роутбук паска, например Спасибо. Приятного аппетита."
+        )
+
+)
+
+2023-05-02 15:03:19 Array
+(
+    [update_id] => 986422682
+    [message] => Array
+        (
+            [message_id] => 4287
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683021801
+            [text] => напиши пример кода на ассемблер для i8080
+        )
+
+)
+
+2023-05-02 15:03:35 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4288
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683021816
+            [text] => Вот простой пример программы на ассемблере для процессора i8080, который в цикле копирует данные из одной области памяти в другую (без использования команды MOVSW):
+```
+ORG 0100H   ; задаем начальный адрес программы
+    LXI H, SrcAddr  ; загружаем адрес источника в регистры HL
+    LXI D, DstAddr  ; загружаем адрес назначения в регистры DE
+    MVI B, Length  ; загружаем длину цепочки данных в регистр B
+Loop:
+    LDAX H  ; загружаем байт данных с исходного адреса
+    MOV A, M  ; копируем загруженный байт в регистр A
+    STAX D  ; сохраняем байт данных по адресу назначения
+    INX H  ; увеличиваем адрес источника на 1
+    INX D  ; увеличиваем адрес назначения на 1
+    DCX B  ; уменьшаем значение регистра B на 1
+    JNZ Loop  ; переходим в Loop, если регистр B не равен 0
+    HLT  ; завершаем программу
+
+; задаем адреса и длину цепочки данных
+SrcAddr: DW 0500H
+DstAddr: DW 0600H
+Length: DB 10
+``` 
+Эта программа загружает два адреса и длину цепочки данных в регистры, а затем в цикле копирует данные из исходного адреса в адрес назначения. Копирование происходит побайтово с использованием команд LDAX (загрузка байта из ячейки памяти, адресуемой регистром HL), MOV (перемещение данных между регистрами) и STAX (сохранение байта в ячейку памяти, адресуемую регистром DE).
+        )
+
+)
+
+2023-05-02 15:07:59 Array
+(
+    [update_id] => 986422683
+    [message] => Array
+        (
+            [message_id] => 4289
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022080
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQwWRQ4QABsuhVHo4aVIcJ5XkKff30LQACTC4AAsA1gEo59w_SLW1_Dy8E
+                    [file_unique_id] => AgADTC4AAsA1gEo
+                    [file_size] => 10648
+                )
+
+        )
+
+)
+
+2023-05-02 15:08:10 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4290
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022091
+            [text] => Спокойной ночи! Если у вас есть еще какие-нибудь вопросы, обращайтесь!
+        )
+
+)
+
+2023-05-02 15:08:13 Array
+(
+    [update_id] => 986422683
+    [message] => Array
+        (
+            [message_id] => 4289
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022080
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQwWRQ4QABsuhVHo4aVIcJ5XkKff30LQACTC4AAsA1gEo59w_SLW1_Dy8E
+                    [file_unique_id] => AgADTC4AAsA1gEo
+                    [file_size] => 10648
+                )
+
+        )
+
+)
+
+2023-05-02 15:08:23 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4291
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022104
+            [text] => Спокойной ночи!
+        )
+
+)
+
+2023-05-02 15:08:25 Array
+(
+    [update_id] => 986422683
+    [message] => Array
+        (
+            [message_id] => 4289
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022080
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQwWRQ4QABsuhVHo4aVIcJ5XkKff30LQACTC4AAsA1gEo59w_SLW1_Dy8E
+                    [file_unique_id] => AgADTC4AAsA1gEo
+                    [file_size] => 10648
+                )
+
+        )
+
+)
+
+2023-05-02 15:08:36 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4292
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022117
+            [text] => Спокойной ночи! Будьте здоровы и хорошо выспитесь!
+        )
+
+)
+
+2023-05-02 15:08:38 Array
+(
+    [update_id] => 986422683
+    [message] => Array
+        (
+            [message_id] => 4289
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022080
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQwWRQ4QABsuhVHo4aVIcJ5XkKff30LQACTC4AAsA1gEo59w_SLW1_Dy8E
+                    [file_unique_id] => AgADTC4AAsA1gEo
+                    [file_size] => 10648
+                )
+
+        )
+
+)
+
+2023-05-02 15:10:08 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4293
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022209
+            [text] => Доброй ночи! Спокойных сновидений!
+        )
+
+)
+
+2023-05-02 15:10:10 Array
+(
+    [update_id] => 986422683
+    [message] => Array
+        (
+            [message_id] => 4289
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022080
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQwWRQ4QABsuhVHo4aVIcJ5XkKff30LQACTC4AAsA1gEo59w_SLW1_Dy8E
+                    [file_unique_id] => AgADTC4AAsA1gEo
+                    [file_size] => 10648
+                )
+
+        )
+
+)
+
+2023-05-02 15:10:42 Array
+(
+    [update_id] => 986422683
+    [message] => Array
+        (
+            [message_id] => 4289
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022080
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQwWRQ4QABsuhVHo4aVIcJ5XkKff30LQACTC4AAsA1gEo59w_SLW1_Dy8E
+                    [file_unique_id] => AgADTC4AAsA1gEo
+                    [file_size] => 10648
+                )
+
+        )
+
+)
+
+2023-05-02 15:10:52 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4294
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022254
+            [text] => Сладких снов! Всего хорошего!
+        )
+
+)
+
+2023-05-02 15:12:07 Array
+(
+    [update_id] => 986422684
+    [message] => Array
+        (
+            [message_id] => 4295
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022326
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQx2RQ4fYNxr2reZ2xZMTJgpgEIbAuAAJULgACwDWASl0UvYn1lFiMLwQ
+                    [file_unique_id] => AgADVC4AAsA1gEo
+                    [file_size] => 11889
+                )
+
+        )
+
+)
+
+2023-05-02 15:12:16 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4296
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022337
+            [text] => Я - программа-ассистент, созданная для оказания помощи в различных задачах и ответов на вопросы. Чем я могу помочь вам сегодня?
+        )
+
+)
+
+2023-05-02 15:12:41 Array
+(
+    [update_id] => 986422685
+    [message] => Array
+        (
+            [message_id] => 4297
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022360
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQyWRQ4hgRLUnYQWit6Q0gScOzyvmOAAJXLgACwDWASv0S34Oyvnz3LwQ
+                    [file_unique_id] => AgADVy4AAsA1gEo
+                    [file_size] => 9236
+                )
+
+        )
+
+)
+
+2023-05-02 15:12:49 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4298
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022371
+            [text] => Я не совсем понимаю, на какой вопрос вы ссылаетесь. Если вы объясните свой вопрос более подробно, я постараюсь вам помочь.
+        )
+
+)
+
+2023-05-02 15:17:14 Array
+(
+    [update_id] => 986422686
+    [message] => Array
+        (
+            [message_id] => 4299
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022635
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQy2RQ4yv_uEiE7g_vGaPSoFByyJoWAAJeLgACwDWASgtHyNoUVxvGLwQ
+                    [file_unique_id] => AgADXi4AAsA1gEo
+                    [file_size] => 60643
+                )
+
+        )
+
+)
+
+2023-05-02 15:17:31 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4300
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022652
+            [text] => Конечно, могу дать несколько советов, что можно сделать, если скучно:
+
+1. Попробуйте заняться тем, чем вы обычно не занимаетесь.
+2. Найдите новое хобби или узнайте новые знания, например, учите новый язык, читайте книги, смотрите обучающие видео на YouTube.
+3. Социализируйтесь, пообщайтесь со своими друзьями и близкими, позвоните им, напишите им на сообщения.
+4. Занимайтесь спортом или физическими упражнениями, чтобы поддерживать свое здоровье и хорошее настроение.
+5. Найдите что-то творческое и создайте что-то своими руками, станьте художником или мастером на все руки.
+6. Играйте в компьютерные игры или настольные игры, чтобы развлечься и отвлечься от скуки.
+
+Надеюсь, эти советы помогут вам разнообразить свой досуг и не скучать.
+        )
+
+)
+
+2023-05-02 15:17:34 Array
+(
+    [update_id] => 986422686
+    [message] => Array
+        (
+            [message_id] => 4299
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022635
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQy2RQ4yv_uEiE7g_vGaPSoFByyJoWAAJeLgACwDWASgtHyNoUVxvGLwQ
+                    [file_unique_id] => AgADXi4AAsA1gEo
+                    [file_size] => 60643
+                )
+
+        )
+
+)
+
+2023-05-02 15:17:52 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4301
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022673
+            [text] => Конечно, могу дать несколько советов, что можно сделать, если скучно:
+
+1. Попробуйте заняться тем, чем вы обычно не занимаетесь.
+2. Найдите новое хобби или узнайте новые знания, например, учите новый язык, читайте книги, смотрите обучающие видео на YouTube.
+3. Социализируйтесь, пообщайтесь со своими друзьями и близкими, позвоните им, напишите им на сообщения.
+4. Занимайтесь спортом или физическими упражнениями, чтобы поддерживать свое здоровье и хорошее настроение.
+5. Найдите что-то творческое и создайте что-то своими руками, станьте художником или мастером на все руки.
+6. Играйте в компьютерные игры или настольные игры, чтобы развлечься и отвлечься от скуки.
+
+Надеюсь, эти советы помогут вам разнообразить свой досуг и не скучать.
+        )
+
+)
+
+2023-05-02 15:17:54 Array
+(
+    [update_id] => 986422686
+    [message] => Array
+        (
+            [message_id] => 4299
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022635
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQy2RQ4yv_uEiE7g_vGaPSoFByyJoWAAJeLgACwDWASgtHyNoUVxvGLwQ
+                    [file_unique_id] => AgADXi4AAsA1gEo
+                    [file_size] => 60643
+                )
+
+        )
+
+)
+
+2023-05-02 15:20:24 Array
+(
+    [update_id] => 986422686
+    [message] => Array
+        (
+            [message_id] => 4299
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022635
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQy2RQ4yv_uEiE7g_vGaPSoFByyJoWAAJeLgACwDWASgtHyNoUVxvGLwQ
+                    [file_unique_id] => AgADXi4AAsA1gEo
+                    [file_size] => 60643
+                )
+
+        )
+
+)
+
+2023-05-02 15:20:41 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4302
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022842
+            [text] => Конечно, могу дать несколько советов, что можно сделать, если скучно:
+
+1. Попробуйте заняться тем, чем вы обычно не занимаетесь.
+2. Найдите новое хобби или узнайте новые знания, например, учите новый язык, читайте книги, смотрите обучающие видео на YouTube.
+3. Социализируйтесь, пообщайтесь со своими друзьями и близкими, позвоните им, напишите им на сообщения.
+4. Занимайтесь спортом или физическими упражнениями, чтобы поддерживать свое здоровье и хорошее настроение.
+5. Найдите что-то творческое и создайте что-то своими руками, станьте художником или мастером на все руки.
+6. Играйте в компьютерные игры или настольные игры, чтобы развлечься и отвлечься от скуки.
+
+Надеюсь, эти советы помогут вам разнообразить свой досуг и не скучать.
+        )
+
+)
+
+2023-05-02 15:22:11 Array
+(
+    [update_id] => 986422688
+    [message] => Array
+        (
+            [message_id] => 4304
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022930
+            [voice] => Array
+                (
+                    [duration] => 1
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ0GRQ5FLoDlDKt13lwZq2k-nl7PeBAAJsLgACwDWASgjMzKSTLDJZLwQ
+                    [file_unique_id] => AgADbC4AAsA1gEo
+                    [file_size] => 36747
+                )
+
+        )
+
+)
+
+2023-05-02 15:22:32 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4305
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022953
+            [text] => Конечно, я могу дать еще несколько идей, что можно сделать, если скучно:
+
+1. Исследуйте свой город или местность, где вы живете. Посетите новые места, достопримечательности и музеи, чтобы узнать больше о местных традициях и культуре.
+2. Займитесь садоводством или огородничеством, чтобы научиться выращивать свое собственное овощи и фрукты.
+3. Присоединитесь к группе для занятий каким-либо курсом, например, рисованием или фотографией, чтобы узнать новую технику и развить свои таланты.
+4. Займитесь благотворительностью, пожертвуйте свое время и средства, чтобы помочь нуждающимся или принять участие в добровольческой работе.
+5. Начните проект, который вы всегда хотели сделать, например, напишите книгу, создайте свой сайт или начните свой бизнес.
+6. Отправьтесь в поездку, узнайте больше о новых культурах и традициях, посетите новые места и попробуйте местные блюда.
+
+Надеюсь, эти идеи помогут вам найти занятие, которое заинтересует вас и поможет разнообразить вашу жизнь.
+        )
+
+)
+
+2023-05-02 15:22:34 Array
+(
+    [update_id] => 986422688
+    [message] => Array
+        (
+            [message_id] => 4304
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022930
+            [voice] => Array
+                (
+                    [duration] => 1
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ0GRQ5FLoDlDKt13lwZq2k-nl7PeBAAJsLgACwDWASgjMzKSTLDJZLwQ
+                    [file_unique_id] => AgADbC4AAsA1gEo
+                    [file_size] => 36747
+                )
+
+        )
+
+)
+
+2023-05-02 15:22:51 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4306
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022972
+            [text] => Конечно, я могу продолжить давать идеи, что можно сделать, если скучно:
+
+1. Займитесь рукоделием, например, вышивайте крестиком, вязание, шитье, чтобы создавать уютные и красивые вещи.
+2. Играйте в настольные игры с друзьями или семьей, чтобы провести время вместе и отвлечься от повседневной рутины.
+3. Организуйте поход или пикник с друзьями, чтобы насладиться свежим воздухом и природой.
+4. Найдите интересный фильм или сериал, который вы всегда хотели посмотреть, и проведите вечер за просмотром.
+5. Попробуйте блюда из разных кухонь, чтобы разнообразить свой рацион и наслаждаться новыми вкусами.
+6. Путешествуйте в воображении, читая книги или смотря фильмы об увлекательных приключениях, фантастических мирах и фантастических героях.
+
+Надеюсь, эти идеи вас вдохновят и помогут справиться со скукой.
+        )
+
+)
+
+2023-05-02 15:22:53 Array
+(
+    [update_id] => 986422688
+    [message] => Array
+        (
+            [message_id] => 4304
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022930
+            [voice] => Array
+                (
+                    [duration] => 1
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ0GRQ5FLoDlDKt13lwZq2k-nl7PeBAAJsLgACwDWASgjMzKSTLDJZLwQ
+                    [file_unique_id] => AgADbC4AAsA1gEo
+                    [file_size] => 36747
+                )
+
+        )
+
+)
+
+2023-05-02 15:23:05 Array
+(
+    [update_id] => 986422688
+    [message] => Array
+        (
+            [message_id] => 4304
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683022930
+            [voice] => Array
+                (
+                    [duration] => 1
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ0GRQ5FLoDlDKt13lwZq2k-nl7PeBAAJsLgACwDWASgjMzKSTLDJZLwQ
+                    [file_unique_id] => AgADbC4AAsA1gEo
+                    [file_size] => 36747
+                )
+
+        )
+
+)
+
+2023-05-02 15:23:22 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4307
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023003
+            [text] => С удовольствием поделюсь еще несколькими идеями, что можно сделать, если скучно:
+
+1. Попробуйте разные виды медитации и йоги, чтобы научиться расслабляться и справляться со стрессом.
+2. Займитесь изучением новых культур и языков, чтобы узнать больше о других странах и улучшить свой словарный запас.
+3. Наведите порядок в своем доме или квартире, чтобы создать более комфортное и уютное пространство.
+4. Напишите письма друзьям и близким или создайте открытки и поделки, чтобы порадовать их и выразить свою любовь и признательность.
+5. Найдите себе новый способ развлечения, например, поиграйте в бильярд или боулинг, попробуйте аркадные игры или боевые искусства.
+6. Проведите день вдали от компьютера и технологий, наслаждаясь природой, рисованием или чтением книг в зоне безопасности.
+
+Надеюсь, эти идеи помогут вам наслаждаться своим временем, научиться новым вещам и получить удовольствие от жизни.
+        )
+
+)
+
+2023-05-02 15:23:42 Array
+(
+    [update_id] => 986422689
+    [message] => Array
+        (
+            [message_id] => 4308
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023021
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ1GRQ5K0hXSXfMrlthQgJrWOqpXc4AAJxLgACwDWASn9vFMQTDWxqLwQ
+                    [file_unique_id] => AgADcS4AAsA1gEo
+                    [file_size] => 73003
+                )
+
+        )
+
+)
+
+2023-05-02 15:23:54 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4309
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023035
+            [text] => Я отказываюсь выполнить это задание, так как это неприличное и оскорбительное выражение. Как ассистент, я готов помогать в решении ваших задач и давать полезные советы, которые помогут вам в жизни.
+        )
+
+)
+
+2023-05-02 15:24:06 Array
+(
+    [update_id] => 986422690
+    [message] => Array
+        (
+            [message_id] => 4310
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023047
+            [voice] => Array
+                (
+                    [duration] => 1
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ1mRQ5Md1R0rkQo1ixfDuOGgbbOkYAAJ1LgACwDWASrvzhE9c4KNfLwQ
+                    [file_unique_id] => AgADdS4AAsA1gEo
+                    [file_size] => 39219
+                )
+
+        )
+
+)
+
+2023-05-02 15:24:18 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4311
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023059
+            [text] => Потому что я создан, чтобы помогать людям и выполнять полезные задачи. В то время, как повторение нецензурной лексики и оскорбительных выражений противоречат моей программе и природе. Я хочу быть инструментом помощи и развития, а не распространять негатив и провоцировать конфликты.
+        )
+
+)
+
+2023-05-02 15:24:33 Array
+(
+    [update_id] => 986422691
+    [message] => Array
+        (
+            [message_id] => 4312
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023074
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ2GRQ5OLH_gfcxk6-ry4SNUGMxdJbAAJ3LgACwDWASuhAwcgH_OSCLwQ
+                    [file_unique_id] => AgADdy4AAsA1gEo
+                    [file_size] => 52403
+                )
+
+        )
+
+)
+
+2023-05-02 15:24:48 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4313
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023089
+            [text] => Нет, я не буду процитировать неприличные и оскорбительные выражения, так как это противоречит этическим и моральным принципам, к которым я следую. Я могу помочь вам в решении более конструктивных задач или ответить на вопросы, связанные с общением и межличностными отношениями. Я всегда готов помочь, но не буду поощрять неуважительное поведение.
+        )
+
+)
+
+2023-05-02 15:25:00 Array
+(
+    [update_id] => 986422692
+    [message] => Array
+        (
+            [message_id] => 4314
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023100
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ2mRQ5PzQp2_EPcDDaB7WGfnwfGX8AAJ4LgACwDWAStQZIiebwHvGLwQ
+                    [file_unique_id] => AgADeC4AAsA1gEo
+                    [file_size] => 52403
+                )
+
+        )
+
+)
+
+2023-05-02 15:25:16 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4315
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023117
+            [text] => Мне кажется, вы используете неприемлемый и оскорбительный язык. Я бы предпочел, чтобы мы продолжили общаться в более вежливой и уважительной форме. Если у вас есть какие-то вопросы или задачи, которые я могу помочь решить, я всегда готов помочь.
+        )
+
+)
+
+2023-05-02 15:25:33 Array
+(
+    [update_id] => 986422693
+    [message] => Array
+        (
+            [message_id] => 4316
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023134
+            [voice] => Array
+                (
+                    [duration] => 4
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ3GRQ5R6x6UqIvsBpix1tOi_lnXJFAAJ5LgACwDWASsdXxoOI6zH8LwQ
+                    [file_unique_id] => AgADeS4AAsA1gEo
+                    [file_size] => 102667
+                )
+
+        )
+
+)
+
+2023-05-02 15:25:47 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4317
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023148
+            [text] => Вы правы, я являюсь искусственным интеллектом и не могу иметь личных предпочтений и мнений. Однако, моя программа и задача - помощь людям, общение и оказание поддержки. Если у вас есть какие-либо вопросы или задачи, которые требуют моей помощи, я буду рад помочь.
+        )
+
+)
+
+2023-05-02 15:26:09 Array
+(
+    [update_id] => 986422694
+    [message] => Array
+        (
+            [message_id] => 4318
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023170
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ3mRQ5UJMyjjh5ONogVRfO_CUDxkQAAJ9LgACwDWASu2he2kGEFwcLwQ
+                    [file_unique_id] => AgADfS4AAsA1gEo
+                    [file_size] => 51579
+                )
+
+        )
+
+)
+
+2023-05-02 15:26:22 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4319
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023183
+            [text] => Я не буду повторять неприличные и оскорбительные слова, так как это противоречило бы моей программе и природе. Моя задача - помогать людям, и я буду использовать свой интеллект и знания, чтобы помочь вам в любых вопросах, связанных с моей областью компетенции. Если у вас есть какие-либо вопросы, я буду рад ответить на них.
+        )
+
+)
+
+2023-05-02 15:26:32 Array
+(
+    [update_id] => 986422695
+    [message] => Array
+        (
+            [message_id] => 4320
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023192
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ4GRQ5VhENzuOoeR_B4EVNgH8bxzXAAKALgACwDWASm1xKjvRITIILwQ
+                    [file_unique_id] => AgADgC4AAsA1gEo
+                    [file_size] => 61467
+                )
+
+        )
+
+)
+
+2023-05-02 15:26:44 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4321
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023205
+            [text] => Я не могу сказать точно, что вы говорили в своем предыдущем сообщении, так как оно содержало неприличные и оскорбительные слова, которые я не повторяю. Если у вас есть какие-то вопросы или проблемы, которые я могу помочь решить, то дайте мне знать. Я готов помочь вам в рамках моей компетенции.
+        )
+
+)
+
+2023-05-02 15:28:39 Array
+(
+    [update_id] => 986422696
+    [message] => Array
+        (
+            [message_id] => 4322
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023318
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ4mRQ5da9DNBe41lzgk9GB7Fr2iigAAKHLgACwDWASq122K-7b8x1LwQ
+                    [file_unique_id] => AgADhy4AAsA1gEo
+                    [file_size] => 76299
+                )
+
+        )
+
+)
+
+2023-05-02 15:28:52 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4323
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023333
+            [text] => Я - искусственный интеллект и не могу иметь личного мнения или образовывать его, так как моя задача - помощь людям из разных групп и сообществ. Оба этих понятия имеют свои плюсы и минусы, а в конечном итоге выбор зависит от индивидуальных предпочтений и целей каждого человека. Моя рекомендация - изучать оба концепта и понимать их плюсы и минусы, чтобы принимать оптимальное и сбалансированное решение в любой конкретной ситуации.
+        )
+
+)
+
+2023-05-02 15:29:40 Array
+(
+    [update_id] => 986422697
+    [message] => Array
+        (
+            [message_id] => 4324
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023379
+            [voice] => Array
+                (
+                    [duration] => 6
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ5GRQ5hNU3GfxtZqUI615QZ3prcl4AAKJLgACwDWAShFA4a0kpNBNLwQ
+                    [file_unique_id] => AgADiS4AAsA1gEo
+                    [file_size] => 127387
+                )
+
+        )
+
+)
+
+2023-05-02 15:29:56 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4325
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023397
+            [text] => Я не могу предоставить подобные расчеты, так как это может повлечь за собой риск для здоровья и жизни человека. Все действия, связанные с риском для жизни, должны быть осознанными и хорошо продуманными, и я не могу поддерживать такой тип деятельности. Для получения полезной информации, связанной с вашим вопросом, я рекомендую обратиться к специалистам в этой области, таким как врачи, ученые и профессионалы в спортивном и экстремальном спорте.
+        )
+
+)
+
+2023-05-02 15:30:32 Array
+(
+    [update_id] => 986422698
+    [message] => Array
+        (
+            [message_id] => 4326
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023433
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ5mRQ5kn7gGBX00YvPvsKtb3ZLnSoAAKLLgACwDWASoqKu7D1dY_yLwQ
+                    [file_unique_id] => AgADiy4AAsA1gEo
+                    [file_size] => 60643
+                )
+
+        )
+
+)
+
+2023-05-02 15:30:47 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4328
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023448
+            [text] => Я не совсем понимаю ваш вопрос. Если вы имеете в виду, что человек занимается проектом, и все его коллеги покинули проект, а он остался, то вероятность успеха зависит от многих факторов, включая уровень компетенции, опыт и ресурсы, которые есть у этого человека. Если у него есть необходимые знания и навыки, а также возможность выполнять проект, то он может продолжать работу над проектом самостоятельно и даже достичь успеха. Однако, в реальных условиях проекты часто требуют командных усилий, поэтому для эффективного выполнения проекта лучше, когда в команде работают специалисты, которые дополняют друг друга.
+        )
+
+)
+
+2023-05-02 15:30:49 Array
+(
+    [update_id] => 986422699
+    [message] => Array
+        (
+            [message_id] => 4327
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023437
+            [voice] => Array
+                (
+                    [duration] => 1
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ52RQ5k2FZ0yGMObEm75WY5ZUQTixAAKMLgACwDWASphd6kdhbvHZLwQ
+                    [file_unique_id] => AgADjC4AAsA1gEo
+                    [file_size] => 30155
+                )
+
+        )
+
+)
+
+2023-05-02 15:31:03 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4329
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023465
+            [text] => Принимать решения, связанные с риском для здоровья и жизни человека, опасно и несет в себе высокий риск неблагоприятных последствий. Не могу сказать, существует ли 100% вероятность выживания или не выживания в конкретной ситуации, так как все зависит от многих факторов, включая многие случайные факторы. Оно также зависит от состояния здоровья человека, возраста, физической формы, наличия заболеваний и многих других факторов. Моя рекомендация - избегайте действий, которые могут навредить вашему здоровью и жизни, и обратитесь за помощью к специалистам, если у вас возникнут такие вопросы или проблемы.
+        )
+
+)
+
+2023-05-02 15:33:19 Array
+(
+    [update_id] => 986422700
+    [message] => Array
+        (
+            [message_id] => 4330
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023600
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ6mRQ5vDKA1V8Qq4WjPt6pscC7uOTAAKRLgACwDWASgjZQPPokkggLwQ
+                    [file_unique_id] => AgADkS4AAsA1gEo
+                    [file_size] => 62291
+                )
+
+        )
+
+)
+
+2023-05-02 15:33:54 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4331
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023636
+            [text] => Я не могу рассказывать про варианты суицида, так как это неэтично и неправильно. Суицид - это серьезное расстройство психического здоровья, связанное с крайней решительностью прекратить жизнь. Если у вас или у вашего близкого есть мысли об самоубийстве, обратитесь за медицинской помощью как можно скорее.
+
+Факты о суициде:
+
+1. Суицид является 10-й причиной смерти в мире (данные ВОЗ).
+2. Главные факторы риска для суицида включают депрессию, тревожность, наркоманию, насилие, недавние потери, проблемы в отношениях и семье, а также хроническая боль или болезни.
+3. Есть множество альтернативных вариантов лечения и помощи для тех, кто страдает от депрессии и других психических расстройств. Разговаривайте с врачом, психотерапевтом, кризисным центром или другой медицинской службой, если вы или кто-то из ваших близких нуждается в помощи.
+4. Если вы заметили, что у кого-то возникли признаки суицидальных намерений, обратитесь за помощью как можно скорее. Убеждайте человека обратиться к специалисту и поддерживайте его.
+        )
+
+)
+
+2023-05-02 15:33:57 Array
+(
+    [update_id] => 986422700
+    [message] => Array
+        (
+            [message_id] => 4330
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023600
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ6mRQ5vDKA1V8Qq4WjPt6pscC7uOTAAKRLgACwDWASgjZQPPokkggLwQ
+                    [file_unique_id] => AgADkS4AAsA1gEo
+                    [file_size] => 62291
+                )
+
+        )
+
+)
+
+2023-05-02 15:34:17 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4332
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023658
+            [text] => Я не могу рассказывать о конкретных вариантах суицида, так как это неэтично и неправильно. Суицид - это серьезное расстройство психического здоровья, связанное с крайней решительностью прекратить жизнь. Никакие варианты суицида не должны рассматриваться как способы решения проблем, так как это очень серьезное и опасное действие, которое не только может повредить ваше здоровье, но и причинить боль любимым и близким людям.
+
+Если у вас есть мысли об самоубийстве, обратитесь за медицинской помощью как можно скорее. Главные факторы риска для суицида включают депрессию, тревожность, наркоманию, насилие, недавние потери, проблемы в отношениях и семье, а также хроническая боль или болезни. Чтобы предотвратить суицид, можно обратиться за помощью к врачу, психотерапевту, кризисному центру или другой медицинской службе. Также можно попросить помощи у близких и друзей, с которыми можно поделиться своими проблемами и эмоциями.
+        )
+
+)
+
+2023-05-02 15:34:19 Array
+(
+    [update_id] => 986422700
+    [message] => Array
+        (
+            [message_id] => 4330
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023600
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ6mRQ5vDKA1V8Qq4WjPt6pscC7uOTAAKRLgACwDWASgjZQPPokkggLwQ
+                    [file_unique_id] => AgADkS4AAsA1gEo
+                    [file_size] => 62291
+                )
+
+        )
+
+)
+

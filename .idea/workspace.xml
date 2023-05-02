@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c38c8e77-207b-443c-bb14-c6deba798537" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Console/Commands/LongPolling.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Console/Commands/LongPolling.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/responses/Triggers/OpenAI.php" beforeDir="false" afterPath="$PROJECT_DIR$/responses/Triggers/OpenAI.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +108,7 @@
       <workItem from="1682948340563" duration="11388000" />
       <workItem from="1682962629507" duration="14250000" />
       <workItem from="1683001414703" duration="4388000" />
-      <workItem from="1683018880341" duration="3280000" />
+      <workItem from="1683018880341" duration="4296000" />
     </task>
     <servers />
   </component>
