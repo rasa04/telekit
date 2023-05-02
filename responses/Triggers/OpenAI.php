@@ -57,6 +57,8 @@ class OpenAI extends Trigger {
                     "role" => "user",
                     "content" => $text
                 ];
+
+                unlink($fileLink);
             }
             elseif (isset($this->request_message()['text'])) {
                 $this->messages[] = [

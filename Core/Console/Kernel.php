@@ -39,7 +39,7 @@ class Kernel
         elseif ($argv[1] === "--make") new Make($options, $argv);
         elseif ($argv[1] === "--database") new DatabaseCommands($options, $argv);
         elseif ($argv[1] === "tinker") require "tinker.php";
-        elseif ($argv[1] === "serve") require "Commands/LongPolling.php";
+        elseif ($argv[1] === "serve") require "Commands/Polling.php";
         elseif ($argv[1] === "getUpdates") exec("php -S localhost:8000 " . __DIR__ . "/Commands/GetUpdates.php");
         else new ErrorHandler("Unknown command: " . $argv[1]);
     }
