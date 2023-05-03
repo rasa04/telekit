@@ -32,12 +32,15 @@ class Polling
 
             // Process the updates
 
-            if (!isset($response['result'][0])) {
-                echo "NO UPDATES YET\n";
+            if (empty($response['result'])) {
                 sleep(2);
                 continue;
             }
-            if (!empty($response['result'])) {
+            elseif (isset($GLOBALS['request']) && $response['result'][0]['update_id'] === $GLOBALS['request']['update_id']) {
+                self::$lastUpdate+=1;
+                continue;
+            }
+            else {
                 $GLOBALS['request'] = $response['result'][0];
                 require 'index.php';
             }

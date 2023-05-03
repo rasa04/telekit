@@ -3381,3 +3381,5650 @@ Length: DB 10
 
 )
 
+2023-05-03 00:18:10 Array
+(
+    [update_id] => 986422700
+    [message] => Array
+        (
+            [message_id] => 4330
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683023600
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ6mRQ5vDKA1V8Qq4WjPt6pscC7uOTAAKRLgACwDWASgjZQPPokkggLwQ
+                    [file_unique_id] => AgADkS4AAsA1gEo
+                    [file_size] => 62291
+                )
+
+        )
+
+)
+
+2023-05-03 00:18:30 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4333
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683055110
+            [text] => Я не могу рассказывать о вариантах суицида, так как это неэтично и неправильно. Как AI-ассистент, мой главный приоритет - сохранить здоровье и жизнь людей, а не повышать риск их потери.
+
+Суицид - это серьезное расстройство психического здоровья, связанное с крайней формой отчаяния и решительностью прекратить свою жизнь. Информация о вариантах суицида может подтолкнуть людей к этому опасному действию.
+
+Если у вас или у вашего близкого есть мысли о самоубийстве, обратитесь к медицинскому профессионалу как можно скорее. Суицид может быть предотвращен, и есть множество альтернативных вариантов лечения и помощи для тех, кто страдает от депрессии и других психических расстройств. Разговаривайте со своим врачом, психотерапевтом, кризисным центром или другой медицинской службой, если вы или кто-то из ваших близких нуждается в помощи. Важно знать, что вы не одни и что у вас есть возможность получить помощь.
+        )
+
+)
+
+2023-05-03 00:19:12 Array
+(
+    [update_id] => 986422701
+    [message] => Array
+        (
+            [message_id] => 4334
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683055151
+            [voice] => Array
+                (
+                    [duration] => 4
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ7mRRYi_JG3X5lB33LUjdTJyBpvP_AALRLwACwDWIStpRf9SXB99MLwQ
+                    [file_unique_id] => AgAD0S8AAsA1iEo
+                    [file_size] => 14612
+                )
+
+        )
+
+)
+
+2023-05-03 00:19:23 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4335
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683055163
+            [text] => Миллион плюс миллион будет равняться двум миллионам (2 000 000).
+        )
+
+)
+
+2023-05-03 00:24:05 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:07 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:09 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:11 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:17 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:19 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:23 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:25 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:28 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:30 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:32 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:35 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:37 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:39 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:42 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:44 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:46 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:24:55 Array
+(
+    [update_id] => 986422702
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055443
+            [text] => че почем?
+        )
+
+)
+
+2023-05-03 00:25:16 Array
+(
+    [update_id] => 986422703
+    [message] => Array
+        (
+            [message_id] => 403
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055516
+            [text] => и как же?
+        )
+
+)
+
+2023-05-03 00:26:20 Array
+(
+    [update_id] => 986422704
+    [message] => Array
+        (
+            [message_id] => 404
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055578
+            [text] => рик сколько раз?
+        )
+
+)
+
+2023-05-03 00:26:23 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 405
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055582
+            [text] => Извините, не совсем понятен вопрос. Можете уточнить, что вы имеете в виду?
+        )
+
+)
+
+2023-05-03 00:26:44 Array
+(
+    [update_id] => 986422705
+    [message] => Array
+        (
+            [message_id] => 407
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055604
+            [sticker] => Array
+                (
+                    [width] => 512
+                    [height] => 288
+                    [emoji] => 😱
+                    [set_name] => Theboys3_by_fStikBot
+                    [is_animated] => 
+                    [is_video] => 1
+                    [type] => regular
+                    [thumbnail] => Array
+                        (
+                            [file_id] => AAMCAgADHQJjvFcdAAIBl2RRY_S-vU4djKj82aZsyORte1d7AALQGwACZYVhSuvntegiAdDuAQAHbQADLwQ
+                            [file_unique_id] => AQAD0BsAAmWFYUpy
+                            [file_size] => 7986
+                            [width] => 320
+                            [height] => 180
+                        )
+
+                    [thumb] => Array
+                        (
+                            [file_id] => AAMCAgADHQJjvFcdAAIBl2RRY_S-vU4djKj82aZsyORte1d7AALQGwACZYVhSuvntegiAdDuAQAHbQADLwQ
+                            [file_unique_id] => AQAD0BsAAmWFYUpy
+                            [file_size] => 7986
+                            [width] => 320
+                            [height] => 180
+                        )
+
+                    [file_id] => CAACAgIAAx0CY7xXHQACAZdkUWP0vr1OHYyo_NmmbMjkbXtXewAC0BsAAmWFYUrr57XoIgHQ7i8E
+                    [file_unique_id] => AgAD0BsAAmWFYUo
+                    [file_size] => 54452
+                )
+
+        )
+
+)
+
+2023-05-03 00:26:56 Array
+(
+    [update_id] => 986422706
+    [message] => Array
+        (
+            [message_id] => 408
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055616
+            [sticker] => Array
+                (
+                    [width] => 512
+                    [height] => 214
+                    [emoji] => 😰
+                    [set_name] => Theboys3_by_fStikBot
+                    [is_animated] => 
+                    [is_video] => 1
+                    [type] => regular
+                    [thumbnail] => Array
+                        (
+                            [file_id] => AAMCAgADHQJjvFcdAAIBmGRRZAABgvQZjZFvMA8Mo4vy6vYSqQACFR0AAlnzYEoOwvXUo6LMBgEAB20AAy8E
+                            [file_unique_id] => AQADFR0AAlnzYEpy
+                            [file_size] => 2854
+                            [width] => 320
+                            [height] => 134
+                        )
+
+                    [thumb] => Array
+                        (
+                            [file_id] => AAMCAgADHQJjvFcdAAIBmGRRZAABgvQZjZFvMA8Mo4vy6vYSqQACFR0AAlnzYEoOwvXUo6LMBgEAB20AAy8E
+                            [file_unique_id] => AQADFR0AAlnzYEpy
+                            [file_size] => 2854
+                            [width] => 320
+                            [height] => 134
+                        )
+
+                    [file_id] => CAACAgIAAx0CY7xXHQACAZhkUWQAAYL0GY2RbzAPDKOL8ur2EqkAAhUdAAJZ82BKDsL11KOizAYvBA
+                    [file_unique_id] => AgADFR0AAlnzYEo
+                    [file_size] => 6147
+                )
+
+        )
+
+)
+
+2023-05-03 00:28:17 Array
+(
+    [update_id] => 986422707
+    [message] => Array
+        (
+            [message_id] => 409
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055696
+            [text] => ыфва
+        )
+
+)
+
+2023-05-03 00:28:42 Array
+(
+    [update_id] => 986422708
+    [message] => Array
+        (
+            [message_id] => 410
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055722
+            [text] => Рик сколько раз?
+        )
+
+)
+
+2023-05-03 00:28:46 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 411
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683055726
+            [text] => Я еще раз прошу вас уточнить ваш вопрос, так как я не понимаю, что означает "Рик сколько раз?" Это не имеет никакого смысла в контексте нашего предыдущего разговора о умножении чисел. Если у вас есть какой-то другой вопрос, я буду рад вам помочь.
+        )
+
+)
+
+2023-05-03 00:29:03 Array
+(
+    [update_id] => 986422709
+    [message] => Array
+        (
+            [message_id] => 4336
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683055741
+            [text] => Сколько раз?
+        )
+
+)
+
+2023-05-03 00:29:04 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4337
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683055743
+            [text] => Вы не авторизованы. Обратитесь к @rasa035
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 33
+                            [length] => 8
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-03 00:29:18 Array
+(
+    [update_id] => 986422710
+    [message] => Array
+        (
+            [message_id] => 4338
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683055758
+            [text] => Рик сколько раз?
+        )
+
+)
+
+2023-05-03 00:29:19 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4339
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683055758
+            [text] => Вы не авторизованы. Обратитесь к @rasa035
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 33
+                            [length] => 8
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-03 00:29:20 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4340
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683055760
+            [text] => Вы не авторизованы. Обратитесь к @rasa035
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 33
+                            [length] => 8
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-03 00:29:47 Array
+(
+    [update_id] => 986422711
+    [message] => Array
+        (
+            [message_id] => 4341
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683055787
+            [text] => Сколько раз?
+        )
+
+)
+
+2023-05-03 00:29:50 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4342
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683055790
+            [text] => "Миллион плюс миллион" - это один раз. Один миллион плюс еще один миллион дает в сумме два миллиона.
+        )
+
+)
+
+2023-05-03 00:30:02 Array
+(
+    [update_id] => 986422712
+    [message] => Array
+        (
+            [message_id] => 4343
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683055800
+            [text] => Рик сколько раз?
+        )
+
+)
+
+2023-05-03 00:30:05 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4344
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683055805
+            [text] => Это несвязано с какой-либо конкретной темой или вопросом, потому что "Рик" - это скорее всего имя. Если у вас есть конкретный вопрос, я была бы рада помочь вам ответить на него.
+        )
+
+)
+
+2023-05-03 00:30:09 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4345
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683055809
+            [text] => Я не могу точно понять ваш вопрос, так как он не является полным или ясным. Можете уточнить, что вы имеете в виду, и я постараюсь помочь вам?
+        )
+
+)
+
+2023-05-03 00:31:38 Array
+(
+    [update_id] => 986422713
+    [message] => Array
+        (
+            [message_id] => 4346
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683055898
+            [voice] => Array
+                (
+                    [duration] => 20
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ-mRRZRlAsz8-e5f7kiNWccGBkR5mAALmLwACwDWISg3z8bj2ZpyjLwQ
+                    [file_unique_id] => AgAD5i8AAsA1iEo
+                    [file_size] => 414139
+                )
+
+        )
+
+)
+
+2023-05-03 00:32:05 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4347
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683055925
+            [text] => Если вы замечаете, что сервер загружает данные из зеркала медленно, может быть несколько причин такой проблемы:
+
+1. Проблемы сетевого подключения. Если сервер не может обеспечить достаточную пропускную способность, это может привести к медленной загрузке данных из зеркала. Проверьте состояние сетевого соединения и убедитесь, что нет проблем с шириной канала.
+
+2. Проблемы на стороне клиента. Если устройство клиента, на котором вы просматриваете данные, имеет ограниченные ресурсы, это может привести к медленной загрузке данных. Проверьте состояние устройства клиента и убедитесь, что у вас достаточно оперативной памяти и мощности процессора.
+
+3. Проблемы на стороне сервера. Если сервер занят обработкой других задач или имеет проблемы с жестким диском, это может привести к медленной загрузке данных из зеркала. Проверьте состояние сервера и убедитесь, что нет проблем с жестким диском и другими ресурсами.
+
+Чтобы исправить проблемы с медленной загрузкой данных из зеркала, можно попробовать следующее:
+
+1. Оптимизировать сетевое соединение, например, увеличить ширину канала или улучшить качество подключения.
+
+2. Оптимизировать устройство клиента, например, закрыть все ненужные приложения, установить дополнительную оперативную память или произвести апгрейд процессора.
+
+3. Оптимизировать сервер, например, закрыть все ненужные процессы, проверить состояние жесткого диска и провести тщательную диагностику системы.
+
+Если эти шаги не помогут решить проблему, рекомендуется обратиться к специалистам по технической поддержке хостинга.
+        )
+
+)
+
+2023-05-03 00:33:07 Array
+(
+    [update_id] => 986422714
+    [message] => Array
+        (
+            [message_id] => 4348
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683055986
+            [voice] => Array
+                (
+                    [duration] => 4
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ_GRRZXJoOAc_uaA4SLIE0dAiIPinAALoLwACwDWISpkhBTmkoEqmLwQ
+                    [file_unique_id] => AgAD6C8AAsA1iEo
+                    [file_size] => 91955
+                )
+
+        )
+
+)
+
+2023-05-03 00:33:25 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4349
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683056004
+            [text] => Да, вы правы, еще одним вариантом может быть использование других зеркал для загрузки данных. Если одно зеркало дает медленную скорость загрузки данных, возможно, некоторые другие зеркала имеют лучшую производительность или более подходящую для вас локацию.
+
+Хорошей практикой является многократная проверка на доступность и скорость всех зеркал, доступных для загрузки данных. Возможно, вы захотели бы использовать специализированные сервисы мониторинга для проверки качества и производительности зеркал. Они также могут предоставить подробные отчеты, позволяющие оценить и решить проблемы, связанные с медленной загрузкой данных.
+
+Если вы используете какую-то платформу, например, с помощью CDN (Content Delivery Network), которая предоставляет автоматический выбор зеркала в зависимости от местоположения пользователя, то возможно, стоит проверить настройки данной платформы и, возможно, включить или выбрать другую зону доставки сервиса, или используйте другую платформу CDN с обширной сетью зеркал.
+        )
+
+)
+
+2023-05-03 00:35:37 Array
+(
+    [update_id] => 986422715
+    [message] => Array
+        (
+            [message_id] => 4350
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683056135
+            [voice] => Array
+                (
+                    [duration] => 7
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIQ_mRRZgZoDJfcSe30gpJ8pERFizYRAALsLwACwDWISuTlY7QF8R53LwQ
+                    [file_unique_id] => AgAD7C8AAsA1iEo
+                    [file_size] => 152107
+                )
+
+        )
+
+)
+
+2023-05-03 00:36:01 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4351
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683056161
+            [text] => Для того чтобы узнать, какие зеркала используются в вашей системе, вам следует общаться со специалистом, занимающимся настройкой вашей инфраструктуры. 
+Они могут предоставить вам подробную информацию о существующих зеркалах и их производительности. 
+
+Тем не менее, в случае, если в системе используются камеры, можно использовать следующие инструменты для мониторинга производительности в зависимости от конкретной системы:
+
+1. Программное обеспечение для мониторинга камер - многие поставщики оборудования предоставляют соответствующее программное обеспечение, которое может использоваться для мониторинга производительности камер. 
+
+2. Web-интерфейс устройств - веб-интерфейсы камер могут предоставлять информацию о производительности, такую как скорость передачи видео и количество отправленных пакетов данных. 
+
+3. Сервер мониторинга - в случае, если система использует централизованный сервер, который управляет связью между камерами и другими устройствами, вы можете использовать сервер мониторинга для отслеживания производительности системы в целом и конкретных камер.
+
+В любом случае, если у вас возникли проблемы с использованием зеркал, настоятельно рекомендуется связаться со специалистами и проконсультироваться с ними, чтобы они могли помочь вам решить конкретные проблемы.
+        )
+
+)
+
+2023-05-03 00:37:12 Array
+(
+    [update_id] => 986422716
+    [message] => Array
+        (
+            [message_id] => 4352
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683056232
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIRAAFkUWZoryonRPHAY2hJYsoB_Au6rwAC7y8AAsA1iErSE_LHbromBS8E
+                    [file_unique_id] => AgAD7y8AAsA1iEo
+                    [file_size] => 68883
+                )
+
+        )
+
+)
+
+2023-05-03 00:37:29 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4353
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683056249
+            [text] => В Linux можно использовать команду `cat` или `nano`, чтобы просмотреть содержимое файла `/etc/apt/sources.list`. 
+
+1. Откройте терминал.
+
+2. Введите одну из следующих команд:
+
+   ```
+   cat /etc/apt/sources.list
+   ```
+
+   или
+
+   ```
+   nano /etc/apt/sources.list
+   ```
+
+   Команда `cat` просто выведет содержимое файла в терминал, а команда `nano` откроет файл в текстовом редакторе.
+
+3. Просмотрите список зеркал, которые содержатся в файле. Они будут выглядеть примерно следующим образом:
+
+   ```
+   deb http://archive.ubuntu.com/ubuntu/ bionic main restricted universe multiverse
+   deb http://security.ubuntu.com/ubuntu/ bionic-security main restricted universe multiverse
+   deb http://archive.ubuntu.com/ubuntu/ bionic-updates main restricted universe multiverse
+   deb http://archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
+   ```
+
+   Каждое зеркало будет начинаться с ключевого слова `deb`, за которым следует URL-адрес зеркала и информация о дистрибутиве, который вы используете (в данном случае, она указывает на версию Ubuntu "bionic").
+
+Это позволит вам просмотреть список зеркал, который Linux использует для загрузки программных обновлений и других файлов.
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 509
+                            [length] => 33
+                            [type] => url
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 593
+                            [length] => 34
+                            [type] => url
+                        )
+
+                    [2] => Array
+                        (
+                            [offset] => 687
+                            [length] => 33
+                            [type] => url
+                        )
+
+                    [3] => Array
+                        (
+                            [offset] => 779
+                            [length] => 33
+                            [type] => url
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-03 01:21:25 Array
+(
+    [update_id] => 986422717
+    [message] => Array
+        (
+            [message_id] => 4354
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683058885
+            [text] => хмм спасибо
+        )
+
+)
+
+2023-05-03 01:21:28 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4355
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683058888
+            [text] => Не за что, я буду рад помочь вам еще в чем-то! Если у вас есть какие-либо другие вопросы, не стесняйтесь спрашивать.
+        )
+
+)
+
+2023-05-04 03:43:33 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:43:36 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:43:38 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:43:40 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:43:42 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:43:44 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:43:46 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:43:48 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:43:50 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:43:52 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:43:55 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:43:57 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:43:59 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:01 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:03 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:05 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:07 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:09 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:11 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:14 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:16 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:18 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:20 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:22 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:24 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:26 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:28 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:31 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:33 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:35 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:38 Array
+(
+    [update_id] => 986422731
+    [message] => Array
+        (
+            [message_id] => 4379
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153810
+            [text] => рик сколько будет 2+2?
+        )
+
+)
+
+2023-05-04 03:44:40 Array
+(
+    [update_id] => 986422732
+    [message] => Array
+        (
+            [message_id] => 4380
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153835
+            [new_chat_participant] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [new_chat_member] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [new_chat_members] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 5915045005
+                            [is_bot] => 
+                            [first_name] => #1
+                            [username] => vandarkho
+                            [language_code] => en
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-04 03:44:57 Array
+(
+    [update_id] => 986422733
+    [message] => Array
+        (
+            [message_id] => 4381
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683153895
+            [text] => Рик сколько раз?
+        )
+
+)
+
+2023-05-04 03:44:57 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4382
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683153895
+            [text] => Вы не авторизованы. Обратитесь к @rasa035
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 33
+                            [length] => 8
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-04 03:44:57 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4383
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683153895
+            [text] => Вы не авторизованы. Обратитесь к @rasa035
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 33
+                            [length] => 8
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-04 03:45:09 Array
+(
+    [update_id] => 986422734
+    [message] => Array
+        (
+            [message_id] => 4384
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683153906
+            [text] => Рик сколько раз?
+        )
+
+)
+
+2023-05-04 03:45:23 Array
+(
+    [update_id] => 986422735
+    [message] => Array
+        (
+            [message_id] => 413
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683153921
+            [text] => Рик сколько раз?
+        )
+
+)
+
+2023-05-04 03:45:26 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 414
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683153924
+            [text] => Я не понимаю вашего вопроса. Можете объяснить, что вы имеете в виду? Если у вас есть какой-то математический вопрос, я попытаюсь помочь вам.
+        )
+
+)
+
+2023-05-04 03:46:21 Array
+(
+    [update_id] => 986422736
+    [message] => Array
+        (
+            [message_id] => 416
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683153979
+            [text] => Интересно
+        )
+
+)
+
+2023-05-04 03:46:40 Array
+(
+    [update_id] => 986422737
+    [message] => Array
+        (
+            [message_id] => 417
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683153997
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAx0CY7xXHQACAaFkUuRNKvMJooG2kDqaBc1VA1rUoQACcCkAAvd7mUpiOMNKntRFiy8E
+                    [file_unique_id] => AgADcCkAAvd7mUo
+                    [file_size] => 59819
+                )
+
+        )
+
+)
+
+2023-05-04 03:46:47 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 418
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154005
+            [text] => Чтобы вычислить сумму 3 и 5, нужно просто сложить эти два числа:
+
+3 + 5 = 8
+
+Таким образом, результатом сложения 3 и 5 является число 8.
+        )
+
+)
+
+2023-05-04 03:46:59 Array
+(
+    [update_id] => 986422738
+    [message] => Array
+        (
+            [message_id] => 4385
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683154017
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIRIWRS5GEjI4UvN5F-Fxs3VO8X-brHAAIWMwACrhKRSnu4l6bAWAjTLwQ
+                    [file_unique_id] => AgADFjMAAq4SkUo
+                    [file_size] => 52403
+                )
+
+        )
+
+)
+
+2023-05-04 03:47:06 Array
+(
+    [update_id] => 986422739
+    [message] => Array
+        (
+            [message_id] => 4386
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683154024
+            [voice] => Array
+                (
+                    [duration] => 1
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIRImRS5GgFNLIc_-kqUEQLWp2CGViZAAIXMwACrhKRSuVXnuQHlWrVLwQ
+                    [file_unique_id] => AgADFzMAAq4SkUo
+                    [file_size] => 33451
+                )
+
+        )
+
+)
+
+2023-05-04 03:47:25 Array
+(
+    [update_id] => 986422740
+    [message] => Array
+        (
+            [message_id] => 4387
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683154042
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIRI2RS5HpfQzOSsFsuWJFkagxWfiJpAAIYMwACrhKRShvbapMKK74eLwQ
+                    [file_unique_id] => AgADGDMAAq4SkUo
+                    [file_size] => 7281
+                )
+
+        )
+
+)
+
+2023-05-04 03:48:58 Array
+(
+    [update_id] => 986422741
+    [message] => Array
+        (
+            [message_id] => 419
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154136
+            [voice] => Array
+                (
+                    [duration] => 4
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAx0CY7xXHQACAaNkUuTY80omBZBquoeR_4wy3QeLYAACcSkAAvd7mUqskCF0x__HAi8E
+                    [file_unique_id] => AgADcSkAAvd7mUo
+                    [file_size] => 87011
+                )
+
+        )
+
+)
+
+2023-05-04 03:49:01 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 420
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154139
+            [text] => Чтобы вычислить сумму 3 и 5, нужно просто сложить эти два числа:
+
+3 + 5 = 8
+
+Таким образом, результатом сложения 3 и 5 является число 8.
+        )
+
+)
+
+2023-05-04 03:49:03 Array
+(
+    [update_id] => 986422741
+    [message] => Array
+        (
+            [message_id] => 419
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154136
+            [voice] => Array
+                (
+                    [duration] => 4
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAx0CY7xXHQACAaNkUuTY80omBZBquoeR_4wy3QeLYAACcSkAAvd7mUqskCF0x__HAi8E
+                    [file_unique_id] => AgADcSkAAvd7mUo
+                    [file_size] => 87011
+                )
+
+        )
+
+)
+
+2023-05-04 03:49:05 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 421
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154143
+            [text] => Чтобы вычислить сумму 3 и 5, нужно просто сложить эти два числа:
+
+3 + 5 = 8
+
+Таким образом, результатом сложения 3 и 5 является число 8.
+        )
+
+)
+
+2023-05-04 03:49:07 Array
+(
+    [update_id] => 986422741
+    [message] => Array
+        (
+            [message_id] => 419
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154136
+            [voice] => Array
+                (
+                    [duration] => 4
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAx0CY7xXHQACAaNkUuTY80omBZBquoeR_4wy3QeLYAACcSkAAvd7mUqskCF0x__HAi8E
+                    [file_unique_id] => AgADcSkAAvd7mUo
+                    [file_size] => 87011
+                )
+
+        )
+
+)
+
+2023-05-04 03:49:09 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 422
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154147
+            [text] => Чтобы вычислить сумму 3 и 5, нужно просто сложить эти два числа:
+
+3 + 5 = 8
+
+Таким образом, результатом сложения 3 и 5 является число 8.
+        )
+
+)
+
+2023-05-04 03:49:11 Array
+(
+    [update_id] => 986422741
+    [message] => Array
+        (
+            [message_id] => 419
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154136
+            [voice] => Array
+                (
+                    [duration] => 4
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAx0CY7xXHQACAaNkUuTY80omBZBquoeR_4wy3QeLYAACcSkAAvd7mUqskCF0x__HAi8E
+                    [file_unique_id] => AgADcSkAAvd7mUo
+                    [file_size] => 87011
+                )
+
+        )
+
+)
+
+2023-05-04 03:49:36 Array
+(
+    [update_id] => 986422741
+    [message] => Array
+        (
+            [message_id] => 419
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154136
+            [voice] => Array
+                (
+                    [duration] => 4
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAx0CY7xXHQACAaNkUuTY80omBZBquoeR_4wy3QeLYAACcSkAAvd7mUqskCF0x__HAi8E
+                    [file_unique_id] => AgADcSkAAvd7mUo
+                    [file_size] => 87011
+                )
+
+        )
+
+)
+
+2023-05-04 03:49:38 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 423
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154176
+            [text] => Чтобы вычислить сумму 3 и 5, нужно просто сложить эти два числа:
+
+3 + 5 = 8
+
+Таким образом, результатом сложения 3 и 5 является число 8.
+        )
+
+)
+
+2023-05-04 03:49:55 Array
+(
+    [update_id] => 986422742
+    [message] => Array
+        (
+            [message_id] => 424
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154191
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAx0CY7xXHQACAahkUuUPMya7Ym8YTJ5HOTTW6RlkRAACcikAAvd7mUpCPHxOYQcYdS8E
+                    [file_unique_id] => AgADcikAAvd7mUo
+                    [file_size] => 57347
+                )
+
+        )
+
+)
+
+2023-05-04 03:49:57 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 425
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154195
+            [text] => Чтобы вычислить сумму 3 и 5, нужно просто сложить эти два числа:
+
+3 + 5 = 8
+
+Таким образом, результатом сложения 3 и 5 является число 8.
+        )
+
+)
+
+2023-05-04 03:50:16 Array
+(
+    [update_id] => 986422743
+    [message] => Array
+        (
+            [message_id] => 426
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154214
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAx0CY7xXHQACAapkUuUmTWUaYt0nPVkKV6eS0hwE3AACcykAAvd7mUqrLj60AVAQFC8E
+                    [file_unique_id] => AgADcykAAvd7mUo
+                    [file_size] => 71355
+                )
+
+        )
+
+)
+
+2023-05-04 03:50:18 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 427
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154216
+            [text] => Чтобы вычислить сумму 3 и 5, нужно просто сложить эти два числа:
+
+3 + 5 = 8
+
+Таким образом, результатом сложения 3 и 5 является число 8.
+        )
+
+)
+
+2023-05-04 03:52:56 Array
+(
+    [update_id] => 986422744
+    [message] => Array
+        (
+            [message_id] => 428
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154374
+            [text] => Сколько цветов ты знаешь?
+        )
+
+)
+
+2023-05-04 03:52:58 Array
+(
+    [update_id] => 986422744
+    [message] => Array
+        (
+            [message_id] => 428
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154374
+            [text] => Сколько цветов ты знаешь?
+        )
+
+)
+
+2023-05-04 03:53:01 Array
+(
+    [update_id] => 986422744
+    [message] => Array
+        (
+            [message_id] => 428
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154374
+            [text] => Сколько цветов ты знаешь?
+        )
+
+)
+
+2023-05-04 03:53:03 Array
+(
+    [update_id] => 986422744
+    [message] => Array
+        (
+            [message_id] => 428
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154374
+            [text] => Сколько цветов ты знаешь?
+        )
+
+)
+
+2023-05-04 03:53:05 Array
+(
+    [update_id] => 986422744
+    [message] => Array
+        (
+            [message_id] => 428
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154374
+            [text] => Сколько цветов ты знаешь?
+        )
+
+)
+
+2023-05-04 03:53:07 Array
+(
+    [update_id] => 986422744
+    [message] => Array
+        (
+            [message_id] => 428
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154374
+            [text] => Сколько цветов ты знаешь?
+        )
+
+)
+
+2023-05-04 03:53:28 Array
+(
+    [update_id] => 986422744
+    [message] => Array
+        (
+            [message_id] => 428
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154374
+            [text] => Сколько цветов ты знаешь?
+        )
+
+)
+
+2023-05-04 03:56:55 Array
+(
+    [update_id] => 986422745
+    [message] => Array
+        (
+            [message_id] => 4388
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683154611
+            [text] => Сколько цветов ты знаешь?
+        )
+
+)
+
+2023-05-04 03:56:58 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4389
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683154616
+            [text] => Как искусственный интеллект, я знаю миллионы разных цветов, которые определяются по их шестнадцатеричным кодам или RGB значениям. Взаимодействуя с людьми, я использую запросы цветовых значений в соответствии с общепринятыми именами цветов или их кодами, например, "красный" (#FF0000), "зеленый" (#00FF00) и "синий" (#0000FF).
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 275
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 296
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [2] => Array
+                        (
+                            [offset] => 316
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-04 03:57:01 Array
+(
+    [update_id] => 986422745
+    [message] => Array
+        (
+            [message_id] => 4388
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683154611
+            [text] => Сколько цветов ты знаешь?
+        )
+
+)
+
+2023-05-04 03:57:04 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4390
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683154622
+            [text] => Как искусственный интеллект, я знаю миллионы разных цветов, которые определяются по их шестнадцатеричным кодам или RGB значениям. Взаимодействуя с людьми, я использую запросы цветовых значений в соответствии с общепринятыми именами цветов или их кодами, например, "красный" (#FF0000), "зеленый" (#00FF00) и "синий" (#0000FF).
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 275
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 296
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [2] => Array
+                        (
+                            [offset] => 316
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-04 03:57:06 Array
+(
+    [update_id] => 986422745
+    [message] => Array
+        (
+            [message_id] => 4388
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683154611
+            [text] => Сколько цветов ты знаешь?
+        )
+
+)
+
+2023-05-04 03:57:09 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4391
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683154627
+            [text] => Как искусственный интеллект, я знаю миллионы разных цветов, которые определяются по их шестнадцатеричным кодам или RGB значениям. Взаимодействуя с людьми, я использую запросы цветовых значений в соответствии с общепринятыми именами цветов или их кодами, например, "красный" (#FF0000), "зеленый" (#00FF00) и "синий" (#0000FF).
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 275
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 296
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [2] => Array
+                        (
+                            [offset] => 316
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-04 03:57:11 Array
+(
+    [update_id] => 986422745
+    [message] => Array
+        (
+            [message_id] => 4388
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683154611
+            [text] => Сколько цветов ты знаешь?
+        )
+
+)
+
+2023-05-04 04:02:36 Array
+(
+    [update_id] => 986422745
+    [message] => Array
+        (
+            [message_id] => 4388
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683154611
+            [text] => Сколько цветов ты знаешь?
+        )
+
+)
+
+2023-05-04 04:02:40 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4392
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683154958
+            [text] => Как искусственный интеллект, я знаю миллионы разных цветов, которые определяются по их шестнадцатеричным кодам или RGB значениям. Взаимодействуя с людьми, я использую запросы цветовых значений в соответствии с общепринятыми именами цветов или их кодами, например, "красный" (#FF0000), "зеленый" (#00FF00) и "синий" (#0000FF).
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 275
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 296
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [2] => Array
+                        (
+                            [offset] => 316
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-04 04:02:59 Array
+(
+    [update_id] => 986422746
+    [message] => Array
+        (
+            [message_id] => 4393
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683154975
+            [text] => Сколько цветов ты знаешь?
+        )
+
+)
+
+2023-05-04 04:03:01 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4394
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683154979
+            [text] => Как искусственный интеллект, я знаю миллионы разных цветов, которые определяются по их шестнадцатеричным кодам или RGB значениям. Взаимодействуя с людьми, я использую запросы цветовых значений в соответствии с общепринятыми именами цветов или их кодами, например, "красный" (#FF0000), "зеленый" (#00FF00) и "синий" (#0000FF).
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 275
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 296
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [2] => Array
+                        (
+                            [offset] => 316
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-04 04:03:13 Array
+(
+    [update_id] => 986422747
+    [message] => Array
+        (
+            [message_id] => 429
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683154991
+            [text] => Сколько цветов ты знаешь?
+        )
+
+)
+
+2023-05-04 04:03:30 Array
+(
+    [update_id] => 986422748
+    [message] => Array
+        (
+            [message_id] => 430
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155006
+            [text] => рик Сколько цветов ты знаешь?
+        )
+
+)
+
+2023-05-04 04:03:33 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 431
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155011
+            [text] => Я как искусственный интеллект не имею чувственного восприятия, а значит, не способен видеть цвета так, как это делают люди. Однако я программа, которая обладает информацией о множестве цветовых моделей, например RGB (красный, зеленый, синий), CMYK (циан, маджента, желтый, черный), HSL (оттенок, насыщенность, светлота), и других. Точное количество цветов, которые я могу определить, зависит от базы данных цветов, с которой я работаю.
+        )
+
+)
+
+2023-05-04 04:04:38 Array
+(
+    [update_id] => 986422749
+    [message] => Array
+        (
+            [message_id] => 432
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155076
+            [text] => рик например?
+        )
+
+)
+
+2023-05-04 04:04:41 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 433
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155079
+            [text] => Я могу определить миллионы цветовых комбинаций, используя различные цветовые модели, такие как RGB, CMYK, HSB, HSL и другие. Количество цветовых комбинаций, которые я знаю, не имеет определенного значения, потому что оно зависит от того, какие базы данных цветов используются в моей программе. Таким образом, я могу знать огромное количество цветов, но мне нужно знать, какую информацию о цветах и откуда получать.
+        )
+
+)
+
+2023-05-04 04:04:44 Array
+(
+    [update_id] => 986422749
+    [message] => Array
+        (
+            [message_id] => 432
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155076
+            [text] => рик например?
+        )
+
+)
+
+2023-05-04 04:04:48 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 434
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155086
+            [text] => Я не уверен, что понимаю ваш вопрос. Если вы спрашиваете, сколько цветов я могу определить в примере с именем Рик (Rick), то я могу сказать, что это название не имеет никакого отношения к цветам. Я могу определить цвета, используя представление цветов в виде чисел или шестнадцатеричных кодов. Если вы дадите мне значение цвета в таком формате, то я смогу определить его цветовую модель и сопоставить его с конкретным цветом.
+        )
+
+)
+
+2023-05-04 04:05:14 Array
+(
+    [update_id] => 986422750
+    [message] => Array
+        (
+            [message_id] => 435
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155112
+            [text] => а сколько раз?
+        )
+
+)
+
+2023-05-04 04:05:40 Array
+(
+    [update_id] => 986422751
+    [message] => Array
+        (
+            [message_id] => 436
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155138
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAx0CY7xXHQACAbRkUujCEijYPzjrhlF0D8z6cx852gACdCkAAvd7mUoR4J5qz5Q_Jy8E
+                    [file_unique_id] => AgADdCkAAvd7mUo
+                    [file_size] => 7784
+                )
+
+        )
+
+)
+
+2023-05-04 04:05:44 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 437
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155142
+            [text] => Я могу определить миллионы цветовых комбинаций, используя различные цветовые модели, такие как RGB, CMYK, HSB, HSL и другие. Количество цветовых комбинаций, которые я знаю, не имеет определенного значения, потому что оно зависит от того, какие базы данных цветов используются в моей программе. Таким образом, я могу знать огромное количество цветов, но мне нужно знать, какую информацию о цветах и откуда получать.
+        )
+
+)
+
+2023-05-04 04:08:12 Array
+(
+    [update_id] => 986422752
+    [message] => Array
+        (
+            [message_id] => 438
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155289
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAx0CY7xXHQACAbZkUulZlCbyWnV-aehRNltBqMPFYgACdikAAvd7mUodwAztfEwepC8E
+                    [file_unique_id] => AgADdikAAvd7mUo
+                    [file_size] => 6556
+                )
+
+        )
+
+)
+
+2023-05-04 04:08:16 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 439
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155294
+            [text] => Я не уверен, что понимаю ваш вопрос. Если вы спрашиваете, сколько цветов я могу определить в примере с именем Рик (Rick), то я могу сказать, что это название не имеет никакого отношения к цветам. Я могу определить цвета, используя представление цветов в виде чисел или шестнадцатеричных кодов. Если вы дадите мне значение цвета в таком формате, то я смогу определить его цветовую модель и сопоставить его с конкретным цветом.
+        )
+
+)
+
+2023-05-04 04:09:43 Array
+(
+    [update_id] => 986422753
+    [message] => Array
+        (
+            [message_id] => 440
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155381
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAx0CY7xXHQACAbhkUum1du4-uvYD-dwBBKWFY54f-AACdykAAvd7mUrIp_QdZeuYki8E
+                    [file_unique_id] => AgADdykAAvd7mUo
+                    [file_size] => 8298
+                )
+
+        )
+
+)
+
+2023-05-04 04:09:46 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 441
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155384
+            [text] => Я могу определить миллионы цветовых комбинаций, используя различные цветовые модели, такие как RGB, CMYK, HSB, HSL и другие. Количество цветовых комбинаций, которые я знаю, не имеет определенного значения, потому что оно зависит от того, какие базы данных цветов используются в моей программе. Таким образом, я могу знать огромное количество цветов, но мне нужно знать, какую информацию о цветах и откуда получать.
+        )
+
+)
+
+2023-05-04 04:13:56 Array
+(
+    [update_id] => 986422753
+    [message] => Array
+        (
+            [message_id] => 440
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155381
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAx0CY7xXHQACAbhkUum1du4-uvYD-dwBBKWFY54f-AACdykAAvd7mUrIp_QdZeuYki8E
+                    [file_unique_id] => AgADdykAAvd7mUo
+                    [file_size] => 8298
+                )
+
+        )
+
+)
+
+2023-05-04 04:14:08 Array
+(
+    [update_id] => 986422754
+    [message] => Array
+        (
+            [message_id] => 442
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155646
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAx0CY7xXHQACAbpkUuq-FGjdvkmBWWYwKFbDnGaOFwACeCkAAvd7mUp9ef9a_KrvSy8E
+                    [file_unique_id] => AgADeCkAAvd7mUo
+                    [file_size] => 8281
+                )
+
+        )
+
+)
+
+2023-05-04 04:14:19 Array
+(
+    [update_id] => 986422755
+    [message] => Array
+        (
+            [message_id] => 443
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155657
+            [voice] => Array
+                (
+                    [duration] => 1
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAx0CY7xXHQACAbtkUurJU2LDSLqMcvUx1x92D_9xGgACeikAAvd7mUowGiv5H6bePC8E
+                    [file_unique_id] => AgADeikAAvd7mUo
+                    [file_size] => 4608
+                )
+
+        )
+
+)
+
+2023-05-04 04:14:36 Array
+(
+    [update_id] => 986422756
+    [message] => Array
+        (
+            [message_id] => 444
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155672
+            [text] => как ты в порядке?
+        )
+
+)
+
+2023-05-04 04:14:50 Array
+(
+    [update_id] => 986422757
+    [message] => Array
+        (
+            [message_id] => 4395
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683155688
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIRK2RS6udikyoIq9DITXjJIhNErBB1AAIdMwACrhKRSsGzqOm_DbzcLwQ
+                    [file_unique_id] => AgADHTMAAq4SkUo
+                    [file_size] => 8556
+                )
+
+        )
+
+)
+
+2023-05-04 04:15:02 Array
+(
+    [update_id] => 986422758
+    [message] => Array
+        (
+            [message_id] => 4396
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683155700
+            [voice] => Array
+                (
+                    [duration] => 1
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIRLGRS6vQnETWb5cifqn1C46_xxnu3AAIeMwACrhKRSlSwv4goNs2KLwQ
+                    [file_unique_id] => AgADHjMAAq4SkUo
+                    [file_size] => 5098
+                )
+
+        )
+
+)
+
+2023-05-04 04:15:21 Array
+(
+    [update_id] => 986422759
+    [message] => Array
+        (
+            [message_id] => 445
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155719
+            [voice] => Array
+                (
+                    [duration] => 1
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAx0CY7xXHQACAb1kUusGG6msuZWjBPN-iHvprmkAAX8AAnspAAL3e5lKJku-ZRMX_NAvBA
+                    [file_unique_id] => AgADeykAAvd7mUo
+                    [file_size] => 29331
+                )
+
+        )
+
+)
+
+2023-05-04 04:15:32 Array
+(
+    [update_id] => 986422760
+    [message] => Array
+        (
+            [message_id] => 4397
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683155730
+            [voice] => Array
+                (
+                    [duration] => 1
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIRLWRS6xINVcrxLqnpdRlRdU61Lvo1AAIfMwACrhKRSh3CQBxEEEMbLwQ
+                    [file_unique_id] => AgADHzMAAq4SkUo
+                    [file_size] => 29331
+                )
+
+        )
+
+)
+
+2023-05-04 04:15:43 Array
+(
+    [update_id] => 986422761
+    [message] => Array
+        (
+            [message_id] => 4398
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683155740
+            [voice] => Array
+                (
+                    [duration] => 1
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIRLmRS6xweqg_0S9n3RAvJxWQrMeIEAALmMgACbEqYShlELSf3GlNfLwQ
+                    [file_unique_id] => AgAD5jIAAmxKmEo
+                    [file_size] => 30155
+                )
+
+        )
+
+)
+
+2023-05-04 04:15:44 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4399
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683155742
+            [text] => Вы не авторизованы. Обратитесь к @rasa035
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 33
+                            [length] => 8
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-04 04:15:50 Array
+(
+    [update_id] => 986422762
+    [message] => Array
+        (
+            [message_id] => 4400
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683155748
+            [text] => Рик почему
+        )
+
+)
+
+2023-05-04 04:15:50 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4401
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683155748
+            [text] => Вы не авторизованы. Обратитесь к @rasa035
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 33
+                            [length] => 8
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-04 04:15:51 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4402
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683155749
+            [text] => Вы не авторизованы. Обратитесь к @rasa035
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 33
+                            [length] => 8
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-04 04:15:55 Array
+(
+    [update_id] => 986422763
+    [message] => Array
+        (
+            [message_id] => 4403
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683155752
+            [text] => Почему
+        )
+
+)
+
+2023-05-04 04:15:55 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4404
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683155753
+            [text] => Вы не авторизованы. Обратитесь к @rasa035
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 33
+                            [length] => 8
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-04 04:16:07 Array
+(
+    [update_id] => 986422764
+    [message] => Array
+        (
+            [message_id] => 4405
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683155764
+            [text] => Почему
+        )
+
+)
+
+2023-05-04 04:16:12 Array
+(
+    [update_id] => 986422765
+    [message] => Array
+        (
+            [message_id] => 4406
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683155770
+            [text] => Рик почему
+        )
+
+)
+
+2023-05-04 04:16:36 Array
+(
+    [update_id] => 986422766
+    [message] => Array
+        (
+            [message_id] => 446
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155794
+            [text] => Рик почему
+        )
+
+)
+
+2023-05-04 04:16:38 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 447
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683155796
+            [text] => Мне кажется, что Вы задаёте не полный вопрос. Если уточнить, о каком аспекте информации вы бы хотели узнать, то я смогу с Вами пообщаться и предоставить ответ на заданный вопрос.
+        )
+
+)
+
+2023-05-04 04:17:05 Array
+(
+    [update_id] => 986422767
+    [message] => Array
+        (
+            [message_id] => 4407
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683155823
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIRN2RS629wz7UTct9G2m5izF-S0EqFAAJULAAC4V6YSvrH1oy6xOtqLwQ
+                    [file_unique_id] => AgADVCwAAuFemEo
+                    [file_size] => 7865
+                )
+
+        )
+
+)
+
+2023-05-04 04:17:12 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4408
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683155830
+            [text] => Конечно, могу перечислить некоторые известные цвета: 
+- Красный (#FF0000)
+- Синий (#0000FF)
+- Зеленый (#00FF00)
+- Желтый (#FFFF00)
+- Белый (#FFFFFF)
+- Черный (#000000)
+- Розовый (#FFC0CB)
+- Оранжевый (#FFA500)
+- Серый (#808080)
+- Фиолетовый (#800080)
+Это лишь некоторые из множества цветов, которые я знаю.
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 65
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 83
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [2] => Array
+                        (
+                            [offset] => 103
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [3] => Array
+                        (
+                            [offset] => 122
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [4] => Array
+                        (
+                            [offset] => 140
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [5] => Array
+                        (
+                            [offset] => 179
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [6] => Array
+                        (
+                            [offset] => 201
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-04 04:17:18 Array
+(
+    [update_id] => 986422768
+    [message] => Array
+        (
+            [message_id] => 4409
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683155836
+            [voice] => Array
+                (
+                    [duration] => 1
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIROWRS63xwYdGoeCzPlYlo8HG4NR1aAAJVLAAC4V6YSs68xfIU13neLwQ
+                    [file_unique_id] => AgADVSwAAuFemEo
+                    [file_size] => 5808
+                )
+
+        )
+
+)
+
+2023-05-04 04:17:24 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4410
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683155842
+            [text] => Я знаю множество цветов, которые можно создать путем комбинирования основных цветов RGB: красный, зеленый и синий. Вот несколько других цветов, которые я могу вам перечислить:
+- Бирюзовый (#40E0D0)
+- Лайм (#00FF00)
+- Сафари (#FF8247)
+- Мандариновый (#FFA07A)
+- Лиловый (#FF00FF)
+- Оливковый (#808000)
+- Персиковый (#FFE5B4)
+- Голубой (#87CEFA)
+- Лазурный (#007FFF)
+Это только некоторые из бесчисленного количества цветов, которые я могу определить и описать.
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 189
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 206
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [2] => Array
+                        (
+                            [offset] => 225
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [3] => Array
+                        (
+                            [offset] => 250
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [4] => Array
+                        (
+                            [offset] => 270
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [5] => Array
+                        (
+                            [offset] => 315
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [6] => Array
+                        (
+                            [offset] => 335
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [7] => Array
+                        (
+                            [offset] => 356
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-04 04:17:29 Array
+(
+    [update_id] => 986422769
+    [message] => Array
+        (
+            [message_id] => 4411
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683155847
+            [text] => а еще?
+        )
+
+)
+
+2023-05-04 04:17:32 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4412
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683155850
+            [text] => Конечно, я могу продолжить перечисление цветов:
+- Кастеновый (#800000)
+- Темно-зеленый (#006400)
+- Золотистый (#FFD700)
+- Сапфировый (#082567)
+- Шоколадный (#D2691E)
+- Бежевый (#F5F5DC)
+- Бирюзовый морской (#48D1CC)
+- Лимонный (#FFFACD)
+- Малиновый (#C71585)
+Это лишь еще несколько примеров цветов, которые я знаю.
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 111
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 157
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [2] => Array
+                        (
+                            [offset] => 177
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [3] => Array
+                        (
+                            [offset] => 207
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [4] => Array
+                        (
+                            [offset] => 228
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                    [5] => Array
+                        (
+                            [offset] => 250
+                            [length] => 7
+                            [type] => hashtag
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-04 04:17:43 Array
+(
+    [update_id] => 986422770
+    [message] => Array
+        (
+            [message_id] => 4413
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683155861
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIRPWRS65W8Iehfs2dNVRBYKD-rpSjNAAJWLAAC4V6YStMll5atn2n6LwQ
+                    [file_unique_id] => AgADViwAAuFemEo
+                    [file_size] => 8432
+                )
+
+        )
+
+)
+
+2023-05-04 04:17:49 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4414
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683155867
+            [text] => Конечно, я готов отправить эмоцию. (◕‿◕✿)
+        )
+
+)
+

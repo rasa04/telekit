@@ -80,6 +80,16 @@ trait Controllers
         }
     }
 
+    public function is_private_chat(): bool
+    {
+        return $GLOBALS['request']['message']['from']['id'] === $GLOBALS['request']['message']['chat']['id'];
+    }
+
+    public function is_public_group(): bool
+    {
+        return $GLOBALS['request']['message']['from']['id'] === $GLOBALS['request']['message']['chat']['id'];
+    }
+
     public function chat_gpt($messages): string
     {
         $response = $this->client()->post('https://api.openai.com/v1/chat/completions', [
