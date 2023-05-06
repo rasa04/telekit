@@ -4,6 +4,7 @@ use Core\App;
 use Core\Database\Database;
 use Dotenv\Dotenv;
 
+use Responses\Invoices\SubscriptionForMonth;
 use Responses\Triggers\{Start, Help, NamesPrevalence, ChooseBetween, OpenAI, Settings};
 use Responses\Triggers\Admin\GetApi;
 use Responses\Plots\{About, Support, Settings as SettingsPlot};
@@ -38,5 +39,8 @@ App::triggers([
     ])
     ->games([
         'example' => null
+    ])
+    ->invoices([
+        "Подписка на месяц" => SubscriptionForMonth::class
     ])
     ->handle();

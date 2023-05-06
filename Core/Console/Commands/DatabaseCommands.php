@@ -5,6 +5,7 @@ namespace Core\Console\Commands;
 use Core\Database\Database;
 use Core\Env;
 use Core\Validator\ErrorHandler;
+use Database\seeders\DatabaseSeeder;
 use Illuminate\Database\Capsule\Manager as Capsule;
 use PDO;
 
@@ -72,6 +73,10 @@ class DatabaseCommands
                 if (!isset($argv[3])) $migration->up();
                 elseif ($argv[3] === '--fresh') $migration->down();
             }
+        }
+        elseif ($argv[2] === '--seed') {
+            $seeder = new DatabaseSeeder();
+            $seeder->run();
         }
         else {
             new ErrorHandler("UNKNOWN COMMAND: " . $argv[2]);

@@ -4,9 +4,9 @@ namespace Database\models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Group extends Model
+class Chat extends Model
 {
-    protected $table = 'groups';
+    protected $table = 'chats';
 
     protected $guarded = false;
 }

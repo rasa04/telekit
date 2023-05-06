@@ -9028,3 +9028,2735 @@ Length: DB 10
 
 )
 
+2023-05-06 22:51:15 Array
+(
+    [update_id] => 986422775
+    [message] => Array
+        (
+            [message_id] => 4417
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683376853
+            [text] => хей
+        )
+
+)
+
+2023-05-06 22:53:35 Array
+(
+    [update_id] => 986422775
+    [message] => Array
+        (
+            [message_id] => 4417
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683376853
+            [text] => хей
+        )
+
+)
+
+2023-05-06 22:54:27 Array
+(
+    [update_id] => 986422775
+    [message] => Array
+        (
+            [message_id] => 4417
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683376853
+            [text] => хей
+        )
+
+)
+
+2023-05-06 22:55:00 Array
+(
+    [update_id] => 986422775
+    [message] => Array
+        (
+            [message_id] => 4417
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683376853
+            [text] => хей
+        )
+
+)
+
+2023-05-06 22:55:02 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4419
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683395702
+            [text] => Привет! Можете задать мне вопрос или попросить помощи?
+        )
+
+)
+
+2023-05-06 22:55:04 Array
+(
+    [update_id] => 986422776
+    [message] => Array
+        (
+            [message_id] => 456
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683376945
+            [text] => хмм
+        )
+
+)
+
+2023-05-06 22:55:06 Array
+(
+    [update_id] => 986422777
+    [message] => Array
+        (
+            [message_id] => 4418
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -967529787
+                    [title] => asfadsaf
+                    [type] => group
+                    [all_members_are_administrators] => 1
+                )
+
+            [date] => 1683377052
+            [text] => фаыв
+        )
+
+)
+
+2023-05-06 22:55:46 Array
+(
+    [update_id] => 986422778
+    [message] => Array
+        (
+            [message_id] => 4420
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683395746
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIRRGRWlKJ4L5xUP-k9aVESyVIyyq7gAAKuKAAC9yawSkPAkLeF6d5uLwQ
+                    [file_unique_id] => AgADrigAAvcmsEo
+                    [file_size] => 6621
+                )
+
+        )
+
+)
+
+2023-05-06 22:55:53 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4421
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683395753
+            [text] => 2х2 будет равно 4.
+        )
+
+)
+
+2023-05-06 22:55:58 Array
+(
+    [update_id] => 986422779
+    [message] => Array
+        (
+            [message_id] => 4422
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683395758
+            [voice] => Array
+                (
+                    [duration] => 1
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIRRmRWlK7fLHGiRcOm8j477kL2XFD2AAKvKAAC9yawShX1YPoS2vX6LwQ
+                    [file_unique_id] => AgADrygAAvcmsEo
+                    [file_size] => 5442
+                )
+
+        )
+
+)
+
+2023-05-06 22:56:06 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4423
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683395766
+            [text] => Да, конечно! 2х2 - это математическое выражение, которое означает умножение двух чисел 2. Умножение - это операция, которая показывает, сколько раз одно число содержится в другом числе. В данном случае, мы умножаем число 2 на себя, то есть сколько раз 2 содержится в самом себе. Из этого следует, что 2х2 равно 4.
+        )
+
+)
+
+2023-05-06 22:56:12 Array
+(
+    [update_id] => 986422780
+    [message] => Array
+        (
+            [message_id] => 4424
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683395772
+            [voice] => Array
+                (
+                    [duration] => 1
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAIRSGRWlLzqOgIVpIlJV4bhqxFczDjFAAKwKAAC9yawSmKgHpDQ2fIxLwQ
+                    [file_unique_id] => AgADsCgAAvcmsEo
+                    [file_size] => 3560
+                )
+
+        )
+
+)
+
+2023-05-06 22:56:20 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4425
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683395779
+            [text] => Пожалуйста, всегда рад помочь!
+        )
+
+)
+
+2023-05-06 22:56:31 Array
+(
+    [update_id] => 986422781
+    [message] => Array
+        (
+            [message_id] => 4426
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683395791
+            [text] => у тебя все работает?
+        )
+
+)
+
+2023-05-06 22:56:35 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4427
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683395795
+            [text] => Да, у меня все работает хорошо! Я готов помочь вам в любое время. Если у вас есть какие-либо вопросы или задачи, не стесняйтесь обращаться ко мне.
+        )
+
+)
+
+2023-05-06 22:56:55 Array
+(
+    [update_id] => 986422782
+    [message] => Array
+        (
+            [message_id] => 4428
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683395815
+            [text] => о чем я ранее спрашивал?
+        )
+
+)
+
+2023-05-06 22:56:58 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4429
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683395817
+            [text] => Вы спрашивали у меня сколько будет 2х2, и я ответил, что 2х2 равно 4, и дал объяснение, как я пришел к этому ответу.
+        )
+
+)
+
+2023-05-06 23:43:22 Array
+(
+    [update_id] => 986422783
+    [pre_checkout_query] => Array
+        (
+            [id] => 2197747893791142806
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => 1000
+        )
+
+)
+
+2023-05-06 23:44:03 Array
+(
+    [update_id] => 986422784
+    [pre_checkout_query] => Array
+        (
+            [id] => 2197747894821378487
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => 1000
+        )
+
+)
+
+2023-05-06 23:47:13 Array
+(
+    [update_id] => 986422785
+    [pre_checkout_query] => Array
+        (
+            [id] => 2197747892536805948
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => test incoive payload 1000
+        )
+
+)
+
+2023-05-07 00:16:47 Array
+(
+    [update_id] => 986422786
+    [message] => Array
+        (
+            [message_id] => 4432
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683400607
+            [text] => 4+23
+        )
+
+)
+
+2023-05-07 00:16:51 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4433
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683400610
+            [text] => 4 + 23 = 27
+        )
+
+)
+
+2023-05-07 00:18:21 Array
+(
+    [update_id] => 986422786
+    [message] => Array
+        (
+            [message_id] => 4432
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683400607
+            [text] => 4+23
+        )
+
+)
+
+2023-05-07 00:18:37 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4437
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683400716
+            [text] => 4 + 23 = 27.
+        )
+
+)
+
+2023-05-07 00:18:44 Array
+(
+    [update_id] => 986422787
+    [message] => Array
+        (
+            [message_id] => 4434
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683400641
+            [text] => 5+5
+        )
+
+)
+
+2023-05-07 00:18:46 Array
+(
+    [update_id] => 986422788
+    [message] => Array
+        (
+            [message_id] => 4435
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683400663
+            [text] => 5+5
+        )
+
+)
+
+2023-05-07 00:18:48 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4438
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683400728
+            [text] => 5 + 5 = 10.
+        )
+
+)
+
+2023-05-07 00:18:50 Array
+(
+    [update_id] => 986422789
+    [message] => Array
+        (
+            [message_id] => 4436
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683400708
+            [text] => 5+5
+        )
+
+)
+
+2023-05-07 00:18:55 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4439
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683400734
+            [text] => 5 + 5 = 10.
+        )
+
+)
+
+2023-05-07 00:19:00 Array
+(
+    [update_id] => 986422790
+    [message] => Array
+        (
+            [message_id] => 4440
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683400739
+            [text] => 6+6
+        )
+
+)
+
+2023-05-07 00:19:39 Array
+(
+    [update_id] => 986422791
+    [message] => Array
+        (
+            [message_id] => 4441
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683400778
+            [text] => 6+1
+        )
+
+)
+
+2023-05-07 00:19:40 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4442
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683400780
+            [text] => 6 + 1 = 7.
+        )
+
+)
+
+2023-05-07 00:19:49 Array
+(
+    [update_id] => 986422792
+    [message] => Array
+        (
+            [message_id] => 4443
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683400789
+            [text] => 4+6
+        )
+
+)
+
+2023-05-07 00:20:53 Array
+(
+    [update_id] => 986422793
+    [message] => Array
+        (
+            [message_id] => 4444
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683400852
+            [text] => 24+24
+        )
+
+)
+
+2023-05-07 00:20:54 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4445
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683400854
+            [text] => 24 + 24 = 48.
+        )
+
+)
+
+2023-05-07 00:21:45 Array
+(
+    [update_id] => 986422793
+    [message] => Array
+        (
+            [message_id] => 4444
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683400852
+            [text] => 24+24
+        )
+
+)
+
+2023-05-07 00:21:47 Array
+(
+    [update_id] => 986422793
+    [message] => Array
+        (
+            [message_id] => 4444
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683400852
+            [text] => 24+24
+        )
+
+)
+
+2023-05-07 00:21:48 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4448
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683400908
+            [text] => 24 + 24 = 48.
+        )
+
+)
+
+2023-05-07 00:21:51 Array
+(
+    [update_id] => 986422794
+    [message] => Array
+        (
+            [message_id] => 4446
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683400863
+            [text] => 2+1
+        )
+
+)
+
+2023-05-07 00:22:11 Array
+(
+    [update_id] => 986422794
+    [message] => Array
+        (
+            [message_id] => 4446
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683400863
+            [text] => 2+1
+        )
+
+)
+
+2023-05-07 00:43:12 Array
+(
+    [update_id] => 986422794
+    [message] => Array
+        (
+            [message_id] => 4446
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683400863
+            [text] => 2+1
+        )
+
+)
+
+2023-05-07 00:47:38 Array
+(
+    [update_id] => 986422794
+    [message] => Array
+        (
+            [message_id] => 4446
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683400863
+            [text] => 2+1
+        )
+
+)
+
+2023-05-07 00:48:42 Array
+(
+    [update_id] => 986422794
+    [message] => Array
+        (
+            [message_id] => 4446
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683400863
+            [text] => 2+1
+        )
+
+)
+
+2023-05-07 00:49:16 Array
+(
+    [update_id] => 986422794
+    [message] => Array
+        (
+            [message_id] => 4446
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683400863
+            [text] => 2+1
+        )
+
+)
+
+2023-05-07 00:50:58 Array
+(
+    [update_id] => 986422794
+    [message] => Array
+        (
+            [message_id] => 4446
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683400863
+            [text] => 2+1
+        )
+
+)
+
+2023-05-07 00:52:10 Array
+(
+    [update_id] => 986422794
+    [message] => Array
+        (
+            [message_id] => 4446
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683400863
+            [text] => 2+1
+        )
+
+)
+
+2023-05-07 00:52:12 Array
+(
+    [update_id] => 986422795
+    [message] => Array
+        (
+            [message_id] => 4447
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683400885
+            [text] => 4+4
+        )
+
+)
+
+2023-05-07 00:52:14 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4450
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683402734
+            [text] => 4 + 4 = 8.
+        )
+
+)
+
+2023-05-07 00:52:48 Array
+(
+    [update_id] => 986422796
+    [message] => Array
+        (
+            [message_id] => 4451
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683402768
+            [text] => Привет
+        )
+
+)
+
+2023-05-07 00:53:26 Array
+(
+    [update_id] => 986422797
+    [message] => Array
+        (
+            [message_id] => 4453
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683402805
+            [text] => Хай
+        )
+
+)
+
+2023-05-07 00:54:27 Array
+(
+    [update_id] => 986422797
+    [message] => Array
+        (
+            [message_id] => 4453
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683402805
+            [text] => Хай
+        )
+
+)
+
+2023-05-07 00:54:30 Array
+(
+    [update_id] => 986422798
+    [message] => Array
+        (
+            [message_id] => 4455
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683402811
+            [text] => [fq
+        )
+
+)
+
+2023-05-07 00:54:32 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4460
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683402872
+            [text] => I'm sorry, I don't understand what you mean by "[fq". Could you please provide more context or information?
+        )
+
+)
+
+2023-05-07 00:54:34 Array
+(
+    [update_id] => 986422799
+    [message] => Array
+        (
+            [message_id] => 4456
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683402813
+            [text] => хай
+        )
+
+)
+
+2023-05-07 00:54:36 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4461
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683402875
+            [text] => Привет! Чем могу вам помочь?
+        )
+
+)
+
+2023-05-07 00:54:38 Array
+(
+    [update_id] => 986422800
+    [message] => Array
+        (
+            [message_id] => 4457
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683402833
+            [text] => привет
+        )
+
+)
+
+2023-05-07 00:54:40 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4462
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683402880
+            [text] => Привет! Как я могу вам помочь?
+        )
+
+)
+
+2023-05-07 00:54:42 Array
+(
+    [update_id] => 986422801
+    [message] => Array
+        (
+            [message_id] => 4458
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683402859
+            [text] => Рппо
+        )
+
+)
+
+2023-05-07 01:09:09 Array
+(
+    [update_id] => 986422802
+    [message] => Array
+        (
+            [message_id] => 4464
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683403747
+            [text] => Уаа
+        )
+
+)
+
+2023-05-07 01:09:26 Array
+(
+    [update_id] => 986422802
+    [message] => Array
+        (
+            [message_id] => 4464
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683403747
+            [text] => Уаа
+        )
+
+)
+
+2023-05-07 01:09:29 Array
+(
+    [update_id] => 986422803
+    [message] => Array
+        (
+            [message_id] => 4466
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683403749
+            [text] => hi
+        )
+
+)
+
+2023-05-07 01:09:30 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4468
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683403770
+            [text] => Hello! How can I assist you today?
+        )
+
+)
+
+2023-05-07 01:09:37 Array
+(
+    [update_id] => 986422804
+    [message] => Array
+        (
+            [message_id] => 4469
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683403777
+            [text] => приветики
+        )
+
+)
+
+2023-05-07 01:09:39 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4470
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683403778
+            [text] => Приветик! Как я могу вам помочь?
+        )
+
+)
+
+2023-05-07 01:09:43 Array
+(
+    [update_id] => 986422805
+    [message] => Array
+        (
+            [message_id] => 4471
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683403781
+            [text] => че как у тебя
+        )
+
+)
+
+2023-05-07 01:09:45 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4472
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683403785
+            [text] => Я всего лишь компьютерная программа, поэтому мне не бывает плохо или хорошо. Но я настроен на помощь пользователям, так что если у вас есть какие-либо вопросы или нужна помощь, я готов помочь вам!
+        )
+
+)
+
+2023-05-07 01:09:55 Array
+(
+    [update_id] => 986422806
+    [message] => Array
+        (
+            [message_id] => 4473
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683403793
+            [text] => Что
+        )
+
+)
+
+2023-05-07 01:10:07 Array
+(
+    [update_id] => 986422807
+    [message] => Array
+        (
+            [message_id] => 4475
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683403805
+            [text] => понятно
+        )
+
+)
+
+2023-05-07 01:10:09 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4476
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683403809
+            [text] => Хорошо, если у вас возникнут какие-либо вопросы или нужна помощь, не стесняйтесь обращаться ко мне. Я постараюсь наилучшим образом помочь вам.
+        )
+
+)
+
+2023-05-07 01:10:57 Array
+(
+    [update_id] => 986422808
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180778231828852
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Оплата за подписку
+        )
+
+)
+
+2023-05-07 01:11:38 Array
+(
+    [update_id] => 986422809
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180778384991401
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Оплата за подписку
+        )
+
+)
+
+2023-05-07 01:12:09 Array
+(
+    [update_id] => 986422809
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180778384991401
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Оплата за подписку
+        )
+
+)
+
+2023-05-07 01:12:22 Array
+(
+    [update_id] => 986422810
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180777744443832
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Оплата за подписку
+        )
+
+)
+
+2023-05-07 01:14:32 Array
+(
+    [update_id] => 986422810
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180777744443832
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Оплата за подписку
+        )
+
+)
+
+2023-05-07 01:14:58 Array
+(
+    [update_id] => 986422811
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180779926578785
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Оплата за подписку
+        )
+
+)
+
+2023-05-07 01:15:03 Array
+(
+    [update_id] => 986422811
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180779926578785
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Оплата за подписку
+        )
+
+)
+
+2023-05-07 01:15:06 Array
+(
+    [update_id] => 986422811
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180779926578785
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Оплата за подписку
+        )
+
+)
+
+2023-05-07 01:15:51 Array
+(
+    [update_id] => 986422812
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180780265714476
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Оплата за подписку
+        )
+
+)
+
+2023-05-07 01:17:44 Array
+(
+    [update_id] => 986422812
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180780265714476
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Оплата за подписку
+        )
+
+)
+
+2023-05-07 01:18:23 Array
+(
+    [update_id] => 986422813
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180780258404573
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Оплата за подписку
+        )
+
+)
+
+2023-05-07 01:18:47 Array
+(
+    [update_id] => 986422813
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180780258404573
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Оплата за подписку
+        )
+
+)
+
+2023-05-07 01:19:23 Array
+(
+    [update_id] => 986422814
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180777593139861
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Оплата за подписку
+        )
+
+)
+
+2023-05-07 01:19:40 Array
+(
+    [update_id] => 986422814
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180777593139861
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Оплата за подписку
+        )
+
+)
+
+2023-05-07 01:20:13 Array
+(
+    [update_id] => 986422814
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180777593139861
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Оплата за подписку
+        )
+
+)
+
+2023-05-07 01:20:40 Array
+(
+    [update_id] => 986422815
+    [message] => Array
+        (
+            [message_id] => 4477
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683404440
+            [text] => прочее
+        )
+
+)
+
+2023-05-07 01:21:21 Array
+(
+    [update_id] => 986422816
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180779904500309
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Подписка на месяц
+        )
+
+)
+
+2023-05-07 01:47:51 Array
+(
+    [update_id] => 986422817
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180780495827467
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Подписка на месяц
+        )
+
+)
+
+2023-05-07 01:48:41 Array
+(
+    [update_id] => 986422817
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180780495827467
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Подписка на месяц
+        )
+
+)
+
+2023-05-07 01:48:53 Array
+(
+    [update_id] => 986422817
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180780495827467
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Подписка на месяц
+        )
+
+)
+
+2023-05-07 01:50:34 Array
+(
+    [update_id] => 986422818
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180780724134957
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Подписка на месяц
+        )
+
+)
+
+2023-05-07 01:50:35 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4479
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683406234
+            [text] => Оплата успешно прошла!
+        )
+
+)
+
+2023-05-07 01:51:11 Array
+(
+    [update_id] => 986422818
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180780724134957
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Подписка на месяц
+        )
+
+)
+
+2023-05-07 01:51:15 Array
+(
+    [update_id] => 986422818
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180780724134957
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Подписка на месяц
+        )
+
+)
+
+2023-05-07 01:52:45 Array
+(
+    [update_id] => 986422818
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180780724134957
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Подписка на месяц
+        )
+
+)
+
+2023-05-07 01:52:45 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4480
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683406365
+            [text] => Оплата успешно прошла!
+        )
+
+)
+
+2023-05-07 01:52:47 Array
+(
+    [update_id] => 986422819
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180781267801955
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Подписка на месяц
+        )
+
+)
+
+2023-05-07 01:52:48 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4481
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683406368
+            [text] => Оплата успешно прошла!
+        )
+
+)
+
+2023-05-07 01:54:07 Array
+(
+    [update_id] => 986422820
+    [message] => Array
+        (
+            [message_id] => 4482
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683406446
+            [text] => Рро
+        )
+
+)
+
+2023-05-07 01:54:55 Array
+(
+    [update_id] => 986422820
+    [message] => Array
+        (
+            [message_id] => 4482
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683406446
+            [text] => Рро
+        )
+
+)
+
+2023-05-07 01:54:57 Array
+(
+    [update_id] => 986422821
+    [pre_checkout_query] => Array
+        (
+            [id] => 6958180781314477743
+            [from] => Array
+                (
+                    [id] => 5915045005
+                    [is_bot] => 
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [language_code] => en
+                )
+
+            [currency] => UZS
+            [total_amount] => 100000
+            [invoice_payload] => Подписка на месяц
+        )
+
+)
+
+2023-05-07 01:54:58 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4485
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 5915045005
+                    [first_name] => #1
+                    [username] => vandarkho
+                    [type] => private
+                )
+
+            [date] => 1683406498
+            [text] => Оплата успешно прошла!
+        )
+
+)
+

@@ -18,7 +18,7 @@ class Database
                 "database" => __DIR__ . "/../../database/database.sqlite",
             ]);
         }
-        elseif (in_array($this->env("DB_DRIVER"), ["mysql", "postgres"])) {
+        elseif (in_array($this->env("DB_DRIVER"), ["mysql", "pgsql"])) {
             $capsule->addConnection([
                 'driver' => $this->env("DB_DRIVER"),
                 'host' => $this->env("DB_HOST") ?? 'localhost',
