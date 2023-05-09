@@ -4,57 +4,9 @@ require "vendor/autoload.php";
 use Core\Database\Database;
 use Database\models\Country;
 use Database\models\Group;
-use Database\models\User;
+use Database\models\Chat;
 
 new Database;
-function seed_users(): void
-{
-    $users = [
-        511703056,
-        748856943,
-        250114420,
-        272004963,
-        679002894
-    ];
-    foreach ($users as $user) {
-        $result = User::insert([
-            "user_id" => $user,
-            "role" => 'pro',
-            "context" => json_encode([]),
-        ]);
-    }
-    var_dump($result);
-}
-function seed_groups(): void
-{
-    $groups = [
-        -1001765736589,
-        -805540894,
-        -1001673287453,
-        -824923223,
-    ];
-    foreach ($groups as $group) {
-        $result = Group::insert([
-            "group_id" => $group,
-            "rights" => "pro",
-            "context" => json_encode([]),
-        ]);
-    }
-    var_dump($result);
-}
-
-function seed_countries(): void
-{
-    $countries = json_decode(file_get_contents(__DIR__ . '/../../storage/countries.json'), true);
-    $result = [];
-    foreach ($countries as $countryCode => $countryName) {
-        $result[] = Country::insert([
-            "code" => $countryCode,
-            "name" => $countryName
-        ]);
-    }
-    var_dump($result);
-}
 
 function list_countries(): void
 {
@@ -73,7 +25,7 @@ function list_context(): void
 
 function update_context(): void
 {
-    User::where('user_id', '=', 511703056)->update([
+    Chat::where('user_id', '=', 511703056)->update([
         'context' => '[{"name":"my","none":"yeah"}]'
     ]);
 }
@@ -139,11 +91,6 @@ function test_plots(): void
     new Responses\Plots\Settings($request);
 }
 
-//SEEDERS
-//seed_users();
-//seed_groups();
-//seed_countries();
-//
 //list_countries();
 //list_context();
 //update_context();

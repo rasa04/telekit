@@ -16,6 +16,7 @@ class App
     private static array $inlineQueries;
     private static array $games;
     private static array $voices;
+    private static array $invoices;
 
     public function handle(bool $writeLogFile = true, bool $saveDataToJson = true) : void
     {
@@ -63,6 +64,11 @@ class App
         static::$voices = $voices;
         return new static;
     }
+    public static function invoices(array $invoices): App
+    {
+        static::$invoices = $invoices;
+        return new static;
+    }
 
     private function setRequest(): void
     {
@@ -79,6 +85,7 @@ class App
         elseif (isset($GLOBALS['request']['inline_query']['query'])) $this->matchInlineQueries();
         elseif (isset($GLOBALS['request']['game_short_name'])) $this->matchGames();
         elseif (isset($GLOBALS['request']['message']['voice'])) $this->matchVoices();
+        elseif (isset($GLOBALS['request']['pre_checkout_query'])) $this->matchInvoices();
 
         if     (isset($GLOBALS['request']['message']['text']))       new TriggerDefault($GLOBALS['request']);
         elseif (isset($GLOBALS['request']['inline_query']['query'])) new InteractionDefault($GLOBALS['request']);
@@ -110,15 +117,22 @@ class App
 
     private function matchGames(): void
     {
-        $iterator = new \ArrayIterator(static::$games);
-        $data_value = $GLOBALS['request']['game_short_name'];
+//        $iterator = new \ArrayIterator(static::$games);
+//        $data_value = $GLOBALS['request']['game_short_name'];
     }
 
     private function matchVoices(): void
     {
-        if (!isset($GLOBALS['request']['message']['voice'])) return;
         foreach(static::$voices as $voiceHandler) {
             new $voiceHandler($GLOBALS['request']);
+        }
+    }
+
+    private function matchInvoices(): void
+    {
+        foreach (static::$invoices as $key => $class) {
+            if ($key === $GLOBALS['request']['pre_checkout_query']['invoice_payload']) new $class;
+            elseif ($key === $GLOBALS['request']['message']['successful_payment']['invoice_payload']) new $class;
         }
     }
 }

@@ -10,11 +10,11 @@ trait Env {
     {
         return __DIR__ . "/../storage/";
     }
-    public function path(): string
+    public static function path(): string
     {
         return __DIR__;
     }
-    public function app_path(): string
+    public static function app_path(): string
     {
         return __DIR__ . "/..";
     }

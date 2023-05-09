@@ -21,7 +21,8 @@
         "illuminate/collections": "^10.9",
         "doctrine/dbal": "^3.6",
         "ext-curl": "*",
-        "ext-pdo": "*"
+        "ext-pdo": "*",
+        "symfony/console": "^6.2"
     },
     "autoload": {
         "psr-4": {

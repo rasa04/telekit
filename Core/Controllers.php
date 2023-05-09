@@ -3,8 +3,7 @@ namespace Core;
 
 use Core\Methods\SendMessage;
 use Core\Storage\Storage;
-use Database\models\Group;
-use Database\models\User;
+use Database\models\Chat;
 use GuzzleHttp\Client;
 use JetBrains\PhpStorm\NoReturn;
 
@@ -69,25 +68,37 @@ trait Controllers
 
     public function authorized(): bool
     {
-        $group = Group::where('group_id', $GLOBALS['request']['message']['chat']['id'])->first('rights');
-        $user = User::where('user_id', $GLOBALS['request']['message']['chat']['id'])->first('role');
-        if ($group) {
-            return $group->toArray()['rights'] == 'pro';
-        } else if ($user) {
-            return $user->toArray()['role'] == 'pro';
-        } else {
-            return false;
+        $chat = Chat::where('chat_id', $GLOBALS['request']['message']['chat']['id'])->first('rights');
+        return $chat && $chat->toArray()['rights'] > 0;
+    }
+
+    public function chat_is_private(): bool
+    {
+        return $GLOBALS['request']['message']['chat']['type'] === 'private';
+    }
+
+    public function chat_is_group(): bool
+    {
+        return ($GLOBALS['request']['message']['chat']['type'] === 'group'
+            || $GLOBALS['request']['message']['chat']['type'] === 'supergroup');
+    }
+
+    public function user_language(): string
+    {
+        return $GLOBALS['request']['message']['from']['language_code'];
+    }
+
+    public function message_date($format = 'timestamps', $value = ''): int|string
+    {
+        if ($format === 'view') {
+            return date('Y-m-d H:i:s', $GLOBALS['request']['message']['date']);
         }
-    }
-
-    public function is_private_chat(): bool
-    {
-        return $GLOBALS['request']['message']['from']['id'] === $GLOBALS['request']['message']['chat']['id'];
-    }
-
-    public function is_public_group(): bool
-    {
-        return $GLOBALS['request']['message']['from']['id'] === $GLOBALS['request']['message']['chat']['id'];
+        elseif ($format === 'self') {
+            return date($value, $GLOBALS['request']['message']['date']);
+        }
+        else {
+            return $GLOBALS['request']['message']['date'];
+        }
     }
 
     public function chat_gpt($messages): string

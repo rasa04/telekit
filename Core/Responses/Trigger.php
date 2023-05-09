@@ -2,9 +2,11 @@
 
 namespace Core\Responses;
 
+use Core\Console\Commands\Send;
 use Core\Controllers;
 use Core\Env;
 use Core\Methods\SendDocument;
+use Core\Methods\SendInvoice;
 use Core\Methods\SendMediaGroup;
 use Core\Methods\SendMessage;
 use Core\Methods\SendPhoto;
@@ -44,5 +46,10 @@ class Trigger
     public function request_message(): array
     {
         return $GLOBALS['request']['message'];
+    }
+
+    public function send_invoice(): SendInvoice
+    {
+        return new SendInvoice;
     }
 }

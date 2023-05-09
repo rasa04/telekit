@@ -2,7 +2,6 @@
 namespace Core\Database;
 
 use Core\Env;
-use Core\Validator\ErrorHandler;
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 class Database
@@ -18,7 +17,7 @@ class Database
                 "database" => __DIR__ . "/../../database/database.sqlite",
             ]);
         }
-        elseif (in_array($this->env("DB_DRIVER"), ["mysql", "postgres"])) {
+        elseif (in_array($this->env("DB_DRIVER"), ["mysql", "pgsql"])) {
             $capsule->addConnection([
                 'driver' => $this->env("DB_DRIVER"),
                 'host' => $this->env("DB_HOST") ?? 'localhost',
@@ -31,7 +30,7 @@ class Database
             ]);
         }
         else{
-            new ErrorHandler("The system is unable to support any other DBMS apart from SQLite or MySQLi.");
+            echo "The system is unable to support any other DBMS apart from SQLite, MySQLi or Postgres.";
         }
 
         $capsule->setAsGlobal();

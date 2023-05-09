@@ -5,10 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c38c8e77-207b-443c-bb14-c6deba798537" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Core/Console/Commands/Database/DatabaseInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/telekit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/telekit.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Console/Commands/Polling.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Console/Commands/Polling.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/responses/Triggers/OpenAI.php" beforeDir="false" afterPath="$PROJECT_DIR$/responses/Triggers/OpenAI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Console/Commands/CommandAbstract.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Console/Commands/DatabaseCommands.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Console/Commands/GetUpdates.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Console/Commands/GetUpdates.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Console/Commands/Make.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Console/Commands/Polling.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Console/Commands/Send.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Console/Commands/Send.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Console/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Database/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Database/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Env.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Env.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Methods/SendInvoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Methods/SendInvoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Responses/Invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Responses/Invoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Validator/ErrorHandler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/do" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/responses/Invoices/SubscriptionForMonth.php" beforeDir="false" afterPath="$PROJECT_DIR$/responses/Invoices/SubscriptionForMonth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/message.txt" beforeDir="false" afterPath="$PROJECT_DIR$/storage/message.txt" afterDir="false" />
     </list>
@@ -64,6 +83,11 @@
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
     </include_path>
   </component>
   <component name="ProjectId" id="2OyLIlXFphTpNP30elAr5885Tfl" />
@@ -116,7 +140,12 @@
       <workItem from="1683018880341" duration="4551000" />
       <workItem from="1683055002786" duration="1262000" />
       <workItem from="1683115735654" duration="1254000" />
-      <workItem from="1683153245237" duration="2365000" />
+      <workItem from="1683153245237" duration="3872000" />
+      <workItem from="1683220967560" duration="195000" />
+      <workItem from="1683376539551" duration="5406000" />
+      <workItem from="1683393864844" duration="15480000" />
+      <workItem from="1683552560603" duration="607000" />
+      <workItem from="1683617855286" duration="21472000" />
     </task>
     <servers />
   </component>
