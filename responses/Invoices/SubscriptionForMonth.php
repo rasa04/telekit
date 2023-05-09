@@ -8,7 +8,14 @@ class SubscriptionForMonth extends Invoice
 {
     public function __construct()
     {
-        self::answerPreCheckoutQuery(true);
-        $this->reply_message("Оплата успешно прошла!");
+        if (self::isPreCheckout()) {
+            self::answerPreCheckoutQuery(true);
+            $this->reply_message("Проверка...");
+        }
+        elseif (self::isSuccessful()) {
+            $this->reply_message("Оплата проведена успешно! Приятного пользования:)");
+        }
+
+        var_dump(['test' => $GLOBALS['request']]);
     }
 }

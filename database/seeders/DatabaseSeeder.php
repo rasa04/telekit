@@ -5,9 +5,6 @@ namespace Database\seeders;
 use Database\models\Country;
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
 
 class DatabaseSeeder extends Seeder
 {
@@ -71,6 +68,18 @@ class DatabaseSeeder extends Seeder
             'context' => '[]',
             'rights' => 1,
             'type' => 'group'
+        ]);
+        Capsule::table('chats')->insert([
+            'chat_id' => 804640983,
+            'context' => '[]',
+            'rights' => 1,
+            'type' => 'private'
+        ]);
+        Capsule::table('chats')->insert([
+            'chat_id' => 604610579,
+            'context' => '[]',
+            'rights' => 1,
+            'type' => 'private'
         ]);
 
         $countries = json_decode(file_get_contents(__DIR__ . '/../../storage/countries.json'), true);

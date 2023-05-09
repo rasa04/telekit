@@ -24,4 +24,14 @@ class Invoice
             ->text($message)
             ->send();
     }
+
+    public static function isPreCheckout(): bool
+    {
+        return isset($GLOBALS['request']['pre_checkout_query']['invoice_payload']);
+    }
+
+    public static function isSuccessful(): bool
+    {
+        return isset($GLOBALS['request']['message']['successful_payment']);
+    }
 }

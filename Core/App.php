@@ -131,7 +131,8 @@ class App
     private function matchInvoices(): void
     {
         foreach (static::$invoices as $key => $class) {
-            if ($key == $GLOBALS['request']['pre_checkout_query']['invoice_payload']) new $class;
+            if ($key === $GLOBALS['request']['pre_checkout_query']['invoice_payload']) new $class;
+            elseif ($key === $GLOBALS['request']['message']['successful_payment']['invoice_payload']) new $class;
         }
     }
 }

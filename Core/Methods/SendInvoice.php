@@ -64,7 +64,7 @@ class SendInvoice
                 'chat_id' => self::$chat_id,
                 'title' => self::$title,
                 'description' => self::$description,
-                'provider_token' => \env('PAYMENTS_TOKEN'),
+                'provider_token' => \env('CLICK_TOKEN'),
                 'payload' => self::$payload,
                 'currency' => self::$currency,
                 'prices' => [self::$prices],
