@@ -10,6 +10,8 @@ use Core\Methods\SendInvoice;
 use Core\Methods\SendMediaGroup;
 use Core\Methods\SendMessage;
 use Core\Methods\SendPhoto;
+use Database\models\Chat;
+use Illuminate\Database\Eloquent\Model;
 
 class Trigger
 {

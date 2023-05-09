@@ -9,20 +9,21 @@ class OpenAI extends Trigger {
 
     public function __construct($request)
     {
-        if (!$this->authorized() && $this->chat_is_private())
-        {
-            $this->send_invoice()
-                ->title('Купить подписку на месяц')
-                ->description("Купив подписку вы получите доступ ко всем функциям.")
-                ->payload('Подписка на месяц')
-                ->currency('UZS')
-                ->prices(['label' => 'Подписка на месяц', 'amount' => 100000])
-                ->send();
-        }
-        elseif ($this->authorized())
-        {
-            $chat = Chat::where('chat_id', $request['message']['chat']['id']);
+        $chat = Chat::where('chat_id', $request['message']['chat']['id']);
+        $attempts = $chat->first('attempts')->toArray()['attempts'];
+        $MAX_ATTEMPTS = 15;
 
+        if ($this->chat_is_private() && $attempts >= $MAX_ATTEMPTS)
+        {
+            $this->reply_message("Вы достигли лимита сообщений. Подробнее: /subscription");
+        }
+        elseif ($this->authorized() || $attempts < $MAX_ATTEMPTS)
+        {
+            if (!$this->authorized()) {
+                $temp_chat = $chat->first();
+                $temp_chat->attempts = $attempts+1;
+                $temp_chat->save();
+            }
             if ($chat->first('context')) {
                 $this->messages = json_decode($chat->first('context')->toArray()["context"], true);
             }
