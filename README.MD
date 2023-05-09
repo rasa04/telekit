@@ -16,6 +16,8 @@ Telekit also provides a range of tools and utilities for working with the Telegr
 
 # Requirements
 * PHP version 8.0
+* Postgres, Mysql, Sqlite database
+* Running migrations (chats table)
 
 # To install Telekit library using Composer, you can follow these steps:
 
@@ -243,4 +245,14 @@ class Example extends Interaction {
             ->send(false, false);
     }
 }
+```
+## Send invoice
+```
+$this->send_invoice()
+    ->title('Subscription')
+    ->description("Buy subscription for an month.")
+    ->payload('Subscription: month')
+    ->currency('USD')
+    ->prices(['label' => 'Subscription for an month', 'amount' => 100000])
+    ->send();
 ```

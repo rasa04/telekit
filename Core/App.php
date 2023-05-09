@@ -2,7 +2,7 @@
 namespace Core;
 
 use Core\Storage\Storage;
-use Core\Validator\ErrorHandler;
+use Database\models\Chat;
 use Responses\Interactions\DefaultAct as InteractionDefault;
 use Responses\Triggers\DefaultAct as TriggerDefault;
 
@@ -18,6 +18,8 @@ class App
     private static array $voices;
     private static array $invoices;
 
+    private bool $is_handled = false;
+
     public function handle(bool $writeLogFile = true, bool $saveDataToJson = true) : void
     {
         date_default_timezone_set($this->time_zone());
@@ -27,8 +29,16 @@ class App
         ini_set('display_startup_errors', 1);
 
         $this->setRequest();
-        if ($writeLogFile) $this->writeLogFile($GLOBALS['request']);
-        if ($saveDataToJson) Storage::save($GLOBALS['request']);
+        if (isset($GLOBALS['request']['message']) && !Chat::where('chat_id', $GLOBALS['request']['message']['chat']['id'])->first()) {
+            Chat::insert([
+                "chat_id" => $GLOBALS['request']['message']['chat']['id'],
+                "rights" => 0,
+                "context" => '[]',
+                "type" => $GLOBALS['request']['message']['chat']['type']
+            ]);
+        }
+        if ($writeLogFile && $GLOBALS['request']) $this->writeLogFile($GLOBALS['request']);
+        if ($saveDataToJson && $GLOBALS['request']) Storage::save($GLOBALS['request']);
         $this->matchingResponse();
     }
 
@@ -75,43 +85,49 @@ class App
         if (isset($GLOBALS['request'])) return;
 
         $request = json_decode(file_get_contents('php://input'), true);
-        if (empty($request)) new ErrorHandler('Nothing requested');
+        if (empty($request)) echo 'Nothing requested';
         $GLOBALS['request'] = $request;
     }
     
     private function matchingResponse() : void {
-        if (isset($GLOBALS['request']['message']['text'])) $this->matchTriggers();
+        if     (isset($GLOBALS['request']['message']['text']))        $this->matchTriggers();
+        elseif (isset($GLOBALS['request']['message']['voice']))       $this->matchVoices();
         elseif (isset($GLOBALS['request']['callback_query']['data'])) $this->matchCallbackQueries();
-        elseif (isset($GLOBALS['request']['inline_query']['query'])) $this->matchInlineQueries();
-        elseif (isset($GLOBALS['request']['game_short_name'])) $this->matchGames();
-        elseif (isset($GLOBALS['request']['message']['voice'])) $this->matchVoices();
-        elseif (isset($GLOBALS['request']['pre_checkout_query'])) $this->matchInvoices();
+        elseif (isset($GLOBALS['request']['inline_query']['query']))  $this->matchInlineQueries();
+        elseif (isset($GLOBALS['request']['pre_checkout_query']))     $this->matchInvoices();
+        elseif (isset($GLOBALS['request']['game_short_name']))        $this->matchGames();
 
-        if     (isset($GLOBALS['request']['message']['text']))       new TriggerDefault($GLOBALS['request']);
-        elseif (isset($GLOBALS['request']['inline_query']['query'])) new InteractionDefault($GLOBALS['request']);
+        if ($this->is_handled === false) {
+            if     (isset($GLOBALS['request']['message']['text']))       new TriggerDefault($GLOBALS['request']);
+            elseif (isset($GLOBALS['request']['inline_query']['query'])) new InteractionDefault($GLOBALS['request']);
+        }
+        else $this->is_handled = false;
     }
 
     private function matchTriggers(): void
     {
         foreach(static::$triggers as $key => $val) {
-            if (!preg_match("#$key#", strtolower($GLOBALS['request']['message']['text']))) return;
+            if (!preg_match("#$key#", strtolower($GLOBALS['request']['message']['text']))) continue;
             new $val($GLOBALS['request']);
+            $this->is_handled = true;
         }
     }
 
     private function matchInlineQueries(): void
     {
         foreach(static::$inlineQueries as $key => $val) {
-            if (!preg_match("#$key#", strtolower($GLOBALS['request']['inline_query']['query']))) return;
+            if (!preg_match("#$key#", strtolower($GLOBALS['request']['inline_query']['query']))) continue;
             new $val($GLOBALS['request']);
+            $this->is_handled = true;
         }
     }
 
     private function matchCallbackQueries(): void
     {
         foreach(static::$callbackData as $key => $val) {
-            if (!preg_match("#$key#", strtolower($GLOBALS['request']['callback_query']['data']))) return;
+            if (!preg_match("#$key#", strtolower($GLOBALS['request']['callback_query']['data']))) continue;
             new $val($GLOBALS['request']);
+            $this->is_handled = true;
         }
     }
 
@@ -125,6 +141,7 @@ class App
     {
         foreach(static::$voices as $voiceHandler) {
             new $voiceHandler($GLOBALS['request']);
+            $this->is_handled = true;
         }
     }
 
@@ -133,6 +150,7 @@ class App
         foreach (static::$invoices as $key => $class) {
             if ($key === $GLOBALS['request']['pre_checkout_query']['invoice_payload']) new $class;
             elseif ($key === $GLOBALS['request']['message']['successful_payment']['invoice_payload']) new $class;
+            $this->is_handled = true;
         }
     }
 }

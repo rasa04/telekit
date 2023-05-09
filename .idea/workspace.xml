@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="c38c8e77-207b-443c-bb14-c6deba798537" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Console/Commands/Serve.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Console/Commands/Serve.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Responses/Trigger.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Responses/Trigger.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2023_04_231682250774_create_chats_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_04_231682250774_create_chats_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/responses/Triggers/OpenAI.php" beforeDir="false" afterPath="$PROJECT_DIR$/responses/Triggers/OpenAI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/responses/Triggers/Start.php" beforeDir="false" afterPath="$PROJECT_DIR$/responses/Triggers/Start.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/message.txt" beforeDir="false" afterPath="$PROJECT_DIR$/storage/message.txt" afterDir="false" />
     </list>
@@ -124,7 +131,7 @@
       <workItem from="1683376539551" duration="5406000" />
       <workItem from="1683393864844" duration="15480000" />
       <workItem from="1683552560603" duration="607000" />
-      <workItem from="1683617855286" duration="22201000" />
+      <workItem from="1683617855286" duration="32153000" />
     </task>
     <servers />
   </component>

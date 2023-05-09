@@ -6,8 +6,10 @@ use Core\Env;
 use Exception;
 use GuzzleHttp\Client;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Formatter\OutputFormatterStyle;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Style\SymfonyStyle;
 
 class Serve extends Command
 {
@@ -24,6 +26,8 @@ class Serve extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
+        $output->getFormatter()->setStyle("green-bg", new OutputFormatterStyle('black', "green"));
+
         new Database;
         $client = new Client();
         $path = "https://api.telegram.org/bot" . self::token() . "/getUpdates";
@@ -57,9 +61,10 @@ class Serve extends Command
                 $GLOBALS['request'] = $response['result'][0];
                 require 'index.php';
             }
+            $io = new SymfonyStyle($input, $output);
             var_dump($GLOBALS['request']);
             self::$lastUpdate+=1;
-            echo "\n### SUCCESSFUL HANDLED ###\n";
+            $output->writeln("<green-bg> SUCCESSFUL HANDLED </green-bg>");
             sleep(2);
         }
     }

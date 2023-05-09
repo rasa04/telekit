@@ -15,6 +15,7 @@ return new class extends Migration
             $table->string('username')->nullable();
             $table->string('language')->nullable();
             $table->enum('rights', [0, 1, 2])->default(0);
+            $table->string('attempts')->default(0);
             $table->json('context')->default('[]');
             $table->enum('type', ['private', 'group', 'supergroup']);
             $table->timestamps();
