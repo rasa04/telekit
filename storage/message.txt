@@ -14156,3 +14156,87 @@ Length: DB 10
 
 )
 
+2023-05-09 14:20:19 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4553
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683642019
+            [text] => Hi! It's test message from Telekit
+        )
+
+)
+
+2023-05-09 14:21:54 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4554
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683642114
+            [text] => hi mark
+        )
+
+)
+
+2023-05-09 14:22:21 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4555
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683642141
+            [text] => hi mark
+        )
+
+)
+
