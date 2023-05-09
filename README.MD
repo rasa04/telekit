@@ -29,84 +29,92 @@ This will download and install the Telekit library and all its dependencies into
 
 Once the installation is complete, you can start using Telekit by including its autoload file in your code
 
- * **[my website](https://matesite.uz)**
+ * **[my website](https://rasa.uz)**
  * **Receive updates in the browser** https://api.telegram.org/bot{TOKEN}/getUpdates
  * **Set up a webhook** https://api.telegram.org/bot{TOKEN}/setwebhook?url=https://test.com/example_bot/index.php
  * **Delete a webhook** https://api.telegram.org/bot{TOKEN}/deleteWebhook
 
-# <h1 style="cyan:purple;">"do" commands</h1>
-## With the command _"php do"_, you can interact with the bot. Here are some examples:
+# <h1 style="cyan:purple;">"artisan" commands</h1>
+## With the command _"php artisan"_, you can interact with the bot. Here are some examples:
 ## Polling
 ### Process requests on your local computer without using hooks using the polling method
 ```
-php do serve
+php artisan serve
 ```
-## getUpdates
-### See updates via the convenient output page
+# To see all available commands
 ```
-php do getUpdates
+php artisan
 ```
 ## Sending messages
+### Sends to all users
 ```
-php do --send (sends default message to default user from .env file)
-php do --send --to=CHAT_ID
-php do --send --to=CHAT_ID --message="hello world"
+php artisan send all
+```
+### Specify the chat id
+```
+php artisan send --to=CHAT_ID
+php artisan send -t CHAT_ID
+```
+### Specify message
+```
+php artisan send --to=CHAT_ID --message="hello world"
+php artisan send -t CHAT_ID -m "hello world"
 ```
 
 ## "make" command
 ### Creating template Interaction files
 ```
-php do --make --interaction=MyInteraction
+php artisan make:interaction MyInteraction
 ```
 ### Creating template Trigger files
 ```
-php do --make --trigger=myTrigger 
+php artisan make:trigger myTrigger 
 ```
 ### Creating template Migration files
 ```
-php do --make --migration=table 
+php artisan make:migration table 
 ```
 ### Creating template Model files
 ```
-php do --make --model=User 
+php artisan make:model User 
 ```
 
 ## "database" command
 ### Get database
 ```
-php do --database
+php artisan database
 ```
 ### Parameters
 ```
-php do --database --params
+php artisan database:params
 ```
 ### Check database version
 ```
-php do --database --version
+php artisan database:version
 ```
 ### Show tables
 ```
-php do --database --tables
+php artisan database:tables
 ```
 ### Describe table
 ```
-php do --database --table=users
+php artisan database:table chats
 ```
 ### Output table contents
 ```
-php do --database --showTable=users
+php artisan database:showTable chats
 ```
 ### Output the contents of a specific table field
 ```
-php do --database --showTable=users --column="user_id"
+php artisan database:showTable chats --column="chat_id"
 ```
 ### run migrations
 ```
-php do --database --migrate
+php artisan migrate
 ```
 ### undo all migration
 ```
-php do --database --migrate --fresh
+php artisan migrate --fresh
 ```
 
 # <h1 style="color:cyan;">Send responses</h1>
