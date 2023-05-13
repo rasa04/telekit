@@ -108,8 +108,8 @@ php artisan database:table chats --desc
 ```
 ### Output the contents of a specific table field
 ```
-php artisan database:showTable chats --column="chat_id"
-php artisan database:showTable chats --column="chat_id" --column="username" --column="attempts"
+php artisan database:showTable chats --columns="chat_id"
+php artisan database:showTable chats --columns="chat_id" --columns="username" --columns="attempts"
 ```
 ### run migrations
 ```
