@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c38c8e77-207b-443c-bb14-c6deba798537" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/App.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Console/Commands/Serve.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Console/Commands/Serve.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Responses/Trigger.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Responses/Trigger.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_04_231682250774_create_chats_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_04_231682250774_create_chats_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Methods/DeleteMessage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Console/Commands/Database/Migration.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Console/Commands/Database/Migration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Console/Commands/Database/Params.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Console/Commands/Database/Params.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Console/Commands/Database/ShowTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Console/Commands/Database/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Console/Commands/Database/Table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Env.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Env.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Methods/SendAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Methods/SendAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Methods/SendMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Methods/SendMessage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/responses/Triggers/Admin/GetApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/responses/Triggers/Admin/GetIP.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/responses/Triggers/OpenAI.php" beforeDir="false" afterPath="$PROJECT_DIR$/responses/Triggers/OpenAI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/responses/Triggers/Start.php" beforeDir="false" afterPath="$PROJECT_DIR$/responses/Triggers/Start.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/message.txt" beforeDir="false" afterPath="$PROJECT_DIR$/storage/message.txt" afterDir="false" />
     </list>
