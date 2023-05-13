@@ -6,7 +6,7 @@ use Core\Controllers;
 use Core\Env;
 use Core\Methods\SendMessage;
 
-class Plot
+class Callback
 {
     use Controllers;
     use Env;

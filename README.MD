@@ -207,7 +207,7 @@ $this->mediaGroup()
 
 # <h1 style="color:cyan;">InlineQueries</h1>
 ```
-namespace Interactions;
+namespace Inlines;
 
 use Core\Responses\Interaction;
 

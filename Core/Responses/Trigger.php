@@ -5,6 +5,7 @@ namespace Core\Responses;
 use Core\Console\Commands\Send;
 use Core\Controllers;
 use Core\Env;
+use Core\Methods\DeleteMessage;
 use Core\Methods\SendDocument;
 use Core\Methods\SendInvoice;
 use Core\Methods\SendMediaGroup;
@@ -17,6 +18,8 @@ class Trigger
 {
     use Controllers;
     use Env;
+
+    public array $lastMessage;
 
     public function request(): array
     {
@@ -40,9 +43,10 @@ class Trigger
     }
     public function reply_message(string $message): void
     {
-        (new SendMessage)
+        $this->lastMessage = (new SendMessage)
             ->chat_id($GLOBALS['request']['message']['chat']['id'])
             ->text($message)
+            ->parse_mode()
             ->send();
     }
     public function request_message(): array
@@ -53,5 +57,13 @@ class Trigger
     public function send_invoice(): SendInvoice
     {
         return new SendInvoice;
+    }
+
+    public function deleteMessage($message_id = null): void
+    {
+        if ($message_id === null) {
+            $message_id = $this->lastMessage['result']['message_id'];
+        }
+        (new DeleteMessage())->delete($message_id);
     }
 }

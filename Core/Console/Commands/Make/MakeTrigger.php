@@ -22,7 +22,7 @@ class MakeTrigger extends Command
         $name = $input->getArgument('name');
 
         $file = self::samplesPath() . "Trigger.php";
-        $new_file = self::responsesPath() . "Triggers/" . $name . ".php";
+        $new_file = self::responsesPath() . "Responses/" . $name . ".php";
         copy($file, $new_file);
 
         $output->getFormatter()->setStyle("bright-green-bg", new OutputFormatterStyle('black', "bright-green"));

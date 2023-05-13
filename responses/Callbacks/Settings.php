@@ -1,9 +1,9 @@
 <?php
-namespace Responses\Plots;
+namespace Responses\Callbacks;
 
-use Core\Responses\Plot;
+use Core\Responses\Callback;
 
-class Settings extends Plot{
+class Settings extends Callback{
     public function __construct($request)
     {
         $this->message()

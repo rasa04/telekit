@@ -19,6 +19,7 @@ class OpenAI extends Trigger {
         }
         elseif ($this->authorized() || $attempts < $MAX_ATTEMPTS)
         {
+            $this->reply_message('🤔');
             if (!$this->authorized()) {
                 $temp_chat = $chat->first();
                 $temp_chat->attempts = $attempts+1;
@@ -83,6 +84,7 @@ class OpenAI extends Trigger {
 
             if ($chat->first('context')) $chat->first()->update(['context' => json_encode($this->messages)]);
 
+            $this->deleteMessage();
             $this->reply_message($answer);
         }
 

@@ -22,7 +22,7 @@ class MakeInteraction extends Command
         $name = $input->getArgument('name');
 
         $file = self::samplesPath() . "Interaction.php";
-        $new_file = self::responsesPath() . "Interactions/" . $name . ".php";
+        $new_file = self::responsesPath() . "Inlines/" . $name . ".php";
         copy($file, $new_file);
 
         $output->getFormatter()->setStyle("bright-green-bg", new OutputFormatterStyle('black', "bright-green"));
