@@ -6,7 +6,7 @@ use Dotenv\Dotenv;
 
 use Responses\Invoices\SubscriptionForMonth;
 use Responses\Triggers\{Start, Help, NamesPrevalence, ChooseBetween, OpenAI, Settings, Subscription};
-use Responses\Triggers\Admin\GetApi;
+use Responses\Triggers\Admin\GetIP;
 use Responses\Callbacks\{About, Support, Settings as SettingsPlot};
 use Responses\Inlines\Dices;
 
@@ -14,7 +14,7 @@ Dotenv::createUnsafeImmutable(__DIR__)->load();
 new Database;
 
 App::triggers([
-        "rasa api" => GetApi::class,
+        "rasa ip" => GetIP::class,
         "/start$" => Start::class,
         "/start@rickbot$" => Start::class,
         "/help$" => Help::class,
