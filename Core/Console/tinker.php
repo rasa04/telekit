@@ -67,9 +67,9 @@ function test_triggers(): void
             'text' => 'сколько будет 5+5?'
         ]
     ];
-//    new \Triggers\Start($request);
-//    new \Triggers\Help($request);
-//    new \Triggers\Settings($request);
+//    new \Responses\Start($request);
+//    new \Responses\Help($request);
+//    new \Responses\Settings($request);
 }
 function test_plots(): void
 {
@@ -87,8 +87,8 @@ function test_plots(): void
         ]
     ];
 
-//    new Responses\Plots\About($request);
-    new Responses\Plots\Settings($request);
+//    new Responses\Callbacks\About($request);
+    new Responses\Callbacks\Settings($request);
 }
 
 //list_countries();

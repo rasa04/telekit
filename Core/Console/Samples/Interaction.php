@@ -1,5 +1,5 @@
 <?php
-namespace Responses\Interactions;
+namespace Responses\Inlines;
 
 use Core\Responses\Interaction;
 

@@ -2,15 +2,10 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-use Core\Console\Commands\Make\{
-    MakeInteraction, MakeTrigger, MakeModel, MakeMigration
-};
-use Core\Console\Commands\Database\{
-    Driver, Migration, Params, Seeder, Table, Tables, Version, DatabaseInfo
-};
-use Core\Console\Commands\{
-    Serve, GetUpdates, Send
-};
+use Core\Console\Commands\{GetUpdates, Send, Serve};
+use Core\Console\Commands\{Responses};
+use Core\Console\Commands\Database\{DatabaseInfo, Driver, Migration, Params, Seeder, Table, Tables, Version};
+use Core\Console\Commands\Make\{MakeInteraction, MakeMigration, MakeModel, MakeTrigger};
 use Dotenv\Dotenv;
 use Symfony\Component\Console\Application;
 
@@ -21,7 +16,7 @@ $application = new Application();
 $application->addCommands([
     new Tables, new Params, new Driver, new Version, new Table, new Table, new Migration, new Seeder, new DatabaseInfo,
     new MakeInteraction, new MakeTrigger, new MakeModel, new MakeMigration,
-    new Serve, new GetUpdates, new Send
+    new Serve, new GetUpdates, new Send, new Responses
 ]);
 
 $application->run();

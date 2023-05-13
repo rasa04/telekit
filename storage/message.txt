@@ -25442,3 +25442,952 @@ Length: DB 10
 
 )
 
+2023-05-13 19:04:40 Array
+(
+    [update_id] => 986422965
+    [message] => Array
+        (
+            [message_id] => 4802
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683986680
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAISwmRfmPiHs2envAc7CazlgysztIYqAAKkKgACFLABS1tTxpeePWN2LwQ
+                    [file_unique_id] => AgADpCoAAhSwAUs
+                    [file_size] => 12424
+                )
+
+        )
+
+)
+
+2023-05-13 19:04:40 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4803
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683986681
+            [text] => 🤔
+        )
+
+)
+
+2023-05-13 19:08:52 Array
+(
+    [update_id] => 986422965
+    [message] => Array
+        (
+            [message_id] => 4802
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683986680
+            [voice] => Array
+                (
+                    [duration] => 3
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAISwmRfmPiHs2envAc7CazlgysztIYqAAKkKgACFLABS1tTxpeePWN2LwQ
+                    [file_unique_id] => AgADpCoAAhSwAUs
+                    [file_size] => 12424
+                )
+
+        )
+
+)
+
+2023-05-13 19:08:53 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4805
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683986934
+            [text] => 🤔
+        )
+
+)
+
+2023-05-13 19:08:59 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4806
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683986940
+            [text] => Результат умножения 5 на 5 равен 25.
+        )
+
+)
+
+2023-05-13 19:09:08 Array
+(
+    [update_id] => 986422966
+    [message] => Array
+        (
+            [message_id] => 4807
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683986948
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAISx2RfmgQKeoKw2NebzJcmO_J6FYpaAAK1KgACFLABS06tUP-qJvUrLwQ
+                    [file_unique_id] => AgADtSoAAhSwAUs
+                    [file_size] => 7549
+                )
+
+        )
+
+)
+
+2023-05-13 19:09:09 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4808
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683986950
+            [text] => 🤔
+        )
+
+)
+
+2023-05-13 19:09:15 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4809
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683986956
+            [text] => Результат деления 25 на 2 равен 12.5. Таким образом, формула будет выглядеть следующим образом: (5 * 5) / 2 = 12.5.
+        )
+
+)
+
+2023-05-13 19:12:57 Array
+(
+    [update_id] => 986422967
+    [message] => Array
+        (
+            [message_id] => 4810
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683987017
+            [text] => hi
+        )
+
+)
+
+2023-05-13 19:12:57 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4811
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683987178
+            [text] => 🤔
+        )
+
+)
+
+2023-05-13 19:12:59 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4812
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683987180
+            [text] => Привет! Чем я могу помочь?
+        )
+
+)
+
+2023-05-13 19:13:02 Array
+(
+    [update_id] => 986422968
+    [message] => Array
+        (
+            [message_id] => 466
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1683987039
+            [text] => ываф
+        )
+
+)
+
+2023-05-13 19:13:06 Array
+(
+    [update_id] => 986422969
+    [message] => Array
+        (
+            [message_id] => 4813
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683987187
+            [text] => /start
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-13 19:13:07 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4814
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683987188
+            [text] => Приветствую! Общайся со мной через текст или голосовые сообщения!
+МОИ ВОЗМОЖНОСТИ
+
+Команда @rickbot что бы бросать игровые кости, если хотите бросить несколько укажите в виде 5d6 или 5к6
+
+Можно задавать вопросы по типу 'поспать или ну его нафиг?' - бот ответит 
+
+Команды name и имя предназначены для просмотра распространенности имени в разных странах
+
+Если добавляете в чат предоставьте админку что бы с ботом было удобнее работать
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 65
+                            [type] => bold
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 66
+                            [length] => 15
+                            [type] => bold
+                        )
+
+                    [2] => Array
+                        (
+                            [offset] => 91
+                            [length] => 8
+                            [type] => code
+                        )
+
+                    [3] => Array
+                        (
+                            [offset] => 271
+                            [length] => 4
+                            [type] => code
+                        )
+
+                    [4] => Array
+                        (
+                            [offset] => 278
+                            [length] => 3
+                            [type] => code
+                        )
+
+                    [5] => Array
+                        (
+                            [offset] => 353
+                            [length] => 79
+                            [type] => bold
+                        )
+
+                )
+
+            [reply_markup] => Array
+                (
+                    [inline_keyboard] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [text] => About
+                                            [callback_data] => about
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [text] => Support
+                                            [callback_data] => support
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [text] => Settings
+                                            [callback_data] => settings
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-13 19:13:09 Array
+(
+    [update_id] => 986422970
+    [callback_query] => Array
+        (
+            [id] => 2197747891041879231
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [message] => Array
+                (
+                    [message_id] => 4814
+                    [from] => Array
+                        (
+                            [id] => 5977797894
+                            [is_bot] => 1
+                            [first_name] => Рик
+                            [username] => BirthdRe_bot
+                        )
+
+                    [chat] => Array
+                        (
+                            [id] => 511703056
+                            [first_name] => ×_×
+                            [username] => rasa035
+                            [type] => private
+                        )
+
+                    [date] => 1683987188
+                    [text] => Приветствую! Общайся со мной через текст или голосовые сообщения!
+МОИ ВОЗМОЖНОСТИ
+
+Команда @rickbot что бы бросать игровые кости, если хотите бросить несколько укажите в виде 5d6 или 5к6
+
+Можно задавать вопросы по типу 'поспать или ну его нафиг?' - бот ответит 
+
+Команды name и имя предназначены для просмотра распространенности имени в разных странах
+
+Если добавляете в чат предоставьте админку что бы с ботом было удобнее работать
+                    [entities] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [offset] => 0
+                                    [length] => 65
+                                    [type] => bold
+                                )
+
+                            [1] => Array
+                                (
+                                    [offset] => 66
+                                    [length] => 15
+                                    [type] => bold
+                                )
+
+                            [2] => Array
+                                (
+                                    [offset] => 91
+                                    [length] => 8
+                                    [type] => code
+                                )
+
+                            [3] => Array
+                                (
+                                    [offset] => 271
+                                    [length] => 4
+                                    [type] => code
+                                )
+
+                            [4] => Array
+                                (
+                                    [offset] => 278
+                                    [length] => 3
+                                    [type] => code
+                                )
+
+                            [5] => Array
+                                (
+                                    [offset] => 353
+                                    [length] => 79
+                                    [type] => bold
+                                )
+
+                        )
+
+                    [reply_markup] => Array
+                        (
+                            [inline_keyboard] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [text] => About
+                                                    [callback_data] => about
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [text] => Support
+                                                    [callback_data] => support
+                                                )
+
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [text] => Settings
+                                                    [callback_data] => settings
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [chat_instance] => -7155587545967989064
+            [data] => about
+        )
+
+)
+
+2023-05-13 19:13:09 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4815
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683987190
+            [text] => Скоро...
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 8
+                            [type] => bold
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-13 19:13:11 Array
+(
+    [update_id] => 986422971
+    [callback_query] => Array
+        (
+            [id] => 2197747893608002833
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [message] => Array
+                (
+                    [message_id] => 4814
+                    [from] => Array
+                        (
+                            [id] => 5977797894
+                            [is_bot] => 1
+                            [first_name] => Рик
+                            [username] => BirthdRe_bot
+                        )
+
+                    [chat] => Array
+                        (
+                            [id] => 511703056
+                            [first_name] => ×_×
+                            [username] => rasa035
+                            [type] => private
+                        )
+
+                    [date] => 1683987188
+                    [text] => Приветствую! Общайся со мной через текст или голосовые сообщения!
+МОИ ВОЗМОЖНОСТИ
+
+Команда @rickbot что бы бросать игровые кости, если хотите бросить несколько укажите в виде 5d6 или 5к6
+
+Можно задавать вопросы по типу 'поспать или ну его нафиг?' - бот ответит 
+
+Команды name и имя предназначены для просмотра распространенности имени в разных странах
+
+Если добавляете в чат предоставьте админку что бы с ботом было удобнее работать
+                    [entities] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [offset] => 0
+                                    [length] => 65
+                                    [type] => bold
+                                )
+
+                            [1] => Array
+                                (
+                                    [offset] => 66
+                                    [length] => 15
+                                    [type] => bold
+                                )
+
+                            [2] => Array
+                                (
+                                    [offset] => 91
+                                    [length] => 8
+                                    [type] => code
+                                )
+
+                            [3] => Array
+                                (
+                                    [offset] => 271
+                                    [length] => 4
+                                    [type] => code
+                                )
+
+                            [4] => Array
+                                (
+                                    [offset] => 278
+                                    [length] => 3
+                                    [type] => code
+                                )
+
+                            [5] => Array
+                                (
+                                    [offset] => 353
+                                    [length] => 79
+                                    [type] => bold
+                                )
+
+                        )
+
+                    [reply_markup] => Array
+                        (
+                            [inline_keyboard] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [text] => About
+                                                    [callback_data] => about
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [text] => Support
+                                                    [callback_data] => support
+                                                )
+
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [text] => Settings
+                                                    [callback_data] => settings
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [chat_instance] => -7155587545967989064
+            [data] => settings
+        )
+
+)
+
+2023-05-13 19:13:12 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4816
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683987193
+            [text] => Скоро...
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 8
+                            [type] => bold
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-13 19:13:17 Array
+(
+    [update_id] => 986422972
+    [message] => Array
+        (
+            [message_id] => 4817
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683987197
+            [text] => /subscription
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 13
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-13 19:13:17 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4818
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683987198
+            [text] => Если Вам функционал бота показался полезным, поддержите меня подпиской.
+
+Это поможет мне поддерживать стабильную и быструю работу сервера, каждая подписка способствует появлению новых фич и удешевлению существующего функционала.
+
+Подписка стоит 2$ или 100руб или 15000 сум в месяц. Обратитесь к @rasa035
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 295
+                            [length] => 8
+                            [type] => mention
+                        )
+
+                )
+
+        )
+
+)
+

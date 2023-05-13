@@ -3,7 +3,7 @@ namespace Core;
 
 use Core\Storage\Storage;
 use Database\models\Chat;
-use Responses\Interactions\DefaultAct as InteractionDefault;
+use Responses\Inlines\DefaultAct as InteractionDefault;
 use Responses\Triggers\DefaultAct as TriggerDefault;
 
 class App
@@ -54,7 +54,7 @@ class App
     }
     
     /**
-     * You can trace and response to all queries first in Interactions\DefaultAct class
+     * You can trace and response to all queries first in Inlines\DefaultAct class
      * Be careful that the new classes for processing inline Queries do not contradict each other
      * use php regex without specifying any delimiters
      * @param $inlineQueries : array
