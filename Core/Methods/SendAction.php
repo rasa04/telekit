@@ -1,9 +1,11 @@
 <?php
 namespace Core\Methods;
 
+use Core\Controllers;
+
 abstract class SendAction
 {
-    use \Core\Controllers;
+    use Controllers;
 
     protected array $response;
 

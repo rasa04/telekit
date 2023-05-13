@@ -25161,3 +25161,284 @@ Length: DB 10
 
 )
 
+2023-05-13 18:03:36 Array
+(
+    [update_id] => 986422962
+    [message] => Array
+        (
+            [message_id] => 4795
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683979536
+            [text] => 132
+        )
+
+)
+
+2023-05-13 18:05:06 Array
+(
+    [update_id] => 986422962
+    [message] => Array
+        (
+            [message_id] => 4795
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683979536
+            [text] => 132
+        )
+
+)
+
+2023-05-13 18:05:09 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4796
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683983110
+            [text] => Из числа 132 нельзя понять, что вы имеете в виду. Если у вас есть какой-то конкретный вопрос или запрос, пожалуйста, уточните его и я постараюсь помочь.
+        )
+
+)
+
+2023-05-13 18:05:30 Array
+(
+    [update_id] => 986422963
+    [message] => Array
+        (
+            [message_id] => 4797
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683983131
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAISvWRfixueYXhppQozXNJU0QMmQ4-KAAIpKgACFLABS2FHPj_IY9xoLwQ
+                    [file_unique_id] => AgADKSoAAhSwAUs
+                    [file_size] => 7680
+                )
+
+        )
+
+)
+
+2023-05-13 18:05:37 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4798
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683983138
+            [text] => Я не совсем понимаю смысл вашего сообщения. Если у вас есть какой-то конкретный вопрос или запрос, пожалуйста, задайте его, и я постараюсь помочь.
+        )
+
+)
+
+2023-05-13 18:05:54 Array
+(
+    [update_id] => 986422963
+    [message] => Array
+        (
+            [message_id] => 4797
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683983131
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAISvWRfixueYXhppQozXNJU0QMmQ4-KAAIpKgACFLABS2FHPj_IY9xoLwQ
+                    [file_unique_id] => AgADKSoAAhSwAUs
+                    [file_size] => 7680
+                )
+
+        )
+
+)
+
+2023-05-13 18:06:01 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4800
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683983162
+            [text] => Я понимаю, что это предложение образовано из разных слов, но оно не имеет конкретного смысла или значения. Если у вас есть какой-то вопрос или запрос, пожалуйста, задайте его, и я постараюсь помочь вам.
+        )
+
+)
+
+2023-05-13 18:06:04 Array
+(
+    [update_id] => 986422964
+    [message] => Array
+        (
+            [message_id] => 4799
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683983148
+            [voice] => Array
+                (
+                    [duration] => 2
+                    [mime_type] => audio/ogg
+                    [file_id] => AwACAgIAAxkBAAISv2Rfiyy8K3mLAVs8D4mecJkn3njjAAIqKgACFLABS1Fae_zAddCmLwQ
+                    [file_unique_id] => AgADKioAAhSwAUs
+                    [file_size] => 8587
+                )
+
+        )
+
+)
+
+2023-05-13 18:06:15 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4801
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1683983176
+            [text] => Я - искусственный интеллект, созданный для общения с людьми на естественном языке и помощи в различных задачах. Моя функциональность основывается на машинном обучении и обработке естественного языка. Я могу помочь с ответами на вопросы, поиском информации, переводом текстов, проведением некоторых вычислений, напоминанием о важных событиях и многое другое. Если у вас есть какой-то конкретный запрос, пожалуйста, задайте его, и я постараюсь помочь.
+        )
+
+)
+

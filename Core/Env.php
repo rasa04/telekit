@@ -6,7 +6,7 @@ trait Env {
     {
         return getenv("TELEGRAM_TOKEN");
     }
-    public function storage_path(): array|false|string
+    public static function storage_path(): array|false|string
     {
         return __DIR__ . "/../storage/";
     }
@@ -39,7 +39,7 @@ trait Env {
         return 511703056;
     }
 
-    public function time_zone(): string
+    public static function time_zone(): string
     {
         return getenv("TIME_ZONE");
     }

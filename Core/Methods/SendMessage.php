@@ -12,21 +12,22 @@ class SendMessage extends SendAction
     /**
      * @throws Exception
      */
-    public function send(array $headers = [], bool $writeLogFile = true, bool $saveDataToJson = true) : void
+    public function send(array $headers = [], bool $writeLogFile = true, bool $saveDataToJson = true) : array
     {
         if (empty($this->response['chat_id'])) throw new Exception('chat id does not exists');
         if (empty($this->response['text'])) throw new Exception('text does not exists');
         
-        $response = $this->client()->post("https://api.telegram.org/bot" . $this->token() . "/sendMessage", [
+        $result = $this->client()->post("https://api.telegram.org/bot" . $this->token() . "/sendMessage", [
             'headers' => array_merge(["Content-Type" => "application/json"], $headers),
             'verify' => false,
             'json' => $this->response,
-        ]);
-        $result = $response->getBody()->getContents();
+        ])->getBody()->getContents();
 
         //сохраняем то что бот сам отправляет
         if($writeLogFile) $this->writeLogFile(json_decode($result, 1));
         if($saveDataToJson) Storage::save(json_decode($result, 1));
+
+        return json_decode($result, 1);
     }
 
     /**

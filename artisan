@@ -6,7 +6,7 @@ use Core\Console\Commands\Make\{
     MakeInteraction, MakeTrigger, MakeModel, MakeMigration
 };
 use Core\Console\Commands\Database\{
-    Driver, Migration, Params, Seeder, ShowTable, Table, Tables, Version, DatabaseInfo
+    Driver, Migration, Params, Seeder, Table, Tables, Version, DatabaseInfo
 };
 use Core\Console\Commands\{
     Serve, GetUpdates, Send
@@ -19,7 +19,7 @@ Dotenv::createUnsafeImmutable(__DIR__)->load();
 $application = new Application();
 
 $application->addCommands([
-    new Tables, new Params, new Driver, new Version, new Table, new ShowTable, new Migration, new Seeder, new DatabaseInfo,
+    new Tables, new Params, new Driver, new Version, new Table, new Table, new Migration, new Seeder, new DatabaseInfo,
     new MakeInteraction, new MakeTrigger, new MakeModel, new MakeMigration,
     new Serve, new GetUpdates, new Send
 ]);

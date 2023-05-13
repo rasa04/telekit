@@ -22,7 +22,7 @@ class Migration extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         new Database;
-        $migrations_folder = $this->app_path() . "\database\migrations\\";
+        $migrations_folder = $this->app_path() . "/database/migrations/";
         $folders = scandir($migrations_folder);
         $migrations = array_filter($folders, fn($files) => preg_match("#^\d#", $files));
 
