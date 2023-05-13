@@ -98,17 +98,18 @@ php artisan database:version
 ```
 php artisan database:tables
 ```
-### Describe table
+### Output table contents
 ```
 php artisan database:table chats
 ```
-### Output table contents
+### Describe table
 ```
-php artisan database:showTable chats
+php artisan database:table chats --desc
 ```
 ### Output the contents of a specific table field
 ```
 php artisan database:showTable chats --column="chat_id"
+php artisan database:showTable chats --column="chat_id" --column="username" --column="attempts"
 ```
 ### run migrations
 ```
@@ -117,6 +118,10 @@ php artisan migrate
 ### undo all migration
 ```
 php artisan migrate --fresh
+```
+## See responses
+```
+php artisan responses
 ```
 
 # <h1 style="color:cyan;">Send responses</h1>
