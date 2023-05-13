@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c38c8e77-207b-443c-bb14-c6deba798537" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/App.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Console/Commands/Make/MakeInteraction.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Console/Commands/Make/MakeInteraction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Console/Commands/Make/MakeTrigger.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Console/Commands/Make/MakeTrigger.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Console/Samples/Interaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Console/Samples/Interaction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Console/tinker.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Console/tinker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Responses/Plot.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Responses/Callback.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Responses/Trigger.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Responses/Trigger.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/responses/Interactions/DefaultAct.php" beforeDir="false" afterPath="$PROJECT_DIR$/responses/Inlines/DefaultAct.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/responses/Interactions/Dices.php" beforeDir="false" afterPath="$PROJECT_DIR$/responses/Inlines/Dices.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/responses/Plots/About.php" beforeDir="false" afterPath="$PROJECT_DIR$/responses/Callbacks/About.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/responses/Plots/Settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/responses/Callbacks/Settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/responses/Plots/Support.php" beforeDir="false" afterPath="$PROJECT_DIR$/responses/Callbacks/Support.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/responses/Triggers/OpenAI.php" beforeDir="false" afterPath="$PROJECT_DIR$/responses/Triggers/OpenAI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/message.txt" beforeDir="false" afterPath="$PROJECT_DIR$/storage/message.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
