@@ -3,6 +3,7 @@ namespace Responses\Triggers;
 
 use Core\Responses\Trigger;
 use Database\models\Chat;
+use Exception;
 
 class OpenAI extends Trigger {
     private array $messages = [];
@@ -26,7 +27,11 @@ class OpenAI extends Trigger {
                 $temp_chat->save();
             }
             if ($chat->first('context')) {
-                json_decode($chat->first('context')->toArray()["context"], true);
+                try {
+                    $this->messages = json_decode($chat->first('context')->toArray()["context"], true);
+                } catch (Exception) {
+                    $this->writeLogFile('TELEKIT ERROR: zero again');
+                }
             }
 
             if (isset($this->request_message()['voice']) && $this->chat_is_private()) {

@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c38c8e77-207b-443c-bb14-c6deba798537" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/responses/Triggers/OpenAI.php" beforeDir="false" afterPath="$PROJECT_DIR$/responses/Triggers/OpenAI.php" afterDir="false" />
-    </list>
+    <list default="true" id="c38c8e77-207b-443c-bb14-c6deba798537" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +124,7 @@
       <workItem from="1683996028941" duration="1069000" />
       <workItem from="1684215289106" duration="29000" />
       <workItem from="1684260672582" duration="37000" />
-      <workItem from="1684587853403" duration="14818000" />
+      <workItem from="1684587853403" duration="15133000" />
     </task>
     <servers />
   </component>
