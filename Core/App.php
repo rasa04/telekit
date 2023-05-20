@@ -35,9 +35,9 @@ class App
                 "rights" => 0,
                 "context" => '[]',
                 "type" => $GLOBALS['request']['message']['chat']['type'],
-                ($GLOBALS['request']['message']['chat']['type'] === 'private') ?? "language" => $GLOBALS['request']['message']['from']['language_code'],
-                ($GLOBALS['request']['message']['chat']['type'] === 'private') ?? "username" => $GLOBALS['request']['message']['from']['username'],
-                ($GLOBALS['request']['message']['chat']['type'] === 'private') ?? "first_name" => $GLOBALS['request']['message']['from']['first_name'],
+                "language" => ($GLOBALS['request']['message']['chat']['type'] === 'private') ? $GLOBALS['request']['message']['from']['language_code'] : '',
+                "username" => ($GLOBALS['request']['message']['chat']['type'] === 'private') ? $GLOBALS['request']['message']['from']['username'] : '',
+                "first_name" => ($GLOBALS['request']['message']['chat']['type'] === 'private') ? $GLOBALS['request']['message']['from']['first_name'] : '',
             ]);
         }
         if ($writeLogFile && $GLOBALS['request']) $this->writeLogFile($GLOBALS['request']);
