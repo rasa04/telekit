@@ -66,8 +66,10 @@
                                 <td class="border-r border-emerald-500">{{Carbon::parse($chat->created_at)->format('M d Y - h:i:s')}}</td>
                                 <td class="border-r border-emerald-500">{{Carbon::parse($chat->updated_at)->format('M d Y - h:i:s')}}</td>
 
-                                <td onclick="context({{$chat->context}})" class="border-r border-emerald-500 font-bold text-emerald-200 hover:text-emerald-500
-                                    bg-emerald-500 text-center select-none pointer-events-auto hover:bg-emerald-300">show</td>
+                                <td onclick="context({{$chat->context}})" class="border-r
+                                    border-emerald-500 font-bold text-emerald-200 hover:text-emerald-500
+                                    bg-emerald-500 text-center select-none pointer-events-auto hover:bg-emerald-300"
+                                >show ({{count(json_decode($chat->context, 1))}})</td>
                             </tr>
                         @endforeach
                     </tbody>
