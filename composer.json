@@ -22,7 +22,8 @@
         "doctrine/dbal": "^3.6",
         "ext-curl": "*",
         "ext-pdo": "*",
-        "symfony/console": "^6.2"
+        "symfony/console": "^6.2",
+        "eftec/bladeone": "^4.9"
     },
     "autoload": {
         "psr-4": {

@@ -81,6 +81,12 @@ class DatabaseSeeder extends Seeder
             'rights' => 1,
             'type' => 'private'
         ]);
+        Capsule::table('chats')->insert([
+            'chat_id' => 843065042,
+            'context' => '[]',
+            'rights' => 1,
+            'type' => 'private'
+        ]);
 
         $countries = json_decode(file_get_contents(__DIR__ . '/../../storage/countries.json'), true);
         foreach ($countries as $countryCode => $countryName) {
