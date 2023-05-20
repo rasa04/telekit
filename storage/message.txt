@@ -26391,3 +26391,300 @@ Length: DB 10
 
 )
 
+2023-05-21 04:11:10 Array
+(
+    [update_id] => 986422973
+    [message] => Array
+        (
+            [message_id] => 4820
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1684612747
+            [text] => hi
+        )
+
+)
+
+2023-05-21 04:11:10 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4823
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1684624269
+            [text] => 🤔
+        )
+
+)
+
+2023-05-21 04:11:12 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4824
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 511703056
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [type] => private
+                )
+
+            [date] => 1684624271
+            [text] => Здравствуйте! Как я могу Вам помочь?
+        )
+
+)
+
+2023-05-21 04:11:14 Array
+(
+    [update_id] => 986422974
+    [message] => Array
+        (
+            [message_id] => 468
+            [from] => Array
+                (
+                    [id] => 511703056
+                    [is_bot] => 
+                    [first_name] => ×_×
+                    [username] => rasa035
+                    [language_code] => en
+                )
+
+            [chat] => Array
+                (
+                    [id] => -1001673287453
+                    [title] => тестовый чат
+                    [username] => krkfdmsm
+                    [type] => supergroup
+                )
+
+            [date] => 1684612756
+            [text] => hi
+        )
+
+)
+
+2023-05-21 04:12:31 Array
+(
+    [update_id] => 986422975
+    [inline_query] => Array
+        (
+            [id] => 6954246882828317825
+            [from] => Array
+                (
+                    [id] => 1619161777
+                    [is_bot] => 
+                    [first_name] => Феруза
+                    [last_name] => Хайруллаевна
+                    [username] => xayrullayevna_a
+                    [language_code] => ru
+                )
+
+            [chat_type] => private
+            [query] => 
+            [offset] => 
+        )
+
+)
+
+2023-05-21 04:14:51 Array
+(
+    [update_id] => 986422976
+    [message] => Array
+        (
+            [message_id] => 4825
+            [from] => Array
+                (
+                    [id] => 1619161777
+                    [is_bot] => 
+                    [first_name] => Феруза
+                    [last_name] => Хайруллаевна
+                    [username] => xayrullayevna_a
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 1619161777
+                    [first_name] => Феруза
+                    [last_name] => Хайруллаевна
+                    [username] => xayrullayevna_a
+                    [type] => private
+                )
+
+            [date] => 1684624375
+            [text] => /start
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+2023-05-21 04:14:52 Array
+(
+    [ok] => 1
+    [result] => Array
+        (
+            [message_id] => 4826
+            [from] => Array
+                (
+                    [id] => 5977797894
+                    [is_bot] => 1
+                    [first_name] => Рик
+                    [username] => BirthdRe_bot
+                )
+
+            [chat] => Array
+                (
+                    [id] => 1619161777
+                    [first_name] => Феруза
+                    [last_name] => Хайруллаевна
+                    [username] => xayrullayevna_a
+                    [type] => private
+                )
+
+            [date] => 1684624491
+            [text] => Приветствую! Общайся со мной через текст или голосовые сообщения!
+МОИ ВОЗМОЖНОСТИ
+
+Команда @rickbot что бы бросать игровые кости, если хотите бросить несколько укажите в виде 5d6 или 5к6
+
+Можно задавать вопросы по типу 'поспать или ну его нафиг?' - бот ответит 
+
+Команды name и имя предназначены для просмотра распространенности имени в разных странах
+
+Если добавляете в чат предоставьте админку что бы с ботом было удобнее работать
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 65
+                            [type] => bold
+                        )
+
+                    [1] => Array
+                        (
+                            [offset] => 66
+                            [length] => 15
+                            [type] => bold
+                        )
+
+                    [2] => Array
+                        (
+                            [offset] => 91
+                            [length] => 8
+                            [type] => code
+                        )
+
+                    [3] => Array
+                        (
+                            [offset] => 271
+                            [length] => 4
+                            [type] => code
+                        )
+
+                    [4] => Array
+                        (
+                            [offset] => 278
+                            [length] => 3
+                            [type] => code
+                        )
+
+                    [5] => Array
+                        (
+                            [offset] => 353
+                            [length] => 79
+                            [type] => bold
+                        )
+
+                )
+
+            [reply_markup] => Array
+                (
+                    [inline_keyboard] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [text] => About
+                                            [callback_data] => about
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [text] => Support
+                                            [callback_data] => support
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [text] => Settings
+                                            [callback_data] => settings
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
