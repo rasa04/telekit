@@ -34,7 +34,10 @@ class App
                 "chat_id" => $GLOBALS['request']['message']['chat']['id'],
                 "rights" => 0,
                 "context" => '[]',
-                "type" => $GLOBALS['request']['message']['chat']['type']
+                "type" => $GLOBALS['request']['message']['chat']['type'],
+                ($GLOBALS['request']['message']['chat']['type'] === 'private') ?? "language" => $GLOBALS['request']['message']['from']['language_code'],
+                ($GLOBALS['request']['message']['chat']['type'] === 'private') ?? "username" => $GLOBALS['request']['message']['from']['username'],
+                ($GLOBALS['request']['message']['chat']['type'] === 'private') ?? "name" => $GLOBALS['request']['message']['from']['first_name'],
             ]);
         }
         if ($writeLogFile && $GLOBALS['request']) $this->writeLogFile($GLOBALS['request']);
@@ -85,7 +88,7 @@ class App
         if (isset($GLOBALS['request'])) return;
 
         $request = json_decode(file_get_contents('php://input'), true);
-        if (empty($request)) echo 'Nothing requested';
+        if (empty($request)) require_once $this->app_path() . '/admin.php';
         $GLOBALS['request'] = $request;
     }
     
