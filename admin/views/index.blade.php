@@ -17,6 +17,13 @@
             <p class="font-bold select-none">Users - {{$users_count}}</p>
         </div>
     </div>
+    <div class="bg-cyan-500 m-4 rounded-lg">
+        <div class="grid grid-cols-2 text-center font-bold">
+            <h1 class="m-4 text-3xl select-none">Context:</h1>
+            <button onclick="clearContext()" class="bg-cyan-700 text-white rounded-lg hover:bg-cyan-800">HIDE</button>
+        </div>
+        <div id="context"></div>
+    </div>
     <div class="flex flex-col bg-emerald-200 m-4 rounded-lg">
         <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
@@ -59,22 +66,14 @@
                                 <td class="border-r border-emerald-500">{{Carbon::parse($chat->created_at)->format('M d Y - h:i:s')}}</td>
                                 <td class="border-r border-emerald-500">{{Carbon::parse($chat->updated_at)->format('M d Y - h:i:s')}}</td>
 
-                                @if($chat->rights === '0')
-                                    <td class="border-r border-emerald-500 font-bold bg-gray-500 text-center select-none pointer-events-auto">-</td>
-                                @elseif($chat->rights > '0')
                                 <td onclick="context({{$chat->context}})" class="border-r border-emerald-500 font-bold text-emerald-200 hover:text-emerald-500
                                     bg-emerald-500 text-center select-none pointer-events-auto hover:bg-emerald-300">show</td>
-                                @endif
                             </tr>
                         @endforeach
                     </tbody>
                 </table>
             </div>
         </div>
-    </div>
-    <div class="bg-cyan-500 m-4 rounded-lg">
-        <h1 class="text-center m-4 font-bold text-3xl">Context:</h1>
-        <div id="context"></div>
     </div>
 <script>
     function context(context)
@@ -87,6 +86,11 @@
             document.getElementById('context').innerHTML += "</div>"
         })
         console.log(context)
+    }
+    function clearContext()
+    {
+        document.getElementById('context').innerHTML = ''
+        console.log('cleared')
     }
 </script>
 </body>
