@@ -31,6 +31,7 @@
                     <thead class="border-b-2 border-emerald-500 font-medium font-bold">
                     <tr>
                         <th>ID</th>
+                        <th>Chat ID</th>
                         <th>Name</th>
                         <th>Username</th>
                         <th>Language</th>
@@ -42,16 +43,20 @@
                         <th>Context</th>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="">
                         @use(Illuminate\Support\Carbon)
                         @foreach($chats as $chat)
                             <tr
-                                    @if($chat->rights === '0') class="hover:bg-gray-500 transition duration-200"
-                                    @elseif($chat->rights === '1') class="hover:bg-emerald-500 transition duration-200"
-                                    @elseif($chat->rights === '2') class="hover:bg-amber-500 transition duration-200"
+                                    @if($chat->rights === '0')
+                                        class="hover:bg-gray-500 transition duration-200"
+                                    @elseif($chat->rights === '1')
+                                        class="hover:bg-emerald-500 transition duration-200"
+                                    @elseif($chat->rights === '2')
+                                        class="hover:bg-amber-500 transition duration-200"
                                     @endif
                             >
                                 <td class="border-r border-emerald-500"><code>{{$chat->id}}</code></td>
+                                <td class="border-r border-emerald-500"><code>{{$chat->chat_id}}</code></td>
                                 <td class="border-r border-emerald-500">{{$chat->first_name}}</td>
                                 <td class="border-r border-emerald-500">{{$chat->username}}</td>
                                 <td class="border-r border-emerald-500">{{$chat->language}}</td>
@@ -63,8 +68,8 @@
 
                                 <td class="border-r border-emerald-500">{{$chat->attempts}}</td>
                                 <td class="border-r border-emerald-500">{{$chat->type}}</td>
-                                <td class="border-r border-emerald-500">{{Carbon::parse($chat->created_at)->format('M d Y - h:i:s')}}</td>
-                                <td class="border-r border-emerald-500">{{Carbon::parse($chat->updated_at)->format('M d Y - h:i:s')}}</td>
+                                <td class="border-r border-emerald-500">{{$chat->created_at}}</td>
+                                <td class="border-r border-emerald-500">{{$chat->updated_at}}</td>
 
                                 <td onclick="context({{$chat->context}})" class="border-r
                                     border-emerald-500 font-bold text-emerald-200 hover:text-emerald-500
