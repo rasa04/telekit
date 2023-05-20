@@ -37,7 +37,7 @@ class App
                 "type" => $GLOBALS['request']['message']['chat']['type'],
                 ($GLOBALS['request']['message']['chat']['type'] === 'private') ?? "language" => $GLOBALS['request']['message']['from']['language_code'],
                 ($GLOBALS['request']['message']['chat']['type'] === 'private') ?? "username" => $GLOBALS['request']['message']['from']['username'],
-                ($GLOBALS['request']['message']['chat']['type'] === 'private') ?? "name" => $GLOBALS['request']['message']['from']['first_name'],
+                ($GLOBALS['request']['message']['chat']['type'] === 'private') ?? "first_name" => $GLOBALS['request']['message']['from']['first_name'],
             ]);
         }
         if ($writeLogFile && $GLOBALS['request']) $this->writeLogFile($GLOBALS['request']);
