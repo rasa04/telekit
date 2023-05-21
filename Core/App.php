@@ -29,20 +29,57 @@ class App
         ini_set('display_startup_errors', 1);
 
         $this->setRequest();
-        if (isset($GLOBALS['request']['message']) && !Chat::where('chat_id', $GLOBALS['request']['message']['chat']['id'])->first()) {
-            Chat::insert([
+        $this->saveDataState();
+
+        if ($writeLogFile && $GLOBALS['request']) $this->writeLogFile($GLOBALS['request']);
+        if ($saveDataToJson && $GLOBALS['request']) Storage::save($GLOBALS['request']);
+        $this->matchingResponse();
+    }
+
+    public function saveDataState(): void
+    {
+        if (!isset($GLOBALS['request']['message'])) return;
+        $chat = Chat::where('chat_id', $GLOBALS['request']['message']['chat']['id'])->first();
+        if ($chat) {
+            $type = $GLOBALS['request']['message']['chat']['type'];
+            $data = [];
+            if ($type === 'private'){
+                $data = [
+                    'first_name' => $GLOBALS['request']['message']['from']['first_name'],
+                    'username' => $GLOBALS['request']['message']['from']['username'],
+                    'language' => $GLOBALS['request']['message']['from']['language_code'],
+                ];
+            }
+            elseif ($type === 'group') {
+                $data['first_name'] = $GLOBALS['request']['message']['chat']['title'];
+            }
+            elseif ($type === 'supergroup') {
+                $data['first_name'] = $GLOBALS['request']['message']['chat']['title'];
+                $data['username'] = $GLOBALS['request']['message']['chat']['username'];
+            }
+            $chat->update($data);
+        }
+        else {
+            $data = [
                 "chat_id" => $GLOBALS['request']['message']['chat']['id'],
                 "rights" => 0,
                 "context" => '[]',
                 "type" => $GLOBALS['request']['message']['chat']['type'],
-                "language" => ($GLOBALS['request']['message']['chat']['type'] === 'private') ? $GLOBALS['request']['message']['from']['language_code'] : '',
-                "username" => ($GLOBALS['request']['message']['chat']['type'] === 'private') ? $GLOBALS['request']['message']['from']['username'] : '',
-                "first_name" => ($GLOBALS['request']['message']['chat']['type'] === 'private') ? $GLOBALS['request']['message']['from']['first_name'] : '',
-            ]);
+            ];
+            if ($data['type'] === 'private') {
+                $data['first_name'] = $GLOBALS['request']['message']['from']['first_name'];
+                $data['username'] = $GLOBALS['request']['message']['from']['username'];
+                $data["language"] = $GLOBALS['request']['message']['from']['language_code'];
+            }
+            else if ($data['type'] === 'group') {
+                $data['first_name'] = $GLOBALS['request']['message']['chat']['title'];
+            }
+            else if ($data['type'] === 'supergroup') {
+                $data['first_name'] = $GLOBALS['request']['message']['chat']['title'];
+                $data['username'] = $GLOBALS['request']['message']['chat']['username'];
+            }
+            Chat::insert($data);
         }
-        if ($writeLogFile && $GLOBALS['request']) $this->writeLogFile($GLOBALS['request']);
-        if ($saveDataToJson && $GLOBALS['request']) Storage::save($GLOBALS['request']);
-        $this->matchingResponse();
     }
 
     public static function triggers(array $triggers): App

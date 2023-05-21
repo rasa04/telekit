@@ -38,7 +38,6 @@
                         <th>Rights</th>
                         <th>Attempts</th>
                         <th>Type</th>
-                        <th>Created</th>
                         <th>Updated</th>
                         <th>Context</th>
                     </tr>
@@ -68,7 +67,6 @@
 
                                 <td class="border-r border-emerald-500">{{$chat->attempts}}</td>
                                 <td class="border-r border-emerald-500">{{$chat->type}}</td>
-                                <td class="border-r border-emerald-500">{{$chat->created_at}}</td>
                                 <td class="border-r border-emerald-500">{{$chat->updated_at}}</td>
 
                                 <td onclick="context({{$chat->context}})" class="border-r
