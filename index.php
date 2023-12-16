@@ -4,6 +4,7 @@ use Core\App;
 use Core\Database\Database;
 use Dotenv\Dotenv;
 
+use Middlewares\BaseMiddleware;
 use Responses\Invoices\SubscriptionForMonth;
 use Responses\Triggers\{Start, Help, NamesPrevalence, ChooseBetween, OpenAI, Settings, Subscription};
 use Responses\Triggers\Admin\GetIP;
@@ -13,7 +14,10 @@ use Responses\Inlines\Dices;
 Dotenv::createUnsafeImmutable(__DIR__)->load();
 new Database;
 
-App::triggers([
+App::middlewares([
+        BaseMiddleware::class
+    ])
+    ->triggers([
         "rasa ip" => GetIP::class,
         "/start$" => Start::class,
         "/start@rickbot$" => Start::class,

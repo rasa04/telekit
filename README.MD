@@ -130,7 +130,7 @@ php artisan responses
 class Hi extends Trigger {
     public function __construct($request)
     {
-        $this->reply_message('Hi');
+        $this->replyMessage('Hi');
     }
 }
 ```
@@ -143,8 +143,8 @@ class Help extends Trigger {
     public function __construct($request)
     {
         $this->sendMessage()
-            ->chat_id($request['message']['chat']['id'])
-            ->text('Помощь')
+            ->chatId($request['message']['chat']['id'])
+            ->text('Info')
             ->send();
     }
 }
@@ -153,9 +153,9 @@ class Help extends Trigger {
 ### Send message with buttons
 ```
 $this->sendMessage()
-    ->chat_id($request['message']['chat']['id'])
+    ->chatId($request['message']['chat']['id'])
     ->text('Choose the option')
-    ->parse_mode()
+    ->parseMode()
     ->reply_markup([
         'one_time_keyboard' => true,
         'resize_keyboard' => true,
@@ -202,7 +202,7 @@ $this->document()
 ## Send media files
 ```
 $this->mediaGroup()
-    ->chat_id(id)
+    ->chatId(id)
     ->media([
             ['type' => 'document', 'name' => 'mycat', 'path' => 'img/image1.png'],
             ['type' => 'document', 'name' => 'mycat2', 'path' => 'img/image1.png']
@@ -253,7 +253,7 @@ class Example extends Interaction {
 ```
 ## Send invoice
 ```
-$this->send_invoice()
+$this->sendInvoice()
     ->title('Subscription')
     ->description("Buy subscription for an month.")
     ->payload('Subscription: month')

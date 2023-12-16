@@ -1,2 +1,7 @@
 /vendor
 .env
+/.idea
+/.fleet
+/.vscode
+composer.phar
+composer.lock

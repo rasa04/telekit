@@ -3,7 +3,7 @@
     "type": "project",
     "description": "Library for creating telegram bots",
     "homepage": "https://matesite.uz",
-    "keywords": ["ptbot", "rasa"],
+    "keywords": ["telekit", "rasa"],
     "license": "MIT",
     "authors": [
         {
@@ -15,21 +15,17 @@
     ],
     "require": {
         "php": "^8.0",
-        "guzzlehttp/guzzle": "^6.5",
+        "rasa/telekit-core":  "dev-main",
         "vlucas/phpdotenv": "^5.5",
-        "illuminate/database": "^10.9",
-        "illuminate/collections": "^10.9",
-        "doctrine/dbal": "^3.6",
         "ext-curl": "*",
         "ext-pdo": "*",
-        "symfony/console": "^6.2",
         "eftec/bladeone": "^4.9"
     },
     "autoload": {
         "psr-4": {
-            "Core\\": "Core/",
             "Database\\": "database/",
-            "Responses\\": "responses/"
+            "Responses\\": "app/responses/",
+            "Middlewares\\": "app/middlewares"
         }
     }
 }
