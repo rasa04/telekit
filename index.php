@@ -29,7 +29,7 @@ App::middlewares([
         "\s(or|или)\s" => ChooseBetween::class,
         "/subscription" => Subscription::class,
         "^(openai|Openai|gpt|Gpt|ии|рик|Рик|rick|Rick)(\s|,\s)" => OpenAI::class,
-    ], default: DefaultAct::class)
+    ], default: DefaultAct::class) // Действие по умолчанию
     ->voices([
         OpenAI::class
     ])
@@ -41,7 +41,7 @@ App::middlewares([
     ->inlineQueries([
         "^(d|к)\d" => Dices::class,
         "^([1-9]|[1-9][0-9])(d|к)\d" => Dices::class,
-    ], )
+    ], \Responses\Inlines\DefaultAct::class)
     ->games([
         'example' => null
     ])
