@@ -95,6 +95,5 @@ class OpenAI extends Trigger {
             $this->deleteMessage();
             $this->replyMessage($answer);
         }
-
     }
 }

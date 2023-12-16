@@ -3,10 +3,11 @@ namespace Middlewares;
 
 use Database\models\Chat;
 use Core\Entities\Message;
+use Core\Interface\Middleware;
 
 class BaseMiddleware implements Middleware
 {
-    public function handle(array $request, Message $message): void
+    public function handle(array $request, ?Message $message): void
     {
         if (!isset($request['message']) && !is_array($request['message'])) {
             return;
