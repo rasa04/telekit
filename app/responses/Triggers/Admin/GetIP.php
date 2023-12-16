@@ -1,9 +1,11 @@
 <?php
 namespace Responses\Triggers\Admin;
+use Core\Entities\Message;
+use Core\Interface\Trigger as TriggerInterface;
 use Core\Responses\Trigger;
 
-class GetIP extends Trigger {
-    public function __construct($request)
+class GetIP extends Trigger implements TriggerInterface {
+    public function __construct(array $request, ?Message $message)
     {
         $result = $this->client()->get('https://api.ipify.org', [
             'query' => [

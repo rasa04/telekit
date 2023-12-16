@@ -6,7 +6,7 @@ use Dotenv\Dotenv;
 
 use Middlewares\BaseMiddleware;
 use Responses\Invoices\SubscriptionForMonth;
-use Responses\Triggers\{Start, Help, NamesPrevalence, ChooseBetween, OpenAI, Settings, Subscription};
+use Responses\Triggers\{DefaultAct, Start, Help, NamesPrevalence, ChooseBetween, OpenAI, Settings, Subscription};
 use Responses\Triggers\Admin\GetIP;
 use Responses\Callbacks\{About, Support, Settings as SettingsPlot};
 use Responses\Inlines\Dices;
@@ -29,7 +29,7 @@ App::middlewares([
         "\s(or|или)\s" => ChooseBetween::class,
         "/subscription" => Subscription::class,
         "^(openai|Openai|gpt|Gpt|ии|рик|Рик|rick|Rick)(\s|,\s)" => OpenAI::class,
-    ])
+    ], default: DefaultAct::class)
     ->voices([
         OpenAI::class
     ])
@@ -41,7 +41,7 @@ App::middlewares([
     ->inlineQueries([
         "^(d|к)\d" => Dices::class,
         "^([1-9]|[1-9][0-9])(d|к)\d" => Dices::class,
-    ])
+    ], )
     ->games([
         'example' => null
     ])

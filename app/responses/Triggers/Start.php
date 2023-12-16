@@ -1,10 +1,13 @@
 <?php
 namespace Responses\Triggers;
 
+
+use Core\Entities\Message;
+use Core\Interface\Trigger as TriggerInterface;
 use Core\Responses\Trigger;
 
-class Start extends Trigger {
-    public function __construct($request)
+class Start extends Trigger implements TriggerInterface {
+    public function __construct(array $request, ?Message $message)
     {
         $text = "<b>Приветствую! Общайся со мной через текст или голосовые сообщения!</b>\n"
         ."<b>МОИ ВОЗМОЖНОСТИ</b>\n\n"

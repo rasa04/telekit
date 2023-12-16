@@ -1,10 +1,12 @@
 <?php
 namespace Responses\Triggers;
 
+use Core\Entities\Message;
+use Core\Interface\Trigger as TriggerInterface;
 use Core\Responses\Trigger;
 
-class ChooseBetween extends Trigger {
-    public function __construct($request)
+class ChooseBetween extends Trigger implements TriggerInterface {
+    public function __construct(array $request, ?Message $message)
     {
         $answers = explode("или", $request['message']['text']);
         if (count($answers) == 1) $answers = explode(" or ", $request['message']['text']);

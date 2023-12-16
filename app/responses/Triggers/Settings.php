@@ -1,10 +1,12 @@
 <?php
 namespace Responses\Triggers;
 
+use Core\Entities\Message;
+use Core\Interface\Trigger as TriggerInterface;
 use Core\Responses\Trigger;
 
-class Settings extends Trigger {
-    public function __construct($request)
+class Settings extends Trigger implements TriggerInterface {
+    public function __construct(array $request, ?Message $message)
     {
         $this->sendMessage()
             ->chatId($request['message']['chat']['id'])

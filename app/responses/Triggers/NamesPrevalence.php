@@ -1,11 +1,15 @@
 <?php
+
 namespace Responses\Triggers;
+
+use Core\Entities\Message;
+use Core\Interface\Trigger as TriggerInterface;
 use Core\Responses\Trigger;
 use Database\models\Country;
 
-class NamesPrevalence extends Trigger {
+class NamesPrevalence extends Trigger implements TriggerInterface{
 
-    public function __construct($request)
+    public function __construct(array $request, ?Message $message)
     {
         (preg_match("/^name\s/", strtolower($request['message']['text']))) 
             ? $name = substr($request['message']['text'], 5)

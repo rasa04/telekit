@@ -1,10 +1,12 @@
 <?php
 namespace Responses\Triggers;
 
+use Core\Entities\Message;
+use Core\Interface\Trigger as TriggerInterface;
 use Core\Responses\Trigger;
 
-class Subscription extends Trigger {
-    public function __construct()
+class Subscription extends Trigger implements TriggerInterface{
+    public function __construct(array $request, ?Message $message)
     {
         $this->replyMessage(
         "Если Вам функционал бота показался полезным, поддержите меня подпиской."

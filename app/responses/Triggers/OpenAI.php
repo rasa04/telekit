@@ -1,21 +1,23 @@
 <?php
 namespace Responses\Triggers;
 
+use Core\Entities\Message;
+use Core\Interface\Trigger as TriggerInterface;
 use Core\Responses\Trigger;
 use Database\models\Chat;
 use Exception;
 
-class OpenAI extends Trigger {
+class OpenAI extends Trigger implements TriggerInterface {
     private const MAX_ATTEMPTS = 15;
     private array $messages = [];
     private array $errorMessages = [
         'LIMIT_REACHED' => 'Вы достигли лимита сообщений. Подробнее: /subscription',
     ];
 
-    public function __construct($request)
+    public function __construct(array $request, ?Message $message)
     {
         /** @var Chat $chat */
-        $chat = Chat::query()->where(column: 'chat_id', operator: $request['message']['chat']['id'])->first();
+        $chat = Chat::query()->firstWhere(column: 'chat_id', operator: $request['message']['chat']['id']);
         $attempts = $chat->getAttribute('attempts');
         $context = $chat->getAttribute('context');
 
@@ -33,7 +35,7 @@ class OpenAI extends Trigger {
                 try {
                     $this->messages = json_decode($context, true);
                 } catch (Exception) {
-                    $this->writeLogFile('TELEKIT ERROR: zero again');
+                    $this->log('TELEKIT ERROR: zero again');
                 }
             }
 
@@ -70,14 +72,12 @@ class OpenAI extends Trigger {
                 ];
 
                 unlink($fileLink);
-            }
-            elseif (isset($this->requestMessage()['text'])) {
+            } elseif (isset($this->requestMessage()['text'])) {
                 $this->messages[] = [
                     "role" => "user",
                     "content" => $request['message']['text']
                 ];
-            }
-            else {
+            } else {
                 return;
             }
 
@@ -90,7 +90,10 @@ class OpenAI extends Trigger {
 
             $this->messages = array_slice($this->messages, -10, 10);
 
-            if ($context) $chat->update(['context' => $this->messages]);
+            if ($context) {
+                $chat->setAttribute('context', $this->messages);
+                $chat->save();
+            }
 
             $this->deleteMessage();
             $this->replyMessage($answer);
