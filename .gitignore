@@ -1,5 +1,6 @@
 /vendor
 /admin/cache/*
+!/admin/cache/.gitkeep
 .env
 /.idea/*
 /.fleet
