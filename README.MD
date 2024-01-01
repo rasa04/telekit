@@ -156,7 +156,7 @@ $this->sendMessage()
     ->chatId($request['message']['chat']['id'])
     ->text('Choose the option')
     ->parseMode()
-    ->reply_markup([
+    ->replyMarkup([
         'one_time_keyboard' => true,
         'resize_keyboard' => true,
         'inline_keyboard' => [
@@ -184,7 +184,7 @@ $this->sendMessage()
 ## Send photo
 ```
 $this->photo()
-    ->protect_content(true)
+    ->protectContent(true)
     ->caption('Подпись')
     ->photo("image1.png", "кот.jpg", "image/jpg")
     ->send()
@@ -193,7 +193,7 @@ $this->photo()
 ## Send document
 ```
 $this->document()
-    ->protect_content(true)
+    ->protectContent(true)
     ->caption('Sign')
     ->photo("image1.png", "cat.jpg", "image/jpg")
     ->send()

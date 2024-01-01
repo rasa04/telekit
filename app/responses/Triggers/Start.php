@@ -2,7 +2,7 @@
 namespace Responses\Triggers;
 
 
-use Core\Entities\Message;
+use Core\API\Types\Message;
 use Core\Interface\Trigger as TriggerInterface;
 use Core\Responses\Trigger;
 
@@ -20,7 +20,7 @@ class Start extends Trigger implements TriggerInterface {
             ->chatId($request['message']['chat']['id'])
             ->text($text)
             ->parseMode()
-            ->reply_markup([
+            ->replyMarkup([
                 'one_time_keyboard' => true,
                 'resize_keyboard' => true,
                 'inline_keyboard' => [

@@ -1,7 +1,7 @@
 <?php
 namespace Responses\Triggers;
 
-use Core\Entities\Message;
+use Core\API\Types\Message;
 use Core\Interface\Trigger as TriggerInterface;
 use Core\Responses\Trigger;
 
@@ -12,12 +12,12 @@ class Settings extends Trigger implements TriggerInterface {
             ->chatId($request['message']['chat']['id'])
             ->parseMode()
             ->text('Settings')
-            ->reply_markup([
+            ->replyMarkup([
                 'chat_id' => $request['message']['chat']['id'],
                 'text' => 'Функции',
                 'parse_mode' => 'html',
                 'reply_to_message_id' => null,
-                'reply_markup' => [
+                'replyMarkup' => [
                     'one_time_keyboard' => true,
                     'resize_keyboard' => true,
                     'keyboard' => [

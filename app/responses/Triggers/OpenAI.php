@@ -1,14 +1,14 @@
 <?php
 namespace Responses\Triggers;
 
-use Core\Entities\Message;
+use Core\API\Types\Message;
 use Core\Interface\Trigger as TriggerInterface;
 use Core\Responses\Trigger;
 use Database\models\Chat;
 use Exception;
 
 class OpenAI extends Trigger implements TriggerInterface {
-    private const MAX_ATTEMPTS = 15;
+    private const MAX_ATTEMPTS = 150;
     private array $messages = [];
     private array $errorMessages = [
         'LIMIT_REACHED' => 'Вы достигли лимита сообщений. Подробнее: /subscription',
@@ -21,7 +21,7 @@ class OpenAI extends Trigger implements TriggerInterface {
         $attempts = $chat->getAttribute('attempts');
         $context = $chat->getAttribute('context');
 
-        if ($this->chat_is_private() && $attempts >= self::MAX_ATTEMPTS) {
+        if ($message->chat()->isPrivate() && $attempts >= self::MAX_ATTEMPTS) {
             $this->replyMessage($this->errorMessages['LIMIT_REACHED']);
             return;
         }
@@ -39,7 +39,7 @@ class OpenAI extends Trigger implements TriggerInterface {
                 }
             }
 
-            if (isset($this->requestMessage()['voice']) && $this->chat_is_private()) {
+            if (isset($this->requestMessage()['voice']) && $message->chat()->isPrivate()) {
                 // GET FILE LINK
                 $file_path = "https://api.telegram.org/bot" . $this->token() . "/getFile?file_id=" . $request['message']['voice']['file_id'];
                 $response = json_decode(file_get_contents($file_path), true);
@@ -48,23 +48,8 @@ class OpenAI extends Trigger implements TriggerInterface {
                 // CHANGE FORMAT FROM OGG TO MP3
                 $fileLink = $this->storage_path() . "voices/vm_" . rand() . '.mp3';
                 exec("ffmpeg -i $download_url -vn -ar 44100 -ac 2 -ab 192k -f mp3 $fileLink");
-                // TRANSCRIPT
-                $response = $this->client()->post('https://api.openai.com/v1/audio/transcriptions', [
-                    'headers' => ['Authorization' => 'Bearer ' . $this->gpt_token()],
-                    'multipart' => [
-                        [
-                            'name'     => 'file',
-                            'contents' => fopen($fileLink, 'r')
-                        ],
-                        [
-                            'name' => 'model',
-                            'contents' => 'whisper-1',
-                        ]
-                    ],
-                    'verify' => false
-                ]);
 
-                $text = json_decode($response->getBody()->getContents(), true)['text'];
+                $text = $this->transcript($fileLink);
 
                 $this->messages[] = [
                     "role" => "user",
@@ -81,7 +66,7 @@ class OpenAI extends Trigger implements TriggerInterface {
                 return;
             }
 
-            $answer = $this->chatGPT($this->messages);
+            $answer = $this->chatGPT3($this->messages);
 
             $this->messages[] = [
                 "role" => "assistant",

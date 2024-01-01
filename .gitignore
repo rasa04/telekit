@@ -1,4 +1,5 @@
 /vendor
+/storage/*
 /admin/cache/*
 !/admin/cache/.gitkeep
 .env

@@ -2,7 +2,7 @@
 
 namespace Responses\Triggers;
 
-use Core\Entities\Message;
+use Core\API\Types\Message;
 use Core\Interface\Trigger as TriggerInterface;
 use Core\Responses\Trigger;
 use Database\models\Country;

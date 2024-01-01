@@ -10,7 +10,7 @@ class Support extends Callback {
             ->chatId($request['callback_query']['message']['chat']['id'])
             ->parseMode()
             ->text('<b>Скоро...</b>')
-            ->reply_markup([
+            ->replyMarkup([
                 'chat_id' => $request['callback_query']['message']['chat']['id'],
                 'text' => '<b>Скоро...<b>',
                 'parse_mode' => 'html',
