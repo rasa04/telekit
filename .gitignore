@@ -1,6 +1,7 @@
 /vendor
+/admin/cache/*
 .env
-/.idea
+/.idea/*
 /.fleet
 /.vscode
 composer.phar
