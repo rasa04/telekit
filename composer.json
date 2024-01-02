@@ -19,13 +19,21 @@
         "vlucas/phpdotenv": "^5.5",
         "ext-curl": "*",
         "ext-pdo": "*",
-        "eftec/bladeone": "^4.9"
+        "eftec/bladeone": "^4.9",
+        "openai-php/client": "^0.8.1",
+        "http-interop/http-factory-guzzle": "^1.2"
     },
     "autoload": {
         "psr-4": {
             "Database\\": "database/",
             "Responses\\": "app/responses/",
-            "Middlewares\\": "app/middlewares"
+            "Middlewares\\": "app/middlewares",
+            "Services\\": "app/services"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
         }
     }
 }

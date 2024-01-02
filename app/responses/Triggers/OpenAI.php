@@ -49,11 +49,9 @@ class OpenAI extends Trigger implements TriggerInterface {
                 $fileLink = $this->storage_path() . "voices/vm_" . rand() . '.mp3';
                 exec("ffmpeg -i $download_url -vn -ar 44100 -ac 2 -ab 192k -f mp3 $fileLink");
 
-                $text = $this->transcript($fileLink);
-
                 $this->messages[] = [
                     "role" => "user",
-                    "content" => $text
+                    "content" => \Services\OpenAI::transcribeCURL($fileLink)
                 ];
 
                 unlink($fileLink);
@@ -66,7 +64,7 @@ class OpenAI extends Trigger implements TriggerInterface {
                 return;
             }
 
-            $answer = $this->chatGPT3($this->messages);
+            $answer = \Services\OpenAI::askCURL($this->messages);
 
             $this->messages[] = [
                 "role" => "assistant",
